@@ -117,8 +117,7 @@ const questions = [
     { text: "Solo piattaforme di social media per studenti", correct: false }
   ]
 },
- //nuove domande DigComp 2.2.
-  {
+   {
   question: "Chi può ricevere la prima posizione economica secondo il C.C.N.L.?",
   answers: [
     { text: "Solo gli assistenti tecnici", correct: false },
@@ -235,9 +234,7 @@ const questions = [
     { text: "Solo piattaforme di social media per studenti", correct: false }
   ]
 },
-
- //nuove domande
-
+ //nuove domande DigComp 2.2.
   {
   question: "Quali sono le due tipologie di posizioni economiche previste dal CCNL per il personale ATA?",
   answers: [
