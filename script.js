@@ -1,6 +1,666 @@
 // Libreria di domande (può essere ampliata facilmente)
 const questions = [
- 
+{
+  question: "Chi può ricevere la prima posizione economica secondo il C.C.N.L.?",
+  answers: [
+    { text: "Solo gli assistenti tecnici", correct: false },
+    { text: "Tutto il personale inquadrato nelle Aree Collaboratori, Operatori e Assistenti", correct: true },
+    { text: "Solo il personale docente", correct: false },
+    { text: "Solo il personale con contratto a tempo determinato", correct: false }
+  ]
+},
+{
+  question: "Quale articolo del decreto legislativo definisce la scuola come comunità educante?",
+  answers: [
+    { text: "Art. 3 del decreto legislativo 16 aprile 1994, n. 297", correct: true },
+    { text: "Art. 5 del decreto legislativo 2010", correct: false },
+    { text: "Art. 1 della Costituzione italiana", correct: false },
+    { text: "Art. 10 della Convenzione ONU sui diritti dell’infanzia", correct: false }
+  ]
+},
+{
+  question: "Quali valori caratterizzano la comunità educante?",
+  answers: [
+    { text: "Valori democratici e crescita della persona in tutte le sue dimensioni", correct: true },
+    { text: "Solo la formazione professionale degli insegnanti", correct: false },
+    { text: "L’efficienza amministrativa della scuola", correct: false },
+    { text: "La gestione economica della scuola", correct: false }
+  ]
+},
+{
+  question: "Chi fa parte della comunità educante secondo il decreto legislativo n. 297/1994?",
+  answers: [
+    { text: "Dirigente scolastico, personale docente ed educativo, DSGA, personale ATA, famiglie, alunni e studenti", correct: true },
+    { text: "Solo il personale docente", correct: false },
+    { text: "Solo gli studenti e le famiglie", correct: false },
+    { text: "Solo il dirigente scolastico e il personale amministrativo", correct: false }
+  ]
+},
+{
+  question: "Qual è lo strumento principale con cui la comunità educante definisce la progettazione educativa e didattica?",
+  answers: [
+    { text: "Il piano triennale dell’offerta formativa", correct: true },
+    { text: "Il regolamento scolastico interno", correct: false },
+    { text: "Il calendario scolastico", correct: false },
+    { text: "Il bilancio annuale della scuola", correct: false }
+  ]
+},
+{
+  question: "Cosa implica la competenza digitale secondo DigComp 2.2?",
+  answers: [
+    { text: "L’uso sicuro, critico e responsabile delle tecnologie digitali nell’apprendimento, lavoro e società", correct: true },
+    { text: "Solo la capacità di usare programmi di scrittura", correct: false },
+    { text: "Solo la capacità di navigare su internet", correct: false },
+    { text: "L’installazione di software antivirus", correct: false }
+  ]
+},
+{
+  question: "Quali sono alcune delle competenze incluse in DigComp 2.2?",
+  answers: [
+    { text: "Alfabetizzazione all’informazione e ai dati, comunicazione, collaborazione, sicurezza, pensiero critico", correct: true },
+    { text: "Solo programmazione", correct: false },
+    { text: "Solo uso di social media", correct: false },
+    { text: "Solo creazione di contenuti artistici", correct: false }
+  ]
+},
+{
+  question: "Che cos’è il Piano Nazionale della Scuola Digitale (PNSD)?",
+  answers: [
+    { text: "Il principale strumento di programmazione per la trasformazione digitale della scuola italiana", correct: true },
+    { text: "Un programma per le attività sportive scolastiche", correct: false },
+    { text: "Un piano per la gestione del personale docente", correct: false },
+    { text: "Un progetto per la ristrutturazione degli edifici scolastici", correct: false }
+  ]
+},
+{
+  question: "Quale legge ha introdotto il Piano Nazionale della Scuola Digitale?",
+  answers: [
+    { text: "Legge 13 luglio 2015, n. 107", correct: true },
+    { text: "Decreto legislativo 297/1994", correct: false },
+    { text: "Costituzione italiana", correct: false },
+    { text: "Legge di bilancio 2016", correct: false }
+  ]
+},
+{
+  question: "Quali misure sono state promosse per l’infrastrutturazione digitale nelle scuole?",
+  answers: [
+    { text: "Potenziamento della connettività, ambienti di apprendimento innovativi, dotazioni per didattica digitale", correct: true },
+    { text: "Solo acquisto di libri cartacei", correct: false },
+    { text: "Aumento del numero di docenti", correct: false },
+    { text: "Organizzazione di eventi sportivi", correct: false }
+  ]
+},
+{
+  question: "Cosa rappresentano PON, PNRR e PN nel contesto della scuola digitale?",
+  answers: [
+    { text: "Programmi e risorse per la transizione digitale e il sostegno economico", correct: true },
+    { text: "Tipologie di contratti di lavoro", correct: false },
+    { text: "Strumenti di valutazione degli studenti", correct: false },
+    { text: "Manuali per l’uso del computer", correct: false }
+  ]
+},
+{
+  question: "Che cos’è il SIDI?",
+  answers: [
+    { text: "Un sistema informativo riservato per la gestione dei dati amministrativi scolastici", correct: true },
+    { text: "Una piattaforma per l’insegnamento a distanza", correct: false },
+    { text: "Un programma di formazione per docenti", correct: false },
+    { text: "Un tipo di contratto per il personale ATA", correct: false }
+  ]
+},
+{
+  question: "Quali servizi sono disponibili attraverso il SIDI?",
+  answers: [
+    { text: "Anagrafe nazionale studenti, iscrizioni online, plico telematico, fatturazione elettronica, firma digitale", correct: true },
+    { text: "Solo iscrizioni manuali degli studenti", correct: false },
+    { text: "Solo gestione delle assenze", correct: false },
+    { text: "Solo piattaforme di social media per studenti", correct: false }
+  ]
+},
+ //nuove domande DigComp 2.2.
+  {
+  question: "Chi può ricevere la prima posizione economica secondo il C.C.N.L.?",
+  answers: [
+    { text: "Solo gli assistenti tecnici", correct: false },
+    { text: "Tutto il personale inquadrato nelle Aree Collaboratori, Operatori e Assistenti", correct: true },
+    { text: "Solo il personale docente", correct: false },
+    { text: "Solo il personale con contratto a tempo determinato", correct: false }
+  ]
+},
+{
+  question: "Quale articolo del decreto legislativo definisce la scuola come comunità educante?",
+  answers: [
+    { text: "Art. 3 del decreto legislativo 16 aprile 1994, n. 297", correct: true },
+    { text: "Art. 5 del decreto legislativo 2010", correct: false },
+    { text: "Art. 1 della Costituzione italiana", correct: false },
+    { text: "Art. 10 della Convenzione ONU sui diritti dell’infanzia", correct: false }
+  ]
+},
+{
+  question: "Quali valori caratterizzano la comunità educante?",
+  answers: [
+    { text: "Valori democratici e crescita della persona in tutte le sue dimensioni", correct: true },
+    { text: "Solo la formazione professionale degli insegnanti", correct: false },
+    { text: "L’efficienza amministrativa della scuola", correct: false },
+    { text: "La gestione economica della scuola", correct: false }
+  ]
+},
+{
+  question: "Chi fa parte della comunità educante secondo il decreto legislativo n. 297/1994?",
+  answers: [
+    { text: "Dirigente scolastico, personale docente ed educativo, DSGA, personale ATA, famiglie, alunni e studenti", correct: true },
+    { text: "Solo il personale docente", correct: false },
+    { text: "Solo gli studenti e le famiglie", correct: false },
+    { text: "Solo il dirigente scolastico e il personale amministrativo", correct: false }
+  ]
+},
+{
+  question: "Qual è lo strumento principale con cui la comunità educante definisce la progettazione educativa e didattica?",
+  answers: [
+    { text: "Il piano triennale dell’offerta formativa", correct: true },
+    { text: "Il regolamento scolastico interno", correct: false },
+    { text: "Il calendario scolastico", correct: false },
+    { text: "Il bilancio annuale della scuola", correct: false }
+  ]
+},
+{
+  question: "Cosa implica la competenza digitale secondo DigComp 2.2?",
+  answers: [
+    { text: "L’uso sicuro, critico e responsabile delle tecnologie digitali nell’apprendimento, lavoro e società", correct: true },
+    { text: "Solo la capacità di usare programmi di scrittura", correct: false },
+    { text: "Solo la capacità di navigare su internet", correct: false },
+    { text: "L’installazione di software antivirus", correct: false }
+  ]
+},
+{
+  question: "Quali sono alcune delle competenze incluse in DigComp 2.2?",
+  answers: [
+    { text: "Alfabetizzazione all’informazione e ai dati, comunicazione, collaborazione, sicurezza, pensiero critico", correct: true },
+    { text: "Solo programmazione", correct: false },
+    { text: "Solo uso di social media", correct: false },
+    { text: "Solo creazione di contenuti artistici", correct: false }
+  ]
+},
+{
+  question: "Che cos’è il Piano Nazionale della Scuola Digitale (PNSD)?",
+  answers: [
+    { text: "Il principale strumento di programmazione per la trasformazione digitale della scuola italiana", correct: true },
+    { text: "Un programma per le attività sportive scolastiche", correct: false },
+    { text: "Un piano per la gestione del personale docente", correct: false },
+    { text: "Un progetto per la ristrutturazione degli edifici scolastici", correct: false }
+  ]
+},
+{
+  question: "Quale legge ha introdotto il Piano Nazionale della Scuola Digitale?",
+  answers: [
+    { text: "Legge 13 luglio 2015, n. 107", correct: true },
+    { text: "Decreto legislativo 297/1994", correct: false },
+    { text: "Costituzione italiana", correct: false },
+    { text: "Legge di bilancio 2016", correct: false }
+  ]
+},
+{
+  question: "Quali misure sono state promosse per l’infrastrutturazione digitale nelle scuole?",
+  answers: [
+    { text: "Potenziamento della connettività, ambienti di apprendimento innovativi, dotazioni per didattica digitale", correct: true },
+    { text: "Solo acquisto di libri cartacei", correct: false },
+    { text: "Aumento del numero di docenti", correct: false },
+    { text: "Organizzazione di eventi sportivi", correct: false }
+  ]
+},
+{
+  question: "Cosa rappresentano PON, PNRR e PN nel contesto della scuola digitale?",
+  answers: [
+    { text: "Programmi e risorse per la transizione digitale e il sostegno economico", correct: true },
+    { text: "Tipologie di contratti di lavoro", correct: false },
+    { text: "Strumenti di valutazione degli studenti", correct: false },
+    { text: "Manuali per l’uso del computer", correct: false }
+  ]
+},
+{
+  question: "Che cos’è il SIDI?",
+  answers: [
+    { text: "Un sistema informativo riservato per la gestione dei dati amministrativi scolastici", correct: true },
+    { text: "Una piattaforma per l’insegnamento a distanza", correct: false },
+    { text: "Un programma di formazione per docenti", correct: false },
+    { text: "Un tipo di contratto per il personale ATA", correct: false }
+  ]
+},
+{
+  question: "Quali servizi sono disponibili attraverso il SIDI?",
+  answers: [
+    { text: "Anagrafe nazionale studenti, iscrizioni online, plico telematico, fatturazione elettronica, firma digitale", correct: true },
+    { text: "Solo iscrizioni manuali degli studenti", correct: false },
+    { text: "Solo gestione delle assenze", correct: false },
+    { text: "Solo piattaforme di social media per studenti", correct: false }
+  ]
+},
+
+ //nuove domande
+
+  {
+  question: "Quali sono le due tipologie di posizioni economiche previste dal CCNL per il personale ATA?",
+  answers: [
+    { text: "Prima posizione economica e seconda posizione economica", correct: true },
+    { text: "Posizione economica base e posizione economica avanzata", correct: false },
+    { text: "Solo prima posizione economica", correct: false },
+    { text: "Posizione economica per assistenti tecnici e per collaboratori", correct: false }
+  ]
+},
+{
+  question: "A quali profili professionali può essere corrisposta la prima o la seconda posizione economica in via alternativa?",
+  answers: [
+    { text: "Assistente amministrativo o Assistente tecnico", correct: true },
+    { text: "Solo Assistenti tecnici", correct: false },
+    { text: "Collaboratori scolastici", correct: false },
+    { text: "Operatori", correct: false }
+  ]
+},
+{
+  question: "Che cos’è il principio della Comunità Educante secondo il d.lgs. n. 297/1994?",
+  answers: [
+    { text: "Una comunità di dialogo, ricerca e esperienza sociale improntata ai valori democratici", correct: true },
+    { text: "Un insieme di regole per la sicurezza digitale", correct: false },
+    { text: "Un piano di formazione per il personale ATA", correct: false },
+    { text: "Un documento di programmazione economica", correct: false }
+  ]
+},
+{
+  question: "Chi appartiene alla comunità educante?",
+  answers: [
+    { text: "Dirigente scolastico, personale docente, DSGA, personale ATA, famiglie, alunni e studenti", correct: true },
+    { text: "Solo il personale docente e il dirigente scolastico", correct: false },
+    { text: "Solo gli alunni e gli studenti", correct: false },
+    { text: "Il personale tecnico e amministrativo", correct: false }
+  ]
+},
+{
+  question: "Come è articolato il sistema di classificazione del personale tecnico e amministrativo?",
+  answers: [
+    { text: "In quattro Aree professionali: Operatori, Assistenti, Funzionari, Elevate Qualificazioni", correct: true },
+    { text: "In tre livelli: base, intermedio, avanzato", correct: false },
+    { text: "In due settori: amministrativo e tecnico", correct: false },
+    { text: "Solo in base alle mansioni quotidiane", correct: false }
+  ]
+},
+{
+  question: "Quali competenze sono richieste per l’Area degli Assistenti?",
+  answers: [
+    { text: "Compiti complessi con conoscenza di procedure e uso di attrezzature elettroniche", correct: true },
+    { text: "Solo mansioni manuali e di supporto", correct: false },
+    { text: "Responsabilità esclusiva di coordinamento", correct: false },
+    { text: "Solo attività di pulizia e manutenzione", correct: false }
+  ]
+},
+{
+  question: "Quali sono le specifiche professionali comuni degli Assistenti?",
+  answers: [
+    { text: "Diploma di istruzione secondaria superiore e capacità applicative", correct: true },
+    { text: "Nessun requisito formativo specifico", correct: false },
+    { text: "Laurea specialistica in ambito tecnico", correct: false },
+    { text: "Solo esperienza pratica senza titoli", correct: false }
+  ]
+},
+{
+  question: "Quali compiti svolge l’Assistente amministrativo?",
+  answers: [
+    { text: "Gestione contabilità, archivio, protocollo e magazzino", correct: true },
+    { text: "Solo attività di assistenza agli alunni", correct: false },
+    { text: "Organizzazione viaggi di istruzione", correct: false },
+    { text: "Coordinamento del personale docente", correct: false }
+  ]
+},
+{
+  question: "Come si applica la classificazione dei profili ATA nelle attività quotidiane?",
+  answers: [
+    { text: "Attraverso il piano delle attività proposto dal DSGA e adottato dal Dirigente scolastico", correct: true },
+    { text: "Solo tramite disposizioni del Ministero dell’Istruzione", correct: false },
+    { text: "Attraverso incontri sindacali trimestrali", correct: false },
+    { text: "Attraverso decisioni dei rappresentanti degli studenti", correct: false }
+  ]
+},
+{
+  question: "A quali commissioni può partecipare il personale ATA?",
+  answers: [
+    { text: "Visite e viaggi di istruzione, assistenza agli alunni con disabilità, sicurezza, elaborazione PEI", correct: true },
+    { text: "Solo commissioni per la sicurezza", correct: false },
+    { text: "Commissioni per la programmazione economica", correct: false },
+    { text: "Commissioni sindacali e politiche", correct: false }
+  ]
+},
+{
+  question: "Cos'è l'accesso sicuro?",
+  answers: [
+    { text: "Modalità di accesso che garantisce la protezione dei dati e dell’identità dell’utente, spesso tramite SPID o CIE.", correct: true },
+    { text: "Accesso senza bisogno di credenziali.", correct: false },
+    { text: "Accesso che consente solo di leggere i dati, ma non modificarli.", correct: false },
+    { text: "Accesso solo tramite password semplice.", correct: false }
+  ]
+},
+{
+  question: "Cosa significa accesso profilato?",
+  answers: [
+    { text: "Accesso a una piattaforma con credenziali che determinano i permessi e le funzioni disponibili per l’utente.", correct: true },
+    { text: "Accesso che richiede solo una password.", correct: false },
+    { text: "Accesso tramite link pubblico senza autenticazione.", correct: false },
+    { text: "Accesso anonimo e senza controllo.", correct: false }
+  ]
+},
+{
+  question: "Cos'è l'autenticazione a due fattori (2FA)?",
+  answers: [
+    { text: "Metodo di sicurezza che richiede due elementi per accedere a un servizio (es. password + codice OTP).", correct: true },
+    { text: "Accesso che utilizza solo una password.", correct: false },
+    { text: "Accesso con un solo dispositivo riconosciuto.", correct: false },
+    { text: "Accesso automatico senza verifica.", correct: false }
+  ]
+},
+{
+  question: "Cos'è il CAD (Codice dell'Amministrazione Digitale)?",
+  answers: [
+    { text: "Normativa che regolamenta l'uso dei sistemi informatici nelle pubbliche amministrazioni italiane.", correct: true },
+    { text: "Un software per la gestione della PA.", correct: false },
+    { text: "Un sistema di autenticazione biometrica.", correct: false },
+    { text: "Una piattaforma per i pagamenti online.", correct: false }
+  ]
+},
+{
+  question: "Cos'è la CIE (Carta d’Identità Elettronica)?",
+  answers: [
+    { text: "Documento d’identità in formato elettronico utilizzabile anche per accedere ai servizi online della PA.", correct: true },
+    { text: "Carta bancomat per pagamenti digitali.", correct: false },
+    { text: "Dispositivo USB per archiviazione dati.", correct: false },
+    { text: "Applicazione per smartphone per autenticarsi.", correct: false }
+  ]
+},
+{
+  question: "Cos'è la CNS (Carta Nazionale dei Servizi)?",
+  answers: [
+    { text: "Dispositivo (smart card o chiavetta USB) che consente l’autenticazione ai servizi digitali e la firma elettronica.", correct: true },
+    { text: "Una password complessa.", correct: false },
+    { text: "Un tipo di browser per accedere ai servizi PA.", correct: false },
+    { text: "Un software antivirus.", correct: false }
+  ]
+},
+{
+  question: "Cosa si intende per credenziali?",
+  answers: [
+    { text: "Insieme di dati (username, password, PIN, ecc.) utilizzati per accedere in modo sicuro a un sistema informatico.", correct: true },
+    { text: "Una carta di credito.", correct: false },
+    { text: "Un tipo di virus informatico.", correct: false },
+    { text: "Un software di sicurezza.", correct: false }
+  ]
+},
+{
+  question: "Cos'è DigComp 2.2?",
+  answers: [
+    { text: "Quadro europeo di riferimento per le competenze digitali dei cittadini, sviluppato dalla Commissione Europea.", correct: true },
+    { text: "Un software di editing digitale.", correct: false },
+    { text: "Un tipo di hardware per PC.", correct: false },
+    { text: "Un protocollo di rete.", correct: false }
+  ]
+},
+{
+  question: "Cos'è Eidas?",
+  answers: [
+    { text: "Regolamento europeo che stabilisce standard per l'identificazione elettronica e i servizi fiduciari.", correct: true },
+    { text: "Un sistema operativo per smartphone.", correct: false },
+    { text: "Un'applicazione per la gestione delle email.", correct: false },
+    { text: "Un software antivirus europeo.", correct: false }
+  ]
+},
+{
+  question: "Cos'è la firma digitale?",
+  answers: [
+    { text: "Strumento che consente di firmare documenti informatici con valore legale, garantendo autenticità, integrità e non ripudio.", correct: true },
+    { text: "Una scansione della firma autografa.", correct: false },
+    { text: "Una password per accedere ai documenti.", correct: false },
+    { text: "Un file PDF protetto.", correct: false }
+  ]
+},
+{
+  question: "Cosa stabilisce il GDPR?",
+  answers: [
+    { text: "Normativa europea sulla protezione dei dati personali.", correct: true },
+    { text: "Regole per la pubblicità online.", correct: false },
+    { text: "Un protocollo di comunicazione.", correct: false },
+    { text: "Un software di gestione dati.", correct: false }
+  ]
+},
+{
+  question: "Cos'è NOIPA?",
+  answers: [
+    { text: "Portale del MEF per la gestione degli stipendi e dei compensi del personale della PA.", correct: true },
+    { text: "Un software di posta elettronica.", correct: false },
+    { text: "Un sistema di archiviazione documenti.", correct: false },
+    { text: "Una piattaforma per l’istruzione online.", correct: false }
+  ]
+},
+{
+  question: "Cos'è il phishing?",
+  answers: [
+    { text: "Tentativo fraudolento di ottenere dati sensibili tramite email o siti web falsi.", correct: true },
+    { text: "Un sistema di sicurezza informatica.", correct: false },
+    { text: "Un software antivirus.", correct: false },
+    { text: "Un protocollo di rete.", correct: false }
+  ]
+},
+{
+  question: "Chi è il responsabile del trattamento?",
+  answers: [
+    { text: "Figura che gestisce i dati personali all’interno della scuola, nel rispetto del GDPR.", correct: true },
+    { text: "Utente che usa il computer.", correct: false },
+    { text: "Tecnico informatico della scuola.", correct: false },
+    { text: "Responsabile della sicurezza antincendio.", correct: false }
+  ]
+},
+{
+  question: "Cos'è SIDI?",
+  answers: [
+    { text: "Portale del Ministero dell’Istruzione per la gestione amministrativa e didattica delle scuole.", correct: true },
+    { text: "Un software di editing video.", correct: false },
+    { text: "Un sistema operativo per PC.", correct: false },
+    { text: "Un'app per smartphone.", correct: false }
+  ]
+},
+{
+  question: "Cos'è SPID?",
+  answers: [
+    { text: "Sistema che consente l’accesso ai servizi online della PA e dei privati aderenti con un’unica coppia di credenziali.", correct: true },
+    { text: "Un sistema di pagamento online.", correct: false },
+    { text: "Un software antivirus.", correct: false },
+    { text: "Un motore di ricerca.", correct: false }
+  ]
+},
+{
+  question: "Cosa si intende per tracciabilità?",
+  answers: [
+    { text: "Capacità di registrare e monitorare le operazioni effettuate da un utente su una piattaforma digitale.", correct: true },
+    { text: "Sistema di crittografia dei dati.", correct: false },
+    { text: "Backup automatico dei dati.", correct: false },
+    { text: "Un programma per modificare dati.", correct: false }
+  ]
+       },
+       {
+  question: "Quale piattaforma viene utilizzata dall’assistente per la rendicontazione delle attività progettuali?",
+  answers: [
+    { text: "NOIPA", correct: false },
+    { text: "FUTURA", correct: true },
+    { text: "SIOPE+", correct: false },
+    { text: "Entratel", correct: false }
+  ]
+},
+{
+  question: "Con quale sistema l’assistente accede a piattaforme come PIMER o SIF2127?",
+  answers: [
+    { text: "Chiave OTP", correct: false },
+    { text: "Autenticazione tramite desktop telematico", correct: false },
+    { text: "SPID o CNS", correct: true },
+    { text: "PIN dispositivo", correct: false }
+  ]
+},
+{
+  question: "A cosa serve l’accesso al sistema B.I.S.?",
+  answers: [
+    { text: "Per inviare la CU all’Agenzia delle Entrate", correct: false },
+    { text: "Per conservare documenti cartacei", correct: false },
+    { text: "Per inserire dati contabili e classificare le voci di bilancio", correct: true },
+    { text: "Per autenticare il F24EP", correct: false }
+  ]
+},
+{
+  question: "Quale tra i seguenti strumenti è richiesto per accedere a B.I.S.?",
+  answers: [
+    { text: "Solo password personale", correct: false },
+    { text: "Chiave OTP", correct: false },
+    { text: "SPID, CIE o CNS", correct: true },
+    { text: "Token bancario", correct: false }
+  ]
+},
+{
+  question: "Quale principio deve essere rispettato nella produzione e conservazione dei documenti digitali?",
+  answers: [
+    { text: "Il codice dei contratti pubblici", correct: false },
+    { text: "Le norme INAIL", correct: false },
+    { text: "Il GDPR", correct: true },
+    { text: "La normativa CNIPA", correct: false }
+  ]
+},
+{
+  question: "Perché l’assistente partecipa a formazioni sulla sicurezza digitale?",
+  answers: [
+    { text: "Per imparare a usare software grafici", correct: false },
+    { text: "Per gestire in sicurezza le credenziali di accesso", correct: true },
+    { text: "Per elaborare le CU", correct: false },
+    { text: "Per compilare modelli F24", correct: false }
+  ]
+},
+{
+  question: "Come si calcola il compenso?",
+  answers: [
+    { text: "Confrontando ore svolte e costo unitario per progetto", correct: false },
+    { text: "Usando un importo medio prestabilito", correct: false },
+    { text: "Confrontando ore dichiarate e tariffa oraria della nomina", correct: true },
+    { text: "A forfait secondo il CCNL", correct: false }
+  ]
+},
+{
+  question: "Cosa contiene la griglia Excel riassuntiva dei compensi?",
+  answers: [
+    { text: "Solo le ore svolte", correct: false },
+    { text: "Ore, compenso orario e importo lordo", correct: true },
+    { text: "I codici fiscali dei partecipanti", correct: false },
+    { text: "I mandati di pagamento", correct: false }
+  ]
+},
+{
+  question: "Quale attività **non** rientra nelle funzioni di prima posizione economica?",
+  answers: [
+    { text: "Compilazione e invio F24EP", correct: true },
+    { text: "Inserimento impegni di spesa in B.I.S.", correct: false },
+    { text: "Produzione documenti nel rispetto GDPR", correct: false },
+    { text: "Inserimento dati contabili", correct: false }
+  ]
+},
+{
+  question: "Cosa si intende per 'lordo Stato' nel calcolo del compenso?",
+  answers: [
+    { text: "Solo il netto pagato al dipendente", correct: false },
+    { text: "L’importo al netto delle sole imposte", correct: false },
+    { text: "L'importo comprensivo di trattenute del dipendente e del datore", correct: true },
+    { text: "Solo gli oneri a carico del datore", correct: false }
+  ]
+},
+{
+  question: "Quale sistema viene usato per l'invio della Distinta di trasmissione nella seconda posizione?",
+  answers: [
+    { text: "NOIPA", correct: false },
+    { text: "PIMER", correct: false },
+    { text: "SIOPE+", correct: true },
+    { text: "FUTURA", correct: false }
+  ]
+},
+{
+  question: "Il modello F24EP serve per:",
+  answers: [
+    { text: "L’accredito dei fondi PON", correct: false },
+    { text: "Il pagamento delle ritenute erariali e previdenziali", correct: true },
+    { text: "La registrazione delle ore lavorate", correct: false },
+    { text: "L'inserimento dei compensi in NOIPA", correct: false }
+  ]
+},
+{
+  question: "Come si effettua l’invio del modello F24EP?",
+  answers: [
+    { text: "Via email certificata (PEC)", correct: false },
+    { text: "Attraverso la piattaforma NOIPA", correct: false },
+    { text: "Con l'applicativo Entratel", correct: true },
+    { text: "Mediante SIOPE+", correct: false }
+  ]
+},
+{
+  question: "Cosa permette la funzione 'Gestione F24EP' di B.I.S.?",
+  answers: [
+    { text: "Compilazione e gestione del modello F24EP", correct: true },
+    { text: "Creazione di CU", correct: false },
+    { text: "Gestione delle password", correct: false },
+    { text: "Registrazione dei mandati", correct: false }
+  ]
+},
+{
+  question: "A cosa serve l’accesso al Desktop Telematico?",
+  answers: [
+    { text: "Alla gestione accessorie", correct: false },
+    { text: "Al controllo formale dei modelli F24EP", correct: true },
+    { text: "Alla rendicontazione dei progetti", correct: false },
+    { text: "Alla firma digitale dei mandati", correct: false }
+  ]
+},
+{
+  question: "Cosa garantisce l’autenticazione degli F24EP?",
+  answers: [
+    { text: "L’accesso a SIOPE+", correct: false },
+    { text: "La chiave crittografata di sicurezza", correct: true },
+    { text: "Il codice fiscale", correct: false },
+    { text: "Una password temporanea", correct: false }
+  ]
+},
+{
+  question: "Dove si inseriscono i compensi per l’aggiornamento previdenziale e fiscale?",
+  answers: [
+    { text: "Nella piattaforma FUTURA", correct: false },
+    { text: "Nel sistema B.I.S.", correct: false },
+    { text: "Nella piattaforma NOIPA", correct: true },
+    { text: "Nel software Entratel", correct: false }
+  ]
+},
+{
+  question: "Quale percorso permette l'inserimento dei compensi accessori in NOIPA?",
+  answers: [
+    { text: "Area Fiscale → Gestione Redditi", correct: false },
+    { text: "Area di Lavoro → Gestione Accessorie → Attività Uffici → Accessorie fuori sistema", correct: true },
+    { text: "Dashboard → CU → Compensi", correct: false },
+    { text: "Area Bilanci → Compensi Netti", correct: false }
+  ]
+},
+{
+  question: "Con quali credenziali si accede a Entratel?",
+  answers: [
+    { text: "PIN dell’ufficio", correct: false },
+    { text: "SPID", correct: true },
+    { text: "Numero di protocollo", correct: false },
+    { text: "Codice CUP", correct: false }
+  ]
+},
+{
+  question: "Quali dichiarazioni fiscali vengono elaborate e inviate nella seconda posizione economica?",
+  answers: [
+    { text: "Solo IRAP", correct: false },
+    { text: "CU, 730, IMU", correct: false },
+    { text: "CU, 770, IRAP", correct: true },
+    { text: "CU, ISEE, 770", correct: false }
+  ]
+  },
   {
     question: "In Microsoft Word, cosa consente di applicare la stessa formattazione a più parti di testo?",
     answers: [
@@ -268,15 +928,6 @@ const questions = [
       { text: "Il backup dei dati su cloud", correct: false },
     ]
   },
-   {
-    question: "Quale di queste è una funzione tipica dell'Assistente Amministrativo?",
-    answers: [
-      { text: "Gestire la contabilità", correct: false },
-      { text: "Organizzare l'attività scolastica", correct: true },
-      { text: "Fare le lezioni", correct: false },
-      { text: "Progettare il piano didattico", correct: false }
-    ]
-  },
   {
     question: "Quale documento attesta la regolarità contributiva di un fornitore?",
     answers: [
@@ -284,24 +935,6 @@ const questions = [
       { text: "CIG", correct: false },
       { text: "CUP", correct: false },
       { text: "Fattura", correct: false }
-    ]
-  },
-  {
-    question: "Il CIG serve per:",
-    answers: [
-      { text: "Identificare un appalto pubblico", correct: true },
-      { text: "Pagare le tasse", correct: false },
-      { text: "Registrare i dipendenti", correct: false },
-      { text: "Gestire la contabilità", correct: false }
-    ]
-  },
-  {
-    question: "Quale è il codice identificativo dell'Istituto scolastico?",
-    answers: [
-      { text: "Codice meccanografico", correct: true },
-      { text: "Codice fiscale", correct: false },
-      { text: "Partita IVA", correct: false },
-      { text: "Codice univoco", correct: false }
     ]
   },
   {
@@ -338,51 +971,6 @@ const questions = [
       { text: "5 anni", correct: true },
       { text: "3 anni", correct: false },
       { text: "6 anni", correct: false }
-    ]
-  },
-  {
-    question: "La funzione dell'Assistente Amministrativo è anche:",
-    answers: [
-      { text: "Gestire la biblioteca", correct: true },
-      { text: "Insegnare le materie", correct: false },
-      { text: "Coordinare le lezioni", correct: false },
-      { text: "Fare pulizie", correct: false }
-    ]
-  },
-  {
-    question: "Il C.F. dell'Istituto è:",
-    answers: [
-      { text: "Codice Fiscale", correct: true },
-      { text: "Codice Identificativo", correct: false },
-      { text: "Codice Univoco", correct: false },
-      { text: "Codice Meccanografico", correct: false }
-    ]
-  },
-  {
-    question: "L'Assistente Amministrativo si occupa di:",
-    answers: [
-      { text: "Gestione personale ATA", correct: true },
-      { text: "Organizzazione del corso", correct: false },
-      { text: "Docenza", correct: false },
-      { text: "Pianificazione orari", correct: false }
-    ]
-  },
-  {
-    question: "Quale codice è obbligatorio nelle fatture verso la Pubblica Amministrazione?",
-    answers: [
-      { text: "Codice Univoco", correct: true },
-      { text: "Codice Fiscale", correct: false },
-      { text: "CIG", correct: false },
-      { text: "CUP", correct: false }
-    ]
-  },
-  {
-    question: "La CUP serve per:",
-    answers: [
-      { text: "Codice Unico di Progetto", correct: true },
-      { text: "Codice Identificativo", correct: false },
-      { text: "Codice Fiscale", correct: false },
-      { text: "Codice Univoco", correct: false }
     ]
   },
   {
@@ -413,87 +1001,6 @@ const questions = [
     ]
   },
   {
-    question: "Cos'è il PON FSE?",
-    answers: [
-      { text: "Fondo Sociale Europeo", correct: true },
-      { text: "Fondo Scuola Europea", correct: false },
-      { text: "Fondo Scolastico Europeo", correct: false },
-      { text: "Fondo Sociale Nazionale", correct: false }
-    ]
-  },
-  {
-    question: "Che cos'è il bilancio consuntivo?",
-    answers: [
-      { text: "Bilancio che mostra i risultati economici effettivi", correct: true },
-      { text: "Bilancio preventivo", correct: false },
-      { text: "Piano finanziario", correct: false },
-      { text: "Bilancio di esercizio", correct: false }
-    ]
-  },
-  {
-    question: "Il DSGA è:",
-    answers: [
-      { text: "Direttore dei Servizi Generali e Amministrativi", correct: true },
-      { text: "Direttore dei Servizi Generali e Artistici", correct: false },
-      { text: "Dirigente Scolastico", correct: false },
-      { text: "Assistente Amministrativo", correct: false }
-    ]
-  },
-  {
-    question: "Quale di queste è una funzione tipica dell’Assistente Amministrativo?",
-    answers: [
-      { text: "Gestire la contabilità", correct: false },
-      { text: "Organizzare l'attività scolastica", correct: true },
-      { text: "Fare le lezioni", correct: false },
-      { text: "Progettare il piano didattico", correct: false }
-    ]
-  },
-  {
-    question: "Quale è il codice identificativo dell'Istituto scolastico?",
-    answers: [
-      { text: "Codice meccanografico", correct: true },
-      { text: "Codice fiscale", correct: false },
-      { text: "Partita IVA", correct: false },
-      { text: "Codice univoco", correct: false }
-    ]
-  },
-  {
-    question: "La PEC serve per:",
-    answers: [
-      { text: "Inviare email certificata", correct: true },
-      { text: "Telefonare", correct: false },
-      { text: "Stampare documenti", correct: false },
-      { text: "Archiviare documenti", correct: false }
-    ]
-  },
-  {
-    question: "Il budget di un istituto scolastico è:",
-    answers: [
-      { text: "Il bilancio preventivo", correct: true },
-      { text: "Il bilancio consuntivo", correct: false },
-      { text: "Il piano didattico", correct: false },
-      { text: "La relazione finale", correct: false }
-    ]
-  },
-  {
-    question: "Cos'è il PON?",
-    answers: [
-      { text: "Programma Operativo Nazionale", correct: true },
-      { text: "Piano Organizzativo Nazionale", correct: false },
-      { text: "Progetto Operativo Nazionale", correct: false },
-      { text: "Programma Organizzativo Nazionale", correct: false }
-    ]
-  },
-  {
-    question: "Qual è la durata del mandato del Dirigente Scolastico?",
-    answers: [
-      { text: "4 anni", correct: false },
-      { text: "5 anni", correct: true },
-      { text: "3 anni", correct: false },
-      { text: "6 anni", correct: false }
-    ]
-  },
-  {
     question: "La funzione dell'Assistente Amministrativo è anche:",
     answers: [
       { text: "Gestire la biblioteca", correct: true },
@@ -530,42 +1037,6 @@ const questions = [
     ]
   },
   {
-    question: "La CUP serve per:",
-    answers: [
-      { text: "Codice Unico di Progetto", correct: true },
-      { text: "Codice Identificativo", correct: false },
-      { text: "Codice Fiscale", correct: false },
-      { text: "Codice Univoco", correct: false }
-    ]
-  },
-  {
-    question: "La delibera del Consiglio d'Istituto è adottata d text: ",
-    answers: [
-      { text: "Dirigente Scolastico", correct: false },
-      { text: "Consiglio d'Istituto", correct: true },
-      { text: "Collegio dei Docenti", correct: false },
-      { text: "Personale ATA", correct: false }
-    ]
-  },
-  {
-    question: "Che cosa significa DURC?",
-    answers: [
-      { text: "Documento Unico di Regolarità Contributiva", correct: true },
-      { text: "Documento Unico di Regolarità Contabile", correct: false },
-      { text: "Documento Unico di Regolarità Certificata", correct: false },
-      { text: "Documento Unico di Registro Contributi", correct: false }
-    ]
-  },
-  {
-    question: "Quale di questi è un codice identificativo?",
-    answers: [
-      { text: "CIG", correct: true },
-      { text: "PEC", correct: false },
-      { text: "DURC", correct: false },
-      { text: "C.F.", correct: false }
-    ]
-  },
-  {
     question: "Cos'è il PON FSE?",
     answers: [
       { text: "Fondo Sociale Europeo", correct: true },
@@ -592,15 +1063,6 @@ const questions = [
       { text: "Assistente Amministrativo", correct: false }
     ]
   },
-  { 
-    question: "Quale di queste è una funzione tipica dell’Assistente Amministrativo?",
-    answers: [
-      { text: "Gestire la contabilità", correct: false },
-      { text: "Organizzare l'attività scolastica", correct: true },
-      { text: "Fare le lezioni", correct: false },
-      { text: "Progettare il piano didattico", correct: false }
-    ]
-  },
   {
     question: "Quale documento attesta la regolarità contributiva di un fornitore?",
     answers: [
@@ -617,33 +1079,6 @@ const questions = [
       { text: "Pagare le tasse", correct: false },
       { text: "Registrare i dipendenti", correct: false },
       { text: "Gestire la contabilità", correct: false }
-    ]
-  },
-  {
-    question: "Il C.F. dell'Istituto è:",
-    answers: [
-      { text: "Codice Fiscale", correct: true },
-      { text: "Codice Identificativo", correct: false },
-      { text: "Codice Univoco", correct: false },
-      { text: "Codice Meccanografico", correct: false }
-    ]
-  },
-  {
-    question: "L'Assistente Amministrativo si occupa di:",
-    answers: [
-      { text: "Gestione personale ATA", correct: true },
-      { text: "Organizzazione del corso", correct: false },
-      { text: "Docenza", correct: false },
-      { text: "Pianificazione orari", correct: false }
-    ]
-  },
-  {
-    question: "Quale codice è obbligatorio nelle fatture verso la Pubblica Amministrazione?",
-    answers: [
-      { text: "Codice Univoco", correct: true },
-      { text: "Codice Fiscale", correct: false },
-      { text: "CIG", correct: false },
-      { text: "CUP", correct: false }
     ]
   },
   {
@@ -665,39 +1100,12 @@ const questions = [
     ]
   },
   {
-    question: "Con l'acronimo DURC si intende il?",
-    answers: [
-      { text: "Documento Unico di Regolarità Contributiva", correct: true },
-      { text: "Documento Unico di Regolarità Contabile", correct: false },
-      { text: "Documento Unico di Regolarità Certificata", correct: false },
-      { text: "Documento Unico di Registro Contributi", correct: false }
-    ]
-  },
-  {
-    question: "Quale di questi è un codice identificativo?",
-    answers: [
-      { text: "CIG", correct: true },
-      { text: "PEC", correct: false },
-      { text: "DURC", correct: false },
-      { text: "C.F.", correct: false }
-    ]
-  },
-  {
     question: "L'Assistente Amministrativo collabora con:",
     answers: [
       { text: "Dirigente Scolastico", correct: true },
       { text: "Personale ATA", correct: false },
       { text: "Docenti", correct: false },
       { text: "Genitori", correct: false }
-    ]
-  },
-  {
-    question: "Che cos'è il bilancio consuntivo?",
-    answers: [
-      { text: "Bilancio che mostra i risultati economici effettivi", correct: true },
-      { text: "Bilancio preventivo", correct: false },
-      { text: "Piano finanziario", correct: false },
-      { text: "Bilancio di esercizio", correct: false }
     ]
   },
   {
@@ -870,8 +1278,43 @@ const questions = [
     { text: "Pubblicazione degli incarichi sul CMS scolastico", correct: false },
     { text: "Creazione di graduatorie su fogli elettronici", correct: false }
   ]
-}
-
+  },
+  {
+    question: "Cosa si intende per 'Lordo Stato'?",
+    answers: [
+      { text: "Il compenso netto percepito dal dipendente", correct: false },
+      { text: "Il totale delle imposte IRPEF", correct: false },
+      { text: "Il compenso totale comprensivo di tutte le trattenute a carico del dipendente e del datore di lavoro", correct: true },
+      { text: "Solo i contributi previdenziali a carico del datore di lavoro", correct: false }
+    ]
+  },
+  {
+    question: "Quale tra i seguenti è un onere a carico del dipendente?",
+    answers: [
+      { text: "Ritenute per il TFR", correct: false },
+      { text: "Contributi INPDAP al 100%", correct: true },
+      { text: "Contributi per il fondo pensioni complementare del datore di lavoro", correct: false },
+      { text: "Contributi INAIL", correct: false }
+    ]
+  },
+  {
+    question: "Quale voce è considerata un onere a carico del datore di lavoro?",
+    answers: [
+      { text: "IRPEF", correct: false },
+      { text: "Fondo di Garanzia", correct: false },
+      { text: "Contributi previdenziali a carico del datore di lavoro", correct: true },
+      { text: "Addizionale regionale", correct: false }
+    ]
+  },
+  {
+    question: "Il compenso netto è:",
+    answers: [
+      { text: "La somma delle trattenute previdenziali e fiscali", correct: false },
+      { text: "L'importo ricevuto al lordo di tutte le trattenute", correct: false },
+      { text: "L'importo effettivamente ricevuto dal dipendente dopo le trattenute", correct: true },
+      { text: "L'importo versato dal datore di lavoro allo Stato", correct: false }
+    ]
+  }
 ];
 
 let selectedQuestions = [];
