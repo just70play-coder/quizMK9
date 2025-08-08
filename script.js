@@ -1,5 +1,132 @@
 // Libreria di domande (può essere ampliata facilmente)
 const questions = [
+{
+    question: "Qual è il principale vantaggio del passaggio da una gestione cartacea a una gestione digitale degli acquisti nella Pubblica Amministrazione?",
+    answers: [
+      { text: "Garantire trasparenza, efficienza e tracciabilità della spesa", correct: true },
+      { text: "Ridurre il numero di fornitori disponibili", correct: false },
+      { text: "Eliminare completamente i controlli amministrativi", correct: false },
+      { text: "Aumentare l'uso della carta per la documentazione", correct: false }
+    ]
+  },
+  {
+    question: "Quali piattaforme digitali sono utilizzate per la gestione degli acquisti nella PA secondo il testo?",
+    answers: [
+      { text: "MePA e Piattaforma Certificazione Crediti", correct: true },
+      { text: "Facebook e Instagram", correct: false },
+      { text: "Spotify e Netflix", correct: false },
+      { text: "Google Drive e Dropbox", correct: false }
+    ]
+  },
+  {
+    question: "Qual è il ruolo principale dell’Assistente Amministrativo in Prima Posizione Economica nel processo digitale di acquisto?",
+    answers: [
+      { text: "Eseguire compiti esecutivi come caricare documenti e inviare PEC da modelli predefiniti", correct: true },
+      { text: "Gestire l’intero processo decisionale e negoziare i contratti", correct: false },
+      { text: "Creare piattaforme digitali per la PA", correct: false },
+      { text: "Effettuare ispezioni negli uffici fornitori", correct: false }
+    ]
+  },
+  {
+    question: "Quali strumenti digitali garantiscono la tracciabilità e la sicurezza nelle comunicazioni con i fornitori?",
+    answers: [
+      { text: "Posta Elettronica Certificata (PEC) e Firma Digitale", correct: true },
+      { text: "Chat di WhatsApp e Messenger", correct: false },
+      { text: "SMS e chiamate telefoniche", correct: false },
+      { text: "Fax tradizionale", correct: false }
+    ]
+  },
+  {
+    question: "In che modo l’Assistente Amministrativo in Seconda Posizione Economica contribuisce al raggiungimento del risultato?",
+    answers: [
+      { text: "Gestendo e supervisionando il processo, proponendo soluzioni e valutando offerte", correct: true },
+      { text: "Solo eseguendo ordini senza alcuna autonomia", correct: false },
+      { text: "Organizzando eventi aziendali per i fornitori", correct: false },
+      { text: "Redigendo bilanci annuali", correct: false }
+    ]
+  },
+  {
+    question: "Come si articola il processo di acquisto digitale nella PA?",
+    answers: [
+      { text: "Rilevazione fabbisogno, indagine di mercato e ordine, esecuzione e monitoraggio, contabilizzazione e archiviazione", correct: true },
+      { text: "Solo la stipula del contratto", correct: false },
+      { text: "Invio di richieste via email senza controllo", correct: false },
+      { text: "Acquisto diretto senza monitoraggio", correct: false }
+    ]
+  },
+  {
+    question: "Quale documento viene predisposto dall’Assistente in Seconda Posizione Economica da sottoporre al DSGA e al Dirigente?",
+    answers: [
+      { text: "Bozza di Ordine Diretto di Acquisto (OdA) o determina a contrarre", correct: true },
+      { text: "Richiesta di ferie", correct: false },
+      { text: "Lettera di dimissioni", correct: false },
+      { text: "Modulo per cambio turno", correct: false }
+    ]
+  },
+  {
+    question: "Quali attività esegue l’Assistente in Prima Posizione Economica nella fase di contabilizzazione e archiviazione?",
+    answers: [
+      { text: "Carica la fattura nel protocollo e invia solleciti di pagamento tramite PEC", correct: true },
+      { text: "Supervisiona e negozia contratti con fornitori", correct: false },
+      { text: "Prepara campagne pubblicitarie", correct: false },
+      { text: "Organizza meeting con il personale", correct: false }
+    ]
+  },
+  {
+    question: "Perché è importante passare da una cultura di adempimento formale a una cultura orientata ai risultati nella PA digitale?",
+    answers: [
+      { text: "Per assicurare che l'acquisto sia giusto, conveniente, tempestivo e tracciabile", correct: true },
+      { text: "Per ridurre il numero di documenti prodotti", correct: false },
+      { text: "Per eliminare ogni tipo di controllo", correct: false },
+      { text: "Per aumentare la burocrazia", correct: false }
+    ]
+  },
+  {
+    question: "Qual è la differenza principale tra i compiti dell’Assistente in Prima e Seconda Posizione Economica nel monitoraggio dell’ordine?",
+    answers: [
+      { text: "Il primo esegue compiti esecutivi, il secondo gestisce e risolve problemi operativi", correct: true },
+      { text: "Il primo fa tutto da solo, il secondo non fa nulla", correct: false },
+      { text: "Entrambi hanno lo stesso ruolo senza differenze", correct: false },
+      { text: "Il primo si occupa di marketing, il secondo di vendite", correct: false }
+    ]
+  },
+  {
+    question: "Come viene gestita la ricerca di fornitori e la scelta del miglior prodotto in un processo digitale?",
+    answers: [
+      { text: "Attraverso piattaforme di e-procurement come MePA che permettono confronto e ordini diretti", correct: true },
+      { text: "Inviando email generiche a fornitori casuali", correct: false },
+      { text: "Chiamando telefonicamente senza registrare le offerte", correct: false },
+      { text: "Scegliendo sempre il primo fornitore trovato", correct: false }
+    ]
+  },
+  {
+    question: "Qual è la funzione del Protocollo Informatico nel processo di gestione digitale degli acquisti?",
+    answers: [
+      { text: "Registrare e conservare a norma tutti i documenti relativi all'acquisto", correct: true },
+      { text: "Creare grafici di vendite mensili", correct: false },
+      { text: "Gestire le ferie del personale", correct: false },
+      { text: "Inviare newsletter agli utenti", correct: false }
+    ]
+  },
+  {
+    question: "In quale fase del processo digitale l’Assistente Amministrativo può inviare un sollecito di pagamento tramite PEC?",
+    answers: [
+      { text: "Nella fase di contabilizzazione e archiviazione, dopo aver ricevuto la fattura e l'ok alla liquidazione", correct: true },
+      { text: "Durante la rilevazione del fabbisogno", correct: false },
+      { text: "Durante l’indagine di mercato", correct: false },
+      { text: "Dopo la stipula del contratto ma prima dell'ordine", correct: false }
+    ]
+  },
+  {
+    question: "Quali rischi sono legati alla gestione frammentaria e cartacea degli acquisti nella PA?",
+    answers: [
+      { text: "Ritardi, acquisti non ottimali e difficoltà nel monitoraggio della spesa", correct: true },
+      { text: "Maggiore velocità nei processi", correct: false },
+      { text: "Riduzione della burocrazia", correct: false },
+      { text: "Aumento della trasparenza", correct: false }
+    ]
+  },
+// nuovo blocco
 { 
   question: "Cos'è l'identità digitale?",
   answers: [
