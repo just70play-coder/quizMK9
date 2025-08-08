@@ -480,7 +480,7 @@ const questions = [
   ]
        },
        {
-  question: "Quale piattaforma usa dall’assistente per la rendicontazione delle attività progettuali?",
+  question: "Quale piattaforma usa l’assistente per la rendicontazione delle attività progettuali?",
   answers: [
     { text: "NOIPA", correct: false },
     { text: "FUTURA", correct: true },
