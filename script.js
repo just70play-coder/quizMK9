@@ -1,6 +1,162 @@
 // Libreria di domande (può essere ampliata facilmente)
 const questions = [
-  {
+
+   {
+    question: "A cosa si riferisce l'identità digitale?",
+    answers: [
+      { text: "Il metodo di autenticazione di un utente su un sito web o un servizio, nonché un insieme di dati che identificano un utente attraverso il tracciamento delle sue attività digitali, azioni e contributi su Internet o sui dispositivi digitali", correct: true },
+      { text: "Il numero di telefono assegnato da un operatore mobile", correct: false },
+      { text: "Il sistema di sicurezza fisica di un edificio", correct: false },
+      { text: "Il codice fiscale di un cittadino", correct: false }
+    ]
+  },{
+    question: "Come si proteggono i dati personali e la privacy?",
+    answers: [
+      { text: "Individuare e cestinare i messaggi di posta elettronica sospetti che cercano di ottenere informazioni e dati sensibili", correct: true },
+      { text: "Condividere le password solo con familiari e amici", correct: false },
+      { text: "Salvare tutte le informazioni su cloud pubblici senza crittografia", correct: false },
+      { text: "Usare solo reti Wi-Fi pubbliche per accedere ai dati sensibili", correct: false }
+    ]
+  },{
+    question: "Quali le responsabilità degli assistenti nell'uso della propria identità digitale?",
+    answers: [
+      { text: "Custodire e usare consapevolmente le credenziali di accesso alle piattaforme digitali", correct: true },
+      { text: "Condividere le password con i colleghi per facilitare il lavoro", correct: false },
+      { text: "Usare l'identità digitale per scopi personali durante l’orario di lavoro", correct: false },
+      { text: "Ignorare gli avvisi di sicurezza perché non rilevanti", correct: false }
+    ]
+  },{
+    question: "Quale modalità di comunicazione formale può essere adottata dall'assistente amministrativo per informare il dirigente scolastico del malfunzionamento?",
+    answers: [
+      { text: "La posta istituzionale (e-mail)", correct: true },
+      { text: "Messaggio WhatsApp personale", correct: false },
+      { text: "Chiamata informale senza documentazione", correct: false },
+      { text: "Post su social media", correct: false }
+    ]
+  },{
+    question: "Quale delle seguenti è una delle prime azioni da compiere per diagnosticare il malfunzionamento del registro elettronico?",
+    answers: [
+      { text: "Controllare le credenziali e provare l'accesso da un browser alternativo", correct: true },
+      { text: "Spegnere e riaccendere il computer senza ulteriori controlli", correct: false },
+      { text: "Ignorare il problema e continuare il lavoro manualmente", correct: false },
+      { text: "Disinstallare e reinstallare il sistema operativo", correct: false }
+    ]
+  },{
+    question: "In caso di crash del registro elettronico durante gli scrutini, quale strumento può essere utilizzato per creare un backup dei dati?",
+    answers: [
+      { text: "Un documento Excel condiviso su Google for Education", correct: true },
+      { text: "Stampare a mano tutte le pagine del registro elettronico", correct: false },
+      { text: "Utilizzare un software di grafica per ricostruire i dati", correct: false },
+      { text: "Salvare le informazioni solo su un disco esterno non connesso a internet", correct: false }
+    ]
+  },{
+    question: "Perché è importante essere attenti e tempestivi nella sistemazione di una posizione assicurativa?",
+    answers: [
+      { text: "Garantire trasparenza, efficienza e tracciabilità della spesa pubblica", correct: true },
+      { text: "Per ricevere bonus personali", correct: false },
+      { text: "Per evitare di dover lavorare in futuro", correct: false },
+      { text: "Per non dover utilizzare strumenti digitali", correct: false }
+    ]
+  },{
+    question: "Quale piattaforma viene utilizzata per effettuare l'indagine di mercato e predisporre ordini richieste di offerta nella procedura di acquisto digitale?",
+    answers: [
+      { text: "MePA - Mercato Elettronico della Pubblica Amministrazione", correct: true },
+      { text: "Amazon Business", correct: false },
+      { text: "Facebook Marketplace", correct: false },
+      { text: "Ebay", correct: false }
+    ]
+  },{
+    question: "In quale fase del processo l'Assistente Amministrativo utilizza la PEC per sollecitare il pagamento al fornitore, seguendo un template predefinito?",
+    answers: [
+      { text: "Fase 4 - Contabilizzazione e Archiviazione", correct: true },
+      { text: "Fase 1 - Richiesta d’acquisto", correct: false },
+      { text: "Fase 2 - Negoziazione prezzi", correct: false },
+      { text: "Fase 3 - Controllo magazzino", correct: false }
+    ]
+  },{
+    question: "Secondo l'AI Act, quale sistema di IA rientra nella categoria a rischio alto in ambito scolastico?",
+    answers: [
+      { text: "Un sistema usato per la protocollo automatica delle comunicazioni in entrata", correct: true },
+      { text: "Un assistente vocale per rispondere alle domande degli studenti", correct: false },
+      { text: "Un software di videoscrittura", correct: false },
+      { text: "Un'app per la gestione del calendario scolastico", correct: false }
+    ]
+  },{
+    question: "Qual è uno dei principi fondamentali previsti dal Regolamento europeo sull'uso dell'IA nella Pubblica Amministrazione?",
+    answers: [
+      { text: "Supervisione umana delle decisioni automatizzate", correct: true },
+      { text: "Automazione totale senza intervento umano", correct: false },
+      { text: "Eliminazione di tutte le figure professionali umane", correct: false },
+      { text: "Libertà di condividere dati sensibili senza restrizioni", correct: false }
+    ]
+  },{
+    question: "In quale caso l'uso dell'IA nei processi amministrativi scolastici può comportare rischi significativi?",
+    answers: [
+      { text: "Per elaborazione dati sensibili non anonimizzati su piattaforme pubbliche", correct: true },
+      { text: "Per uso di software antivirus aggiornati", correct: false },
+      { text: "Per backup frequenti dei dati", correct: false },
+      { text: "Per uso di reti interne protette", correct: false }
+    ]
+  },{
+    question: "Qual è la piattaforma utilizzata dagli assistenti amministrativi per la valutazione delle domande di inserimento/aggiornamento nelle GPS?",
+    answers: [
+      { text: "SIDI (Sistema Informativo Dell'Istruzione)", correct: true },
+      { text: "Google Classroom", correct: false },
+      { text: "Moodle", correct: false },
+      { text: "Microsoft Teams", correct: false }
+    ]
+  },{
+    question: "Quale canale di comunicazione è più frequentemente utilizzato dalle scuole per interpellare gli aspiranti docenti per le supplenze brevi e saltuarie dalle Graduatorie di Istituto?",
+    answers: [
+      { text: "L'invio di e-mail (anche PEC) o comunicazioni tramite piattaforme gestionali scolastiche", correct: true },
+      { text: "Telefonate informali", correct: false },
+      { text: "Messaggi su WhatsApp personali", correct: false },
+      { text: "Annunci su social media", correct: false }
+    ]
+  },{
+    question: "Quale strumento di sottoscrizione dei contratti è richiesto?",
+    answers: [
+      { text: "Firma elettronica avanzata", correct: true },
+      { text: "Firma autografa scannerizzata", correct: false },
+      { text: "Firma su foglio bianco", correct: false },
+      { text: "Firma digitale con semplice immagine", correct: false }
+    ]
+  },{
+    question: "Autenticazione a due fattori che cosa è?",
+    answers: [
+      { text: "È un metodo di sicurezza che richiede due forme di identificazione per accedere a un account o sistema, oltre alla tradizionale password. Viene richiesto un secondo \"fattore\" per verificare l'identità dell'utente, come un codice inviato via SMS, un codice generato da un'app di autenticazione, o una chiave hardware", correct: true },
+      { text: "Un metodo che permette di usare la stessa password per due account diversi", correct: false },
+      { text: "Un codice inviato solo una volta alla registrazione", correct: false },
+      { text: "Un sistema che richiede solo la password senza altri controlli", correct: false }
+    ]
+  },{
+    question: "Cosa sono i data center?",
+    answers: [
+      { text: "I data center sono centri che svolgono un ruolo fondamentale nel garantire un processo di backup e ripristino dati senza interruzioni nelle aziende e nelle pubbliche Amministrazioni", correct: true },
+      { text: "Centri sportivi per la formazione digitale", correct: false },
+      { text: "Postazioni di lavoro per sviluppatori software", correct: false },
+      { text: "Sistemi per l’eliminazione definitiva dei dati", correct: false }
+    ]
+  },{
+    question: "Cosa significa GDPR?",
+    answers: [
+      { text: "General Data Protection Regulation, il regolamento europeo per la protezione dei dati personali", correct: true },
+      { text: "Gestione dei dati pubblici regionali", correct: false },
+      { text: "Gruppo di discussione per la privacy", correct: false },
+      { text: "Gestione dati personali regionali", correct: false }
+    ]
+  },{
+    question: "Chi è il DPO?",
+    answers: [
+      { text: "Il Data Protection Officer, ovvero il responsabile della protezione dei dati personali all'interno dell'organizzazione", correct: true },
+      { text: "Un tecnico informatico responsabile delle reti", correct: false },
+      { text: "Un docente che si occupa di sicurezza in classe", correct: false },
+      { text: "Un funzionario amministrativo incaricato della contabilità", correct: false }
+    ]
+  },
+
+//nuovo blocco da wzapp
+{
     question: "Che cosa si intende per accessibilità digitale?",
     answers: [
       { text: "La possibilità di utilizzare strumenti informatici da parte di persone con disabilità, garantendo la fruibilità tramite tecnologie assistive", correct: true },
@@ -353,16 +509,7 @@ const questions = [
     { text: "Evitare il monitoraggio dell'efficienza", correct: false }
   ]
 },
-{ 
-  question: "Quale tra queste azioni aiuta il personale scolastico ad adottare la cultura del risultato?",
-  answers: [
-    { text: "Formazione continua", correct: true },
-    { text: "Evitare il monitoraggio dei servizi", correct: false },
-    { text: "Mantenere le procedure manuali", correct: false },
-    { text: "Ignorare l'automazione", correct: false }
-  ]
-},
-//nuovo blocco di domande
+//nuvo blocco di domande
 {
   question: "Chi può ricevere la prima posizione economica secondo il C.C.N.L.?",
   answers: [
@@ -479,14 +626,104 @@ const questions = [
     { text: "Solo gestione delle assenze", correct: false },
     { text: "Solo piattaforme di social media per studenti", correct: false }
   ]
-  },
-  {
+},
+   {
+  question: "Chi può ricevere la prima posizione economica secondo il C.C.N.L.?",
+  answers: [
+    { text: "Solo gli assistenti tecnici", correct: false },
+    { text: "Tutto il personale inquadrato nelle Aree Collaboratori, Operatori e Assistenti", correct: true },
+    { text: "Solo il personale docente", correct: false },
+    { text: "Solo il personale con contratto a tempo determinato", correct: false }
+  ]
+},
+{
+  question: "Chi fa parte della comunità educante secondo il decreto legislativo n. 297/1994?",
+  answers: [
+    { text: "Dirigente scolastico, personale docente ed educativo, DSGA, personale ATA, famiglie, alunni e studenti", correct: true },
+    { text: "Solo il personale docente", correct: false },
+    { text: "Solo gli studenti e le famiglie", correct: false },
+    { text: "Solo il dirigente scolastico e il personale amministrativo", correct: false }
+  ]
+},
+{
+  question: "Qual è lo strumento principale con cui la comunità educante definisce la progettazione educativa e didattica?",
+  answers: [
+    { text: "Il piano triennale dell’offerta formativa", correct: true },
+    { text: "Il regolamento scolastico interno", correct: false },
+    { text: "Il calendario scolastico", correct: false },
+    { text: "Il bilancio annuale della scuola", correct: false }
+  ]
+},
+{
+  question: "Cosa implica la competenza digitale secondo DigComp 2.2?",
+  answers: [
+    { text: "L’uso sicuro, critico e responsabile delle tecnologie digitali nell’apprendimento, lavoro e società", correct: true },
+    { text: "Solo la capacità di usare programmi di scrittura", correct: false },
+    { text: "Solo la capacità di navigare su internet", correct: false },
+    { text: "L’installazione di software antivirus", correct: false }
+  ]
+},
+{
+  question: "Quali sono alcune delle competenze incluse in DigComp 2.2?",
+  answers: [
+    { text: "Alfabetizzazione all’informazione e ai dati, comunicazione, collaborazione, sicurezza, pensiero critico", correct: true },
+    { text: "Solo programmazione", correct: false },
+    { text: "Solo uso di social media", correct: false },
+    { text: "Solo creazione di contenuti artistici", correct: false }
+  ]
+},
+{
+  question: "Che cos’è il Piano Nazionale della Scuola Digitale (PNSD)?",
+  answers: [
+    { text: "Il principale strumento di programmazione per la trasformazione digitale della scuola italiana", correct: true },
+    { text: "Un programma per le attività sportive scolastiche", correct: false },
+    { text: "Un piano per la gestione del personale docente", correct: false },
+    { text: "Un progetto per la ristrutturazione degli edifici scolastici", correct: false }
+  ]
+},
+{
+  question: "Quale legge ha introdotto il Piano Nazionale della Scuola Digitale?",
+  answers: [
+    { text: "Legge 13 luglio 2015, n. 107", correct: true },
+    { text: "Decreto legislativo 297/1994", correct: false },
+    { text: "Costituzione italiana", correct: false },
+    { text: "Legge di bilancio 2016", correct: false }
+  ]
+},
+{
+  question: "Quali misure sono state promosse per l’infrastrutturazione digitale nelle scuole?",
+  answers: [
+    { text: "Potenziamento della connettività, ambienti di apprendimento innovativi, dotazioni per didattica digitale", correct: true },
+    { text: "Solo acquisto di libri cartacei", correct: false },
+    { text: "Aumento del numero di docenti", correct: false },
+    { text: "Organizzazione di eventi sportivi", correct: false }
+  ]
+},
+{
+  question: "Cosa rappresentano PON, PNRR e PN nel contesto della scuola digitale?",
+  answers: [
+    { text: "Programmi e risorse per la transizione digitale e il sostegno economico", correct: true },
+    { text: "Tipologie di contratti di lavoro", correct: false },
+    { text: "Strumenti di valutazione degli studenti", correct: false },
+    { text: "Manuali per l’uso del computer", correct: false }
+  ]
+},
+{
   question: "Che cos’è il SIDI?",
   answers: [
     { text: "Un sistema informativo riservato per la gestione dei dati amministrativi scolastici", correct: true },
     { text: "Una piattaforma per l’insegnamento a distanza", correct: false },
     { text: "Un programma di formazione per docenti", correct: false },
     { text: "Un tipo di contratto per il personale ATA", correct: false }
+  ]
+},
+{
+  question: "Quali servizi sono disponibili attraverso il SIDI?",
+  answers: [
+    { text: "Anagrafe nazionale studenti, iscrizioni online, plico telematico, fatturazione elettronica, firma digitale", correct: true },
+    { text: "Solo iscrizioni manuali degli studenti", correct: false },
+    { text: "Solo gestione delle assenze", correct: false },
+    { text: "Solo piattaforme di social media per studenti", correct: false }
   ]
 },
  //nuove domande DigComp 2.2.
@@ -509,7 +746,7 @@ const questions = [
   ]
 },
 {
-  question: "Secondo il d.lgs. n. 297/1994 che cos’è il principio della Comunità Educante?",
+  question: "Che cos’è il principio della Comunità Educante secondo il d.lgs. n. 297/1994?",
   answers: [
     { text: "Una comunità di dialogo, ricerca e esperienza sociale improntata ai valori democratici", correct: true },
     { text: "Un insieme di regole per la sicurezza digitale", correct: false },
@@ -734,7 +971,7 @@ const questions = [
   ]
        },
        {
-  question: "Quale piattaforma usa l’assistente per la rendicontazione delle attività progettuali?",
+  question: "Quale piattaforma viene utilizzata dall’assistente per la rendicontazione delle attività progettuali?",
   answers: [
     { text: "NOIPA", correct: false },
     { text: "FUTURA", correct: true },
@@ -1316,6 +1553,15 @@ const questions = [
     ]
   },
   {
+    question: "Quale documento attesta la regolarità contributiva di un fornitore?",
+    answers: [
+      { text: "Durc", correct: true },
+      { text: "CIG", correct: false },
+      { text: "CUP", correct: false },
+      { text: "Fattura", correct: false }
+    ]
+  },
+  {
     question: "Il CIG serve per:",
     answers: [
       { text: "Identificare un appalto pubblico", correct: true },
@@ -1331,6 +1577,15 @@ const questions = [
       { text: "Codice Identificativo", correct: false },
       { text: "Codice Fiscale", correct: false },
       { text: "Codice Univoco", correct: false }
+    ]
+  },
+  {
+    question: "La delibera del Consiglio d'Istituto è adottata da:",
+    answers: [
+      { text: "Dirigente Scolastico", correct: false },
+      { text: "Consiglio d'Istituto", correct: true },
+      { text: "Collegio dei Docenti", correct: false },
+      { text: "Personale ATA", correct: false }
     ]
   },
   {
@@ -1514,7 +1769,7 @@ const questions = [
   ]
   },
   {
-    question: "Cosa si indica per 'Lordo Stato'?",
+    question: "Cosa si intende per 'Lordo Stato'?",
     answers: [
       { text: "Il compenso netto percepito dal dipendente", correct: false },
       { text: "Il totale delle imposte IRPEF", correct: false },
@@ -1554,6 +1809,15 @@ const questions = [
 let selectedQuestions = [];
 let timerInterval;
 
+// Funzione per mescolare un array (Fisher-Yates shuffle)
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 function startQuiz() {
   const quizContainer = document.getElementById("quiz-container");
   const info = document.getElementById("info");
@@ -1564,7 +1828,17 @@ function startQuiz() {
   const numQuestions = Math.min(20, questions.length);
   selectedQuestions = [...questions].sort(() => 0.5 - Math.random()).slice(0, numQuestions);
 
-  // Mostra le domande
+  // Per ogni domanda randomizza l’ordine delle risposte
+  selectedQuestions = selectedQuestions.map(q => {
+    // Clona l’oggetto domanda per non modificare l’originale
+    const questionCopy = {
+      ...q,
+      answers: shuffleArray([...q.answers])
+    };
+    return questionCopy;
+  });
+
+  // Mostra le domande con risposte mescolate
   quizContainer.innerHTML = selectedQuestions.map((q, i) => `
     <div class="question-block">
       <p><strong>${i + 1}. ${q.question}</strong></p>
