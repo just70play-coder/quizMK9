@@ -1,5 +1,114 @@
 // Libreria di domande (può essere ampliata facilmente)
 const questions = [
+{ 
+  question: "Cos'è l'identità digitale?",
+  answers: [
+    { text: "L'insieme delle informazioni che ci rappresentano online", correct: true },
+    { text: "Un documento cartaceo di riconoscimento", correct: false },
+    { text: "Un software per navigare su internet", correct: false },
+    { text: "Un social network dedicato", correct: false }
+  ]
+},
+{ 
+  question: "Qual è il quadro europeo di riferimento per le competenze digitali dei cittadini?",
+  answers: [
+    { text: "DigComp 2.2", correct: true },
+    { text: "SPID", correct: false },
+    { text: "eIDAS", correct: false },
+    { text: "CIE", correct: false }
+  ]
+},
+{ 
+  question: "Quale strumento di identificazione digitale consente l’accesso ai portali governativi e scolastici?",
+  answers: [
+    { text: "SPID", correct: true },
+    { text: "CIE", correct: false },
+    { text: "CNS", correct: false },
+    { text: "MFA", correct: false }
+  ]
+},
+{ 
+  question: "Quale tra questi è un metodo per garantire la sicurezza dell'identità digitale?",
+  answers: [
+    { text: "Autenticazione a più fattori (MFA)", correct: true },
+    { text: "Utilizzo di password semplici", correct: false },
+    { text: "Condivisione delle password con colleghi", correct: false },
+    { text: "Usare sempre lo stesso dispositivo senza aggiornamenti", correct: false }
+  ]
+},
+{ 
+  question: "Qual è una buona pratica per custodire l’identità digitale secondo l’area degli assistenti amministrativi (1^ posizione)?",
+  answers: [
+    { text: "Usare password complesse e diverse per ogni servizio", correct: true },
+    { text: "Scrivere le password su un foglio di carta", correct: false },
+    { text: "Utilizzare la stessa password per tutti i servizi", correct: false },
+    { text: "Non cambiare mai le password", correct: false }
+  ]
+},
+{ 
+  question: "Perché è importante fare backup regolari e conservarli in ambienti sicuri?",
+  answers: [
+    { text: "Per proteggere i dati importanti e assicurarne il recupero", correct: true },
+    { text: "Per occupare più spazio di archiviazione", correct: false },
+    { text: "Per evitare di usare i server scolastici", correct: false },
+    { text: "Per evitare aggiornamenti del software", correct: false }
+  ]
+},
+{ 
+  question: "Quale pratica è consigliata per gli assistenti tecnici per proteggere l'identità digitale?",
+  answers: [
+    { text: "Configurare account con permessi limitati", correct: true },
+    { text: "Usare sempre l’account amministratore per tutto", correct: false },
+    { text: "Disabilitare l’antivirus", correct: false },
+    { text: "Non bloccare mai lo schermo del computer", correct: false }
+  ]
+},
+{ 
+  question: "Quale normativa italiana regola l'uso dei sistemi informatici nella Pubblica Amministrazione?",
+  answers: [
+    { text: "Codice dell'Amministrazione Digitale (CAD)", correct: true },
+    { text: "DigComp 2.2", correct: false },
+    { text: "Regolamento GDPR", correct: false },
+    { text: "Decreto Legislativo 231", correct: false }
+  ]
+},
+{ 
+  question: "Quale tra queste piattaforme è utilizzata nella scuola per la gestione amministrativa digitale?",
+  answers: [
+    { text: "SIDI", correct: true },
+    { text: "Facebook", correct: false },
+    { text: "Instagram", correct: false },
+    { text: "Spotify", correct: false }
+  ]
+},
+{ 
+  question: "Qual è uno dei principali benefici della digitalizzazione nella scuola?",
+  answers: [
+    { text: "Automazione e semplificazione delle procedure", correct: true },
+    { text: "Aumento del carico burocratico", correct: false },
+    { text: "Maggiore uso di carta", correct: false },
+    { text: "Isolamento degli studenti", correct: false }
+  ]
+},
+{ 
+  question: "Cosa significa passare dalla cultura dell’adempimento a quella del risultato?",
+  answers: [
+    { text: "Focalizzarsi sull'impatto reale e la qualità dei servizi offerti", correct: true },
+    { text: "Produrre più documentazione ufficiale possibile", correct: false },
+    { text: "Ignorare le normative", correct: false },
+    { text: "Evitare il monitoraggio dell'efficienza", correct: false }
+  ]
+},
+{ 
+  question: "Quale tra queste azioni aiuta il personale scolastico ad adottare la cultura del risultato?",
+  answers: [
+    { text: "Formazione continua", correct: true },
+    { text: "Evitare il monitoraggio dei servizi", correct: false },
+    { text: "Mantenere le procedure manuali", correct: false },
+    { text: "Ignorare l'automazione", correct: false }
+  ]
+},
+//nuovo blocco di domande
 {
   question: "Chi può ricevere la prima posizione economica secondo il C.C.N.L.?",
   answers: [
@@ -116,122 +225,14 @@ const questions = [
     { text: "Solo gestione delle assenze", correct: false },
     { text: "Solo piattaforme di social media per studenti", correct: false }
   ]
-},
-   {
-  question: "Chi può ricevere la prima posizione economica secondo il C.C.N.L.?",
-  answers: [
-    { text: "Solo gli assistenti tecnici", correct: false },
-    { text: "Tutto il personale inquadrato nelle Aree Collaboratori, Operatori e Assistenti", correct: true },
-    { text: "Solo il personale docente", correct: false },
-    { text: "Solo il personale con contratto a tempo determinato", correct: false }
-  ]
-},
-{
-  question: "Quale articolo del decreto legislativo definisce la scuola come comunità educante?",
-  answers: [
-    { text: "Art. 3 del decreto legislativo 16 aprile 1994, n. 297", correct: true },
-    { text: "Art. 5 del decreto legislativo 2010", correct: false },
-    { text: "Art. 1 della Costituzione italiana", correct: false },
-    { text: "Art. 10 della Convenzione ONU sui diritti dell’infanzia", correct: false }
-  ]
-},
-{
-  question: "Quali valori caratterizzano la comunità educante?",
-  answers: [
-    { text: "Valori democratici e crescita della persona in tutte le sue dimensioni", correct: true },
-    { text: "Solo la formazione professionale degli insegnanti", correct: false },
-    { text: "L’efficienza amministrativa della scuola", correct: false },
-    { text: "La gestione economica della scuola", correct: false }
-  ]
-},
-{
-  question: "Chi fa parte della comunità educante secondo il decreto legislativo n. 297/1994?",
-  answers: [
-    { text: "Dirigente scolastico, personale docente ed educativo, DSGA, personale ATA, famiglie, alunni e studenti", correct: true },
-    { text: "Solo il personale docente", correct: false },
-    { text: "Solo gli studenti e le famiglie", correct: false },
-    { text: "Solo il dirigente scolastico e il personale amministrativo", correct: false }
-  ]
-},
-{
-  question: "Qual è lo strumento principale con cui la comunità educante definisce la progettazione educativa e didattica?",
-  answers: [
-    { text: "Il piano triennale dell’offerta formativa", correct: true },
-    { text: "Il regolamento scolastico interno", correct: false },
-    { text: "Il calendario scolastico", correct: false },
-    { text: "Il bilancio annuale della scuola", correct: false }
-  ]
-},
-{
-  question: "Cosa implica la competenza digitale secondo DigComp 2.2?",
-  answers: [
-    { text: "L’uso sicuro, critico e responsabile delle tecnologie digitali nell’apprendimento, lavoro e società", correct: true },
-    { text: "Solo la capacità di usare programmi di scrittura", correct: false },
-    { text: "Solo la capacità di navigare su internet", correct: false },
-    { text: "L’installazione di software antivirus", correct: false }
-  ]
-},
-{
-  question: "Quali sono alcune delle competenze incluse in DigComp 2.2?",
-  answers: [
-    { text: "Alfabetizzazione all’informazione e ai dati, comunicazione, collaborazione, sicurezza, pensiero critico", correct: true },
-    { text: "Solo programmazione", correct: false },
-    { text: "Solo uso di social media", correct: false },
-    { text: "Solo creazione di contenuti artistici", correct: false }
-  ]
-},
-{
-  question: "Che cos’è il Piano Nazionale della Scuola Digitale (PNSD)?",
-  answers: [
-    { text: "Il principale strumento di programmazione per la trasformazione digitale della scuola italiana", correct: true },
-    { text: "Un programma per le attività sportive scolastiche", correct: false },
-    { text: "Un piano per la gestione del personale docente", correct: false },
-    { text: "Un progetto per la ristrutturazione degli edifici scolastici", correct: false }
-  ]
-},
-{
-  question: "Quale legge ha introdotto il Piano Nazionale della Scuola Digitale?",
-  answers: [
-    { text: "Legge 13 luglio 2015, n. 107", correct: true },
-    { text: "Decreto legislativo 297/1994", correct: false },
-    { text: "Costituzione italiana", correct: false },
-    { text: "Legge di bilancio 2016", correct: false }
-  ]
-},
-{
-  question: "Quali misure sono state promosse per l’infrastrutturazione digitale nelle scuole?",
-  answers: [
-    { text: "Potenziamento della connettività, ambienti di apprendimento innovativi, dotazioni per didattica digitale", correct: true },
-    { text: "Solo acquisto di libri cartacei", correct: false },
-    { text: "Aumento del numero di docenti", correct: false },
-    { text: "Organizzazione di eventi sportivi", correct: false }
-  ]
-},
-{
-  question: "Cosa rappresentano PON, PNRR e PN nel contesto della scuola digitale?",
-  answers: [
-    { text: "Programmi e risorse per la transizione digitale e il sostegno economico", correct: true },
-    { text: "Tipologie di contratti di lavoro", correct: false },
-    { text: "Strumenti di valutazione degli studenti", correct: false },
-    { text: "Manuali per l’uso del computer", correct: false }
-  ]
-},
-{
+  },
+  {
   question: "Che cos’è il SIDI?",
   answers: [
     { text: "Un sistema informativo riservato per la gestione dei dati amministrativi scolastici", correct: true },
     { text: "Una piattaforma per l’insegnamento a distanza", correct: false },
     { text: "Un programma di formazione per docenti", correct: false },
     { text: "Un tipo di contratto per il personale ATA", correct: false }
-  ]
-},
-{
-  question: "Quali servizi sono disponibili attraverso il SIDI?",
-  answers: [
-    { text: "Anagrafe nazionale studenti, iscrizioni online, plico telematico, fatturazione elettronica, firma digitale", correct: true },
-    { text: "Solo iscrizioni manuali degli studenti", correct: false },
-    { text: "Solo gestione delle assenze", correct: false },
-    { text: "Solo piattaforme di social media per studenti", correct: false }
   ]
 },
  //nuove domande DigComp 2.2.
@@ -254,7 +255,7 @@ const questions = [
   ]
 },
 {
-  question: "Che cos’è il principio della Comunità Educante secondo il d.lgs. n. 297/1994?",
+  question: "Secondo il d.lgs. n. 297/1994 che cos’è il principio della Comunità Educante?",
   answers: [
     { text: "Una comunità di dialogo, ricerca e esperienza sociale improntata ai valori democratici", correct: true },
     { text: "Un insieme di regole per la sicurezza digitale", correct: false },
@@ -479,7 +480,7 @@ const questions = [
   ]
        },
        {
-  question: "Quale piattaforma viene utilizzata dall’assistente per la rendicontazione delle attività progettuali?",
+  question: "Quale piattaforma usa dall’assistente per la rendicontazione delle attività progettuali?",
   answers: [
     { text: "NOIPA", correct: false },
     { text: "FUTURA", correct: true },
@@ -1061,15 +1062,6 @@ const questions = [
     ]
   },
   {
-    question: "Quale documento attesta la regolarità contributiva di un fornitore?",
-    answers: [
-      { text: "Durc", correct: true },
-      { text: "CIG", correct: false },
-      { text: "CUP", correct: false },
-      { text: "Fattura", correct: false }
-    ]
-  },
-  {
     question: "Il CIG serve per:",
     answers: [
       { text: "Identificare un appalto pubblico", correct: true },
@@ -1085,15 +1077,6 @@ const questions = [
       { text: "Codice Identificativo", correct: false },
       { text: "Codice Fiscale", correct: false },
       { text: "Codice Univoco", correct: false }
-    ]
-  },
-  {
-    question: "La delibera del Consiglio d'Istituto è adottata da:",
-    answers: [
-      { text: "Dirigente Scolastico", correct: false },
-      { text: "Consiglio d'Istituto", correct: true },
-      { text: "Collegio dei Docenti", correct: false },
-      { text: "Personale ATA", correct: false }
     ]
   },
   {
@@ -1277,7 +1260,7 @@ const questions = [
   ]
   },
   {
-    question: "Cosa si intende per 'Lordo Stato'?",
+    question: "Cosa si indica per 'Lordo Stato'?",
     answers: [
       { text: "Il compenso netto percepito dal dipendente", correct: false },
       { text: "Il totale delle imposte IRPEF", correct: false },
