@@ -1,5 +1,132 @@
 // Libreria di domande (può essere ampliata facilmente)
 const questions = [
+  {
+    question: "Che cosa si intende per accessibilità digitale?",
+    answers: [
+      { text: "La possibilità di utilizzare strumenti informatici da parte di persone con disabilità, garantendo la fruibilità tramite tecnologie assistive", correct: true },
+      { text: "L'accesso esclusivo a software proprietari", correct: false },
+      { text: "L'uso di dispositivi mobili per ogni utente", correct: false },
+      { text: "La creazione di contenuti solo per utenti esperti", correct: false }
+    ]
+  },
+  {
+    question: "A cosa serve un'app di gestione/monitoraggio in un sistema tecnologico?",
+    answers: [
+      { text: "Monitorare dati da sensori, visualizzare attività storiche e modificare impostazioni da remoto", correct: true },
+      { text: "Giocare a videogiochi", correct: false },
+      { text: "Effettuare chiamate vocali", correct: false },
+      { text: "Gestire solo la sicurezza fisica", correct: false }
+    ]
+  },
+  {
+    question: "Qual è la funzione della centralina di controllo programmabile?",
+    answers: [
+      { text: "Riceve dati dai sensori e comanda l’attivazione o disattivazione dell’impianto secondo regole impostate", correct: true },
+      { text: "Archivia dati storici senza alcuna azione", correct: false },
+      { text: "Genera energia elettrica", correct: false },
+      { text: "Gestisce solo la connessione internet", correct: false }
+    ]
+  },
+  {
+    question: "Per cosa si utilizza un foglio di calcolo nella gestione tecnologica?",
+    answers: [
+      { text: "Per pianificare budget di spesa e confrontare i costi dei componenti tecnologici", correct: true },
+      { text: "Per creare presentazioni multimediali", correct: false },
+      { text: "Per modificare immagini", correct: false },
+      { text: "Per navigare in Internet", correct: false }
+    ]
+  },
+  {
+    question: "Cos’è l’irrigazione intelligente?",
+    answers: [
+      { text: "Una strategia che usa la tecnologia per automatizzare e ottimizzare l’apporto idrico", correct: true },
+      { text: "Un metodo manuale tradizionale di irrigazione", correct: false },
+      { text: "Una tecnica per aumentare l’uso di acqua senza controllo", correct: false },
+      { text: "Un sistema per irrigare solo terreni artificiali", correct: false }
+    ]
+  },
+  {
+    question: "Cosa si intende con cloud computing?",
+    answers: [
+      { text: "Erogazione di servizi informatici tramite Internet, accessibili da diversi dispositivi", correct: true },
+      { text: "Uso esclusivo di computer desktop", correct: false },
+      { text: "Archiviazione di dati solo su dischi locali", correct: false },
+      { text: "Un sistema operativo per smartphone", correct: false }
+    ]
+  },
+  {
+    question: "Qual è il significato di digital transformation (trasformazione digitale)?",
+    answers: [
+      { text: "Processo di integrazione delle tecnologie digitali in ogni ambito di un’organizzazione o della vita quotidiana", correct: true },
+      { text: "Solo l’acquisto di nuovi computer", correct: false },
+      { text: "La creazione di siti web statici", correct: false },
+      { text: "Il processo di stampa di documenti digitali", correct: false }
+    ]
+  },
+  {
+    question: "Che cos’è l’intelligenza artificiale (AI)?",
+    answers: [
+      { text: "Sistemi informatici che eseguono compiti richiedenti intelligenza umana come apprendimento e ragionamento", correct: true },
+      { text: "Un software per creare grafici", correct: false },
+      { text: "Un tipo di hardware per computer", correct: false },
+      { text: "Un’app per inviare messaggi vocali", correct: false }
+    ]
+  },
+  {
+    question: "Qual è il ruolo di Internet nella competenza 5.2?",
+    answers: [
+      { text: "È la rete globale fondamentale per ricercare, confrontare e accedere alle risposte tecnologiche ai bisogni", correct: true },
+      { text: "È un social network per utenti professionali", correct: false },
+      { text: "Serve solo per scaricare software", correct: false },
+      { text: "È un’app per gestione di contatti", correct: false }
+    ]
+  },
+  {
+    question: "Cosa si intende con Internet of Things (IoT)?",
+    answers: [
+      { text: "Rete di oggetti fisici con sensori e connessione a Internet che raccolgono e scambiano dati", correct: true },
+      { text: "Un nuovo tipo di smartphone", correct: false },
+      { text: "Un software per la gestione di database", correct: false },
+      { text: "Un’app di messaggistica istantanea", correct: false }
+    ]
+  },
+  {
+    question: "Quali sono i vantaggi del software open source?",
+    answers: [
+      { text: "Codice pubblico, modificabile e distribuibile liberamente, con vantaggi in costi, personalizzazione e trasparenza", correct: true },
+      { text: "Software a pagamento con licenza chiusa", correct: false },
+      { text: "Programmi usati solo per videogiochi", correct: false },
+      { text: "Software che non permette modifiche al codice", correct: false }
+    ]
+  },
+  {
+    question: "Cosa rappresenta il problem solving in ambito digitale?",
+    answers: [
+      { text: "Il processo cognitivo di affrontare e risolvere problemi usando strumenti digitali", correct: true },
+      { text: "Solo la scrittura di codice", correct: false },
+      { text: "La semplice installazione di software", correct: false },
+      { text: "L’acquisto di hardware avanzato", correct: false }
+    ]
+  },
+  {
+    question: "Che cosa si intende per Software as a Service (SaaS)?",
+    answers: [
+      { text: "Modello in cui un software è ospitato da un fornitore e disponibile via Internet, spesso tramite abbonamento", correct: true },
+      { text: "Software installato solo su singolo dispositivo senza rete", correct: false },
+      { text: "Un sistema operativo open source", correct: false },
+      { text: "Un programma di grafica professionale", correct: false }
+    ]
+  },
+  {
+    question: "Cos’è la tecnologia assistiva?",
+    answers: [
+      { text: "Strumenti e sistemi che aiutano persone con disabilità a superare barriere funzionali e migliorare autonomia", correct: true },
+      { text: "Tecnologie usate solo in ambito industriale", correct: false },
+      { text: "Software per videogiochi", correct: false },
+      { text: "Dispositivi per aumentare la velocità di internet", correct: false }
+    ]
+  },
+//nuovo blocco
 {
     question: "Qual è il principale vantaggio del passaggio da una gestione cartacea a una gestione digitale degli acquisti nella Pubblica Amministrazione?",
     answers: [
