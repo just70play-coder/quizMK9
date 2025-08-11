@@ -1,6 +1,1328 @@
-// Libreria di domande (può essere ampliata facilmente)
+// Libreria di domande
+
 const questions = [
 
+				// nuovo blocco A_A2_valutare_dati_glossario
+
+{question:"Cos'è un cookie?",answers:[
+  {text:"Un piccolo file di testo salvato da un sito web sul dispositivo dell’utente",correct:true},
+  {text:"Un programma antivirus per il computer",correct:false},
+  {text:"Un tipo di hardware per la connessione internet",correct:false},
+  {text:"Un linguaggio di programmazione",correct:false}
+]},
+{question:"Cosa rappresenta il CAD?",answers:[
+  {text:"Codice dell’Amministrazione Digitale che organizza le norme sull’informatizzazione della PA",correct:true},
+  {text:"Codice per la crittografia dei dati",correct:false},
+  {text:"Un programma per la gestione dei cookie",correct:false},
+  {text:"Un sistema operativo per computer",correct:false}
+]},
+{question:"Cosa si intende per Competenza Digitale?",answers:[
+  {text:"Insieme di abilità informatiche e digitali come alfabetizzazione, sicurezza e pensiero critico",correct:true},
+  {text:"Solo la capacità di usare un computer",correct:false},
+  {text:"Conoscenza esclusiva di linguaggi di programmazione",correct:false},
+  {text:"Capacità di scrivere testi manualmente",correct:false}
+]},
+{question:"Quale contenuto rientra nei Contenuti Digitali?",answers:[
+  {text:"Testi, immagini, video, audio ed elementi interattivi",correct:true},
+  {text:"Solo testi scritti a mano",correct:false},
+  {text:"Documenti cartacei scansionati senza formato digitale",correct:false},
+  {text:"Solo video e film",correct:false}
+]},
+{question:"Cos'è DigComp 2.2?",answers:[
+  {text:"Quadro europeo delle competenze digitali per cittadini e professionisti",correct:true},
+  {text:"Un software per la creazione di contenuti digitali",correct:false},
+  {text:"Un motore di ricerca avanzato",correct:false},
+  {text:"Un tipo di malware",correct:false}
+]},
+{question:"Cosa si intende per Documento Informatico?",answers:[
+  {text:"Rappresentazione digitale di atti, fatti o dati con rilevanza giuridica",correct:true},
+  {text:"Documento scritto a mano su carta",correct:false},
+  {text:"Un tipo di malware",correct:false},
+  {text:"Un software per gestire i dati",correct:false}
+]},
+{question:"Qual è la differenza tra Documento Analogico e Documento Informatico?",answers:[
+  {text:"Documento analogico è cartaceo con firma autografa, documento informatico è digitale",correct:true},
+  {text:"Documento analogico è digitale, documento informatico è cartaceo",correct:false},
+  {text:"Non c'è differenza",correct:false},
+  {text:"Documento analogico è un software",correct:false}
+]},
+{question:"Cos'è l’E-Learning?",answers:[
+  {text:"Metodo di insegnamento basato su materiali digitali e processi formativi",correct:true},
+  {text:"Solo corsi in presenza",correct:false},
+  {text:"Un tipo di hardware per computer",correct:false},
+  {text:"Un tipo di virus informatico",correct:false}
+]},
+{question:"Cosa sono le ePolicy?",answers:[
+  {text:"Norme e procedure per l’uso corretto delle tecnologie in ambiente scolastico",correct:true},
+  {text:"Software per la gestione delle email",correct:false},
+  {text:"Un sistema di sicurezza informatica",correct:false},
+  {text:"Un tipo di malware",correct:false}
+]},
+{question:"Qual è la funzione della Firma Digitale?",answers:[
+  {text:"Garantire identità, integrità del documento e non ripudio con valore legale",correct:true},
+  {text:"È un software antivirus",correct:false},
+  {text:"Serve solo a criptare messaggi",correct:false},
+  {text:"È un programma di scrittura digitale",correct:false}
+]},
+{question:"Che cos’è IPA?",answers:[
+  {text:"Banca dati pubblica con riferimenti per comunicare con enti pubblici",correct:true},
+  {text:"Un programma per navigare su internet",correct:false},
+  {text:"Un tipo di malware",correct:false},
+  {text:"Un sistema operativo",correct:false}
+]},
+{question:"Cos’è l’Intelligenza Artificiale?",answers:[
+  {text:"Sistemi informatici che simulano funzioni dell’intelligenza umana",correct:true},
+  {text:"Un tipo di hardware",correct:false},
+  {text:"Un linguaggio di programmazione",correct:false},
+  {text:"Un sistema operativo",correct:false}
+]},
+{question:"Cosa indica un Link (hyperlink)?",answers:[
+  {text:"Collegamento ipertestuale da una pagina web a un’altra pagina o file",correct:true},
+  {text:"Un virus informatico",correct:false},
+  {text:"Un tipo di software per navigare su internet",correct:false},
+  {text:"Un tipo di documento digitale",correct:false}
+]},
+{question:"Che cos’è il Machine Learning?",answers:[
+  {text:"Algoritmi che permettono a una macchina di imparare e migliorare con l’esperienza",correct:true},
+  {text:"Un tipo di virus informatico",correct:false},
+  {text:"Un programma per scrivere codice",correct:false},
+  {text:"Un tipo di hardware",correct:false}
+]},
+{question:"Cos’è un Malware software?",answers:[
+  {text:"Software dannoso che si installa inconsapevolmente per danneggiare o monitorare",correct:true},
+  {text:"Un software antivirus",correct:false},
+  {text:"Un tipo di programma educativo",correct:false},
+  {text:"Un sistema operativo",correct:false}
+]},
+{question:"Cos’è un motore di ricerca?",answers:[
+  {text:"Sistema software che consente di trovare informazioni su Internet tramite parole chiave",correct:true},
+  {text:"Un browser per navigare su internet",correct:false},
+  {text:"Un sistema operativo",correct:false},
+  {text:"Un tipo di malware",correct:false}
+]},
+{question:"Cos’è una OTP (One-Time Password)?",answers:[
+  {text:"Password monouso valida per un solo accesso o transazione",correct:true},
+  {text:"Password segreta usata sempre",correct:false},
+  {text:"Un tipo di virus",correct:false},
+  {text:"Un software per la gestione delle password",correct:false}
+]},
+{question:"Cos’è la PEC?",answers:[
+  {text:"Sistema di posta elettronica certificata con valore legale simile a raccomandata",correct:true},
+  {text:"Un programma di posta elettronica normale",correct:false},
+  {text:"Un tipo di virus",correct:false},
+  {text:"Un sistema operativo",correct:false}
+]},
+{question:"Cos’è uno Screenshot?",answers:[
+  {text:"Cattura dell’immagine del desktop o di una finestra in formato immagine",correct:true},
+  {text:"Un software per modificare immagini",correct:false},
+  {text:"Un tipo di virus informatico",correct:false},
+  {text:"Un tipo di documento digitale",correct:false}
+]},
+{question:"Cosa sono i Servizi Online?",answers:[
+  {text:"Funzioni offerte via Internet per interagire, accedere a informazioni o effettuare transazioni",correct:true},
+  {text:"Programmi per computer offline",correct:false},
+  {text:"Un tipo di malware",correct:false},
+  {text:"Un sistema operativo",correct:false}
+]},
+{question:"Cosa significa Sicurezza Informatica?",answers:[
+  {text:"Pratiche per proteggere dati digitali, dispositivi e risorse personali",correct:true},
+  {text:"Un tipo di malware",correct:false},
+  {text:"Un programma antivirus",correct:false},
+  {text:"Un tipo di hardware",correct:false}
+]},
+{question:"Cos’è S.I.D.I.?",answers:[
+  {text:"Sistema Informativo Dell'Istruzione per gestione dati scolastici",correct:true},
+  {text:"Un sistema operativo",correct:false},
+  {text:"Un programma antivirus",correct:false},
+  {text:"Un tipo di malware",correct:false}
+]},
+{question:"Cos’è SPID?",answers:[
+  {text:"Sistema Pubblico di Identità Digitale per accesso sicuro ai servizi pubblici",correct:true},
+  {text:"Un sistema operativo",correct:false},
+  {text:"Un programma di posta elettronica",correct:false},
+  {text:"Un tipo di malware",correct:false}
+]},
+{question:"Cosa si intende per Tecnologia dell’Informazione?",answers:[
+  {text:"Metodi e tecnologie per archiviazione, trasmissione ed elaborazione dati e informazioni",correct:true},
+  {text:"Un tipo di malware",correct:false},
+  {text:"Un programma antivirus",correct:false},
+  {text:"Un sistema operativo",correct:false}
+]},
+{question:"Cos’è un Touchscreen?",answers:[
+  {text:"Dispositivo che consente di controllare un sistema tramite tocchi sullo schermo",correct:true},
+  {text:"Un tipo di malware",correct:false},
+  {text:"Un programma per computer",correct:false},
+  {text:"Un sistema operativo",correct:false}
+]},
+{question:"Cos’è VOIP?",answers:[
+  {text:"Sistema telefonico che trasmette voce e dati tramite Internet",correct:true},
+  {text:"Un programma antivirus",correct:false},
+  {text:"Un tipo di malware",correct:false},
+  {text:"Un tipo di hardware",correct:false}
+]},
+				// nuovo blocco A_A2_valutare dati_slide
+
+				// Prima posizione economica
+
+  {question: "Per la Prima posizione economica - Qual è il primo passo suggerito per cercare informazioni efficacemente?",
+   answers: [
+     {text: "Digitare subito la parola chiave principale", correct: false},
+     {text: "Definire con attenzione quali informazioni si vogliono cercare e discutere parole chiave con i colleghi", correct: true},
+     {text: "Cercare solo tra i primi tre risultati", correct: false},
+     {text: "Citare sempre l’autore senza controllare le fonti", correct: false}
+   ]},
+  {question: "Per la Prima posizione economica - Perché è importante verificare i risultati di una ricerca andando oltre le prime pagine?",
+   answers: [
+     {text: "Perché le informazioni importanti si trovano sempre alla fine", correct: false},
+     {text: "Perché non sempre le informazioni più utili sono tra i primi risultati", correct: true},
+     {text: "Perché è necessario aumentare il tempo di ricerca", correct: false},
+     {text: "Perché i primi risultati sono sempre inattendibili", correct: false}
+   ]},
+  {question: "Per la Prima posizione economica - Qual è una funzione utile per esaminare rapidamente il contenuto di una pagina web?",
+   answers: [
+     {text: "CTRL+F per cercare parole chiave nella pagina", correct: true},
+     {text: "Bloccare la pagina per salvarla", correct: false},
+     {text: "Usare un motore di ricerca interno al sito sempre presente", correct: false},
+     {text: "Chiudere la pagina e cercare un’altra fonte", correct: false}
+   ]},
+  {question: "Per la Prima posizione economica - Perché è importante citare correttamente la fonte di un’informazione trovata online?",
+   answers: [
+     {text: "Per evitare il plagio e dare valore all’informazione", correct: true},
+     {text: "Perché aumenta il numero di pagine visitate", correct: false},
+     {text: "Perché aiuta a trovare altri siti", correct: false},
+     {text: "Perché così si può copiare il contenuto", correct: false}
+   ]},
+  {question: "Per la Prima posizione economica - Come definisce il Codice dell’Amministrazione Digitale (CAD) il documento informatico?",
+   answers: [
+     {text: "Una rappresentazione non digitale di dati rilevanti", correct: false},
+     {text: "Un insieme di dati in formato cartaceo", correct: false},
+     {text: "La rappresentazione informatica di atti, fatti o dati giuridicamente rilevanti", correct: true},
+     {text: "Un documento scritto a mano", correct: false}
+   ]},
+
+				// Seconda posizione economica
+
+  {question: "Per la Seconda posizione economica - Cosa si intende per contenuto digitale negli enti pubblici?",
+   answers: [
+     {text: "Solo documenti cartacei digitalizzati", correct: false},
+     {text: "Qualsiasi media, informazione o dato creato e distribuito in formato digitale", correct: true},
+     {text: "Solo dati gestiti tramite app", correct: false},
+     {text: "Solo informazioni visibili sui siti web", correct: false}
+   ]},
+  {question: "Per la Seconda posizione economica - Quali strumenti includono i contenuti digitali nella pubblica amministrazione?",
+   answers: [
+     {text: "Solo siti web e app", correct: false},
+     {text: "Servizi online, gestione documentale, siti web, app, strumenti di comunicazione, dati e informazioni", correct: true},
+     {text: "Solo piattaforme social", correct: false},
+     {text: "Solo sistemi di posta elettronica", correct: false}
+   ]},
+  {question: "Per la Seconda posizione economica - Qual è il valore legale di un documento informatico firmato digitalmente?",
+   answers: [
+     {text: "Non ha valore legale", correct: false},
+     {text: "Ha valore legale come se fosse firmato autograficamente", correct: true},
+     {text: "Ha valore solo se stampato", correct: false},
+     {text: "Ha valore legale solo se firmato manualmente", correct: false}
+   ]},
+  {question: "Per la Seconda posizione economica - Qual è la differenza tra firma digitale e firma elettronica semplice?",
+   answers: [
+     {text: "La firma digitale è meno sicura", correct: false},
+     {text: "La firma elettronica semplice ha una valenza legale più debole rispetto alla firma digitale", correct: true},
+     {text: "La firma digitale non ha valore legale", correct: false},
+     {text: "La firma elettronica semplice è sempre equivalente alla firma digitale", correct: false}
+   ]},
+  {question: "Per la Seconda posizione economica - Perché un documento informatico firmato digitalmente è valido in giudizio?",
+   answers: [
+     {text: "Perché è immodificabile e permette l’identificazione certa del firmatario", correct: true},
+     {text: "Perché è stampato su carta speciale", correct: false},
+     {text: "Perché è inviato tramite e-mail", correct: false},
+     {text: "Perché contiene dati personali", correct: false}
+   ]},
+
+				// nuovo blocco A-A2-privacy
+
+				// per la Prima posizione economica
+
+{question: "Per la Prima posizione economica - Qual è la prima azione che l'assistente amministrativo deve compiere dopo aver individuato dati personali non conformi pubblicati sul sito scolastico?",
+ answers: [
+  { text: "Rimuovere i file non conformi dal sito e sostituirli con elenchi codificati", correct: true },
+  { text: "Inoltrare una segnalazione all'Autorità Garante per la privacy senza modificare nulla", correct: false },
+  { text: "Ignorare il problema e aspettare indicazioni dal dirigente scolastico", correct: false },
+  { text: "Pubblicare un avviso sul sito informando gli studenti del problema", correct: false }
+ ]},
+
+{question: "Per la Prima posizione economica - Quando l’assistente amministrativo esamina i documenti da pubblicare sul sito, cosa deve verificare principalmente?",
+ answers: [
+  { text: "Che i dati personali siano ridotti al minimo e anonimizzati se necessario", correct: true },
+  { text: "Che i documenti siano esteticamente ben formattati", correct: false },
+  { text: "Che tutte le informazioni siano visibili senza limitazioni", correct: false },
+  { text: "Che i dati degli studenti siano pubblicati con nome completo e data di nascita", correct: false }
+ ]},
+
+{question: "Per la Prima posizione economica - Come deve essere effettuata la sostituzione dei file sul CMS scolastico per garantire la conformità al GDPR?",
+ answers: [
+  { text: "Utilizzando codici identificativi e iniziali al posto di dati completi", correct: true },
+  { text: "Caricando i dati senza alcuna modifica, per garantire trasparenza", correct: false },
+  { text: "Pubblicando solo i dati completi ma senza foto", correct: false },
+  { text: "Inserendo un disclaimer che avverte della possibile visibilità dei dati", correct: false }
+ ]},
+
+{question: "Per la Prima posizione economica - Quale misura l’assistente deve adottare riguardo alle comunicazioni interne tra il personale scolastico?",
+ answers: [
+  { text: "Verificare che le comunicazioni avvengano esclusivamente tramite indirizzi e-mail istituzionali", correct: true },
+  { text: "Permettere l’uso di e-mail personali per maggiore praticità", correct: false },
+  { text: "Evitare di monitorare le comunicazioni interne per rispetto della privacy", correct: false },
+  { text: "Consentire l’uso di applicazioni di messaggistica personali per la velocità", correct: false }
+ ]},
+
+{question: "Per la Prima posizione economica - Qual è lo scopo principale della creazione delle procedure operative standard (SOP) in questo contesto?",
+ answers: [
+  { text: "Garantire uniformità e conformità al GDPR nella gestione dei dati scolastici", correct: true },
+  { text: "Velocizzare la pubblicazione dei documenti senza controlli", correct: false },
+  { text: "Delegare completamente la responsabilità al DPO senza interventi propri", correct: false },
+  { text: "Mantenere la privacy solo per i dati sensibili degli insegnanti", correct: false }
+ ]},
+
+{question: "Per la Prima posizione economica - Quale attività è fondamentale nella fase di formazione e sensibilizzazione interna?",
+ answers: [
+  { text: "Condividere criticità rilevate e promuovere buone pratiche per la tutela dei dati personali", correct: true },
+  { text: "Limitarsi a distribuire materiale informativo senza incontri formativi", correct: false },
+  { text: "Ignorare i feedback del personale e concentrarsi solo sulla parte tecnica", correct: false },
+  { text: "Rendere obbligatoria la firma di un modulo di responsabilità senza formazione", correct: false }
+ ]},
+
+			// per la Seconda posizione economica
+
+{question: "Per la Seconda posizione economica - Qual è il primo compito dell’assistente nella gestione del problema GDPR?",
+ answers: [
+  { text: "Coordinare il gruppo di lavoro per definire priorità e tempistiche della revisione dei contenuti", correct: true },
+  { text: "Rimuovere personalmente i documenti non conformi senza consultare il team", correct: false },
+  { text: "Lasciare che il DPO gestisca tutto senza interventi", correct: false },
+  { text: "Inviare una segnalazione all’Autorità Garante senza modificare i contenuti", correct: false }
+ ]},
+
+{question: "Per la Seconda posizione economica - Come deve essere gestito il confronto con il DPO?",
+ answers: [
+  { text: "Gestendo direttamente la corrispondenza e integrando le indicazioni nelle procedure operative", correct: true },
+  { text: "Aspettare che il DPO fornisca un manuale dettagliato senza altre interazioni", correct: false },
+  { text: "Consultare il DPO solo in caso di sanzioni", correct: false },
+  { text: "Limitarsi a inviare comunicazioni generiche senza dettagliare i problemi", correct: false }
+ ]},
+
+{question: "Per la Seconda posizione economica - Quale attività di verifica è richiesta nella fase di rimozione e anonimizzazione dei documenti?",
+ answers: [
+  { text: "Controllare che i documenti siano anonimizzati e verificare la cronologia modifiche nel CMS", correct: true },
+  { text: "Scaricare i documenti e inviarli via email al personale per revisione", correct: false },
+  { text: "Pubblicare nuovamente i documenti senza modifiche per velocizzare il processo", correct: false },
+  { text: "Delegare la verifica a personale esterno senza supervisione", correct: false }
+ ]},
+
+{question: "Per la Seconda posizione economica - Quali misure di comunicazione interna vengono promosse dall’assistente?",
+ answers: [
+  { text: "Emissione di circolari per disciplinare l’uso dei canali digitali e promozione dell’uso del registro elettronico", correct: true },
+  { text: "Permettere l’uso libero di e-mail personali per aumentare la flessibilità", correct: false },
+  { text: "Limitare l’uso delle comunicazioni digitali per ridurre i rischi", correct: false },
+  { text: "Usare solo comunicazioni verbali per evitare tracce scritte", correct: false }
+ ]},
+
+{question: "Per la Seconda posizione economica - Cosa prevede la fase di creazione delle procedure operative standard (SOP)?",
+ answers: [
+  { text: "Redigere la versione ufficiale del vademecum e produrre checklist operative coerenti con la normativa", correct: true },
+  { text: "Creare SOP solo per uso interno senza coinvolgere altri settori", correct: false },
+  { text: "Affidare la creazione delle SOP esclusivamente al personale tecnico informatico", correct: false },
+  { text: "Evitare procedure scritte per mantenere flessibilità operativa", correct: false }
+ ]},
+
+{question: "Per la Seconda posizione economica - Quali strumenti formativi vengono sviluppati nella fase di formazione e sensibilizzazione interna?",
+ answers: [
+  { text: "Creazione di slide, casi-studio e quiz di verifica, con analisi dei risultati per interventi mirati", correct: true },
+  { text: "Distribuzione di brochure senza verifica dell’apprendimento", correct: false },
+  { text: "Svolgimento di lezioni frontali senza materiale di supporto", correct: false },
+  { text: "Rinuncia a formare il personale per mancanza di tempo", correct: false }
+ ]},
+				
+				// nuovo blocco A-A2-privacy
+
+{question:"Cosa indica l'acronimo GDPR?",answers:[
+ {text:"General Data Protection Regulation, la normativa europea sulla protezione dei dati personali.",correct:true},
+ {text:"General Data Processing Rules, le regole generali per la gestione dei dati aziendali.",correct:false},
+ {text:"Global Data Privacy Regulation, la normativa globale per la privacy informatica.",correct:false},
+ {text:"General Digital Privacy Rights, i diritti digitali fondamentali degli utenti.",correct:false}]},
+
+{question:"Che cosa rappresenta il DPO (Data Protection Officer)?",answers:[
+ {text:"La figura responsabile di organizzare e supervisionare il trattamento dei dati personali in conformità al GDPR.",correct:true},
+ {text:"Un consulente esterno per la sicurezza informatica senza responsabilità diretta sui dati.",correct:false},
+ {text:"Il responsabile legale per la gestione dei contratti di dati aziendali.",correct:false},
+ {text:"Un software che automatizza il trattamento dei dati personali.",correct:false}]},
+
+{question:"Cosa si intende con DPIA (Data Protection Impact Assessment)?",answers:[
+ {text:"Procedura per valutare i rischi di un trattamento dati e individuare misure per mitigarli.",correct:true},
+ {text:"Documento di approvazione per l’uso dei dati biometrici nelle aziende.",correct:false},
+ {text:"Registro delle violazioni di dati personali.",correct:false},
+ {text:"Rapporto annuale sulle attività del DPO.",correct:false}]},
+
+{question:"Che cos’è il Registro dei Data Breach?",answers:[
+ {text:"Documento obbligatorio in cui il titolare del trattamento annota tutte le violazioni di dati personali.",correct:true},
+ {text:"Registro pubblico consultabile da chiunque sulle violazioni di dati in Europa.",correct:false},
+ {text:"Archivio dei dati personali non più utilizzati da un’azienda.",correct:false},
+ {text:"Lista di utenti sospetti per violazioni della privacy.",correct:false}]},
+
+{question:"Cosa significa 'Accountability' nel GDPR?",answers:[
+ {text:"Responsabilizzazione del titolare nel garantire e dimostrare la conformità al GDPR.",correct:true},
+ {text:"Libertà del titolare di decidere arbitrariamente sulle modalità di trattamento.",correct:false},
+ {text:"Esenzione da responsabilità in caso di data breach.",correct:false},
+ {text:"Delegare tutte le responsabilità al DPO.",correct:false}]},
+
+{question:"Che cos’è il Codice Privacy?",answers:[
+ {text:"Il testo unico nazionale che regola la protezione dei dati personali in Italia.",correct:true},
+ {text:"Un codice identificativo univoco per ogni dato personale.",correct:false},
+ {text:"Un sistema di crittografia per proteggere i dati.",correct:false},
+ {text:"Un software per gestire le autorizzazioni di accesso.",correct:false}]},
+
+{question:"Cosa sono i Big Data?",answers:[
+ {text:"Grandi insiemi di dati complessi che richiedono strumenti avanzati per la gestione e l’analisi.",correct:true},
+ {text:"Dati personali particolarmente sensibili.",correct:false},
+ {text:"Database utilizzati solo da enti pubblici.",correct:false},
+ {text:"Piccoli archivi di dati anonimi.",correct:false}]},
+
+{question:"Cosa indica il termine 'Credenziali di autenticazione'?",answers:[
+ {text:"Dati e dispositivi usati da una persona per verificare la propria identità in un sistema.",correct:true},
+ {text:"Documenti cartacei di autorizzazione all’accesso fisico in azienda.",correct:false},
+ {text:"Password utilizzate esclusivamente per accedere ai social network.",correct:false},
+ {text:"Codici segreti gestiti esclusivamente dal DPO.",correct:false}]},
+
+{question:"Cosa sono i Dati biometrici?",answers:[
+ {text:"Dati personali relativi a caratteristiche fisiche o comportamentali che identificano una persona in modo univoco.",correct:true},
+ {text:"Dati relativi a giudizi legali e procedimenti penali.",correct:false},
+ {text:"Informazioni anonime raccolte per studi statistici.",correct:false},
+ {text:"Dati personali divulgati in pubblico.",correct:false}]},
+
+{question:"Cosa sono i Dati giudiziari?",answers:[
+ {text:"Informazioni riguardanti provvedimenti giudiziari e situazioni processuali di una persona.",correct:true},
+ {text:"Dati raccolti durante processi di marketing legale.",correct:false},
+ {text:"Dati anonimi usati per rilevamenti statistici giudiziari.",correct:false},
+ {text:"Informazioni personali pubblicate sui registri comunali.",correct:false}]},
+
+{question:"Che cosa significa 'Diritto alla portabilità'?",answers:[
+ {text:"Diritto di trasferire i propri dati personali da un titolare del trattamento a un altro.",correct:true},
+ {text:"Diritto di cancellare i dati da qualsiasi sistema elettronico.",correct:false},
+ {text:"Diritto di impedire l’uso dei dati biometrici.",correct:false},
+ {text:"Diritto a ricevere una copia cartacea del proprio registro dati.",correct:false}]},
+
+{question:"Che cosa è il Double opt-in?",answers:[
+ {text:"Procedura che richiede una doppia conferma del consenso, ad esempio tramite modulo e mail di verifica.",correct:true},
+ {text:"Il consenso implicito dato durante la navigazione di un sito web.",correct:false},
+ {text:"L’obbligo di fornire due documenti d’identità per iscriversi a un servizio.",correct:false},
+ {text:"Procedura che consente di saltare la conferma via mail per velocizzare l’iscrizione.",correct:false}]},
+
+{question:"Che cosa si intende per Informativa nel contesto GDPR?",answers:[
+ {text:"Documento con cui il titolare comunica agli interessati finalità e modalità del trattamento dei dati.",correct:true},
+ {text:"Comunicazione riservata tra DPO e Autorità di controllo.",correct:false},
+ {text:"Un tipo di report statistico interno all’azienda.",correct:false},
+ {text:"Documento di identità digitale per accedere ai servizi.",correct:false}]},
+
+{question:"Cosa significa Opt-in?",answers:[
+ {text:"Consenso esplicito che un soggetto dà per ricevere comunicazioni o servizi.",correct:true},
+ {text:"Rifiuto implicito di ricevere email commerciali.",correct:false},
+ {text:"Procedura automatica di iscrizione senza consenso.",correct:false},
+ {text:"Codice identificativo per utenti anonimi.",correct:false}]},
+
+{question:"Che cos’è la Privacy by default?",answers:[
+ {text:"Principio che prevede di trattare solo i dati necessari per gli scopi previsti e per il tempo strettamente necessario.",correct:true},
+ {text:"Impostazione che consente di condividere tutti i dati per default.",correct:false},
+ {text:"Una tecnica di crittografia per proteggere i dati biometrici.",correct:false},
+ {text:"Normativa che impone l’archiviazione permanente di tutti i dati personali.",correct:false}]},
+
+{question:"Chi è il Responsabile per la Protezione dei Dati Personali (DPO)?",answers:[
+ {text:"Specialista che supporta e supervisiona la conformità al GDPR all’interno di un’organizzazione.",correct:true},
+ {text:"Funzionario che gestisce solo le richieste di accesso ai dati.",correct:false},
+ {text:"Tecnico informatico responsabile della manutenzione hardware.",correct:false},
+ {text:"Consulente legale esterno senza accesso ai dati.",correct:false}]},
+
+{question:"Cosa sono gli Strumenti elettronici nel contesto GDPR?",answers:[
+ {text:"Dispositivi e programmi utilizzati per il trattamento automatizzato dei dati personali.",correct:true},
+ {text:"Apparecchiature per la sorveglianza fisica degli uffici.",correct:false},
+ {text:"Sistemi manuali di archiviazione cartacea.",correct:false},
+ {text:"Software di fatturazione non collegati ai dati personali.",correct:false}]},
+
+{question:"Che cosa si intende per Trattamento dei dati?",answers:[
+ {text:"Qualsiasi operazione eseguita su dati personali, dalla raccolta alla cancellazione.",correct:true},
+ {text:"Solo la conservazione dei dati su supporti digitali.",correct:false},
+ {text:"La condivisione dei dati solo con enti pubblici.",correct:false},
+ {text:"L’uso esclusivo di dati anonimi per studi statistici.",correct:false}]},
+
+{question:"Cosa si intende per Violazione dei dati personali?",answers:[
+ {text:"Evento che causa distruzione, perdita, modifica o accesso non autorizzato ai dati personali.",correct:true},
+ {text:"Condivisione volontaria di dati tra dipendenti di un’azienda.",correct:false},
+ {text:"Conservazione di dati per un periodo superiore a quello previsto.",correct:false},
+ {text:"Utilizzo di dati per scopi di marketing interno.",correct:false}]},
+
+			//nuovo blocco A_A2_PROTEGGERE I DATI_ Glossario
+
+{question: "Quali strategie digitali adotta un assistente amministrativo per ottimizzare la gestione e la valutazione delle istanze quotidiane?",
+answers: [
+{ text: "Protocollare ogni istanza tramite GECODOC, utilizzare Excel per il monitoraggio, archiviare documenti su NAS, digitalizzare e classificare istanze, e collaborare internamente tramite condivisione documenti", correct: true },
+{ text: "Stampare tutte le istanze e archiviarle manualmente senza digitalizzazione", correct: false },
+{ text: "Delegare tutte le istanze senza monitoraggio né protocollazione", correct: false },
+{ text: "Utilizzare solo la posta elettronica senza strumenti di tracciamento o archiviazione", correct: false }
+]},
+
+{question: "Quali strategie digitali utilizza un assistente amministrativo per monitorare cattedre scoperte, rinunce e nuove disponibilità per lo scorrimento delle graduatorie?",
+answers: [
+{ text: "Monitoraggio tramite piattaforma SIDI, aggiornamento comunicazioni PEC, protocollazione in GECODOC, collaborazione con DSGA e dirigente", correct: true },
+{ text: "Gestione manuale senza uso di piattaforme digitali o protocolli formali", correct: false },
+{ text: "Delegare il monitoraggio solo ai docenti senza coinvolgimento dell’amministrazione", correct: false },
+{ text: "Ignorare le comunicazioni PEC e non aggiornare i registri digitali", correct: false }
+]},
+
+{question: "Quali strategie digitali adotta un assistente amministrativo per individuare i docenti disponibili e istruire i loro contratti?",
+answers: [
+{ text: "Consultazione graduatorie SIDI o Argo, convocazioni via PEC, inserimento dati contrattuali su SIDI, protocollazione in GECODOC, firma e invio contratti", correct: true },
+{ text: "Invio contratti via posta cartacea senza uso di piattaforme digitali o protocolli", correct: false },
+{ text: "Predisposizione dei contratti senza consultare graduatorie o documenti ufficiali", correct: false },
+{ text: "Gestione dei contratti affidata esclusivamente ai docenti senza supervisione amministrativa", correct: false }
+]},
+			//nuovo blocco Questionnaire Report
+
+{question: "Cosa si intende per Data Breach e quali sono le possibili conseguenze per un'organizzazione?",
+answers: [
+{ text: "Una violazione dei dati sensibili causata da attacchi dolosi o errori, con gravi rischi per la sicurezza e la privacy", correct: true },
+{ text: "Un semplice malfunzionamento hardware senza impatti sui dati", correct: false },
+{ text: "Un aggiornamento di sistema previsto senza rischi", correct: false },
+{ text: "Un tipo di backup dei dati per sicurezza", correct: false }
+]},
+
+{question: "Qual è l’obiettivo delle strategie di Disaster Recovery nei data center?",
+answers: [
+{ text: "Ripristinare rapidamente le operazioni dopo un attacco o incidente per minimizzare i tempi di inattività", correct: true },
+{ text: "Aumentare la capacità di archiviazione senza preoccuparsi della sicurezza", correct: false },
+{ text: "Eliminare dati non importanti per liberare spazio", correct: false },
+{ text: "Creare copie fisiche dei server per uso futuro", correct: false }
+]},
+
+{question: "Cosa comprendono le metodologie Vulnerability Assessment e Penetration Test (VAPT)?",
+answers: [
+{ text: "Valutazioni e test di sicurezza per individuare vulnerabilità in un sistema informatico", correct: true },
+{ text: "Processi di ottimizzazione della rete senza controllo della sicurezza", correct: false },
+{ text: "Procedure di installazione software standard", correct: false },
+{ text: "Backup dei dati in ambienti esterni", correct: false }
+]},
+
+{question: "Cosa sono i Deep Fake e quali rischi comportano?",
+answers: [
+{ text: "Tecnologie che manipolano contenuti digitali per creare informazioni false o ingannevoli, con rischi per l’informazione e la sicurezza", correct: true },
+{ text: "Software per migliorare la qualità delle immagini senza rischi", correct: false },
+{ text: "Metodi di protezione dei dati personali", correct: false },
+{ text: "Tecniche di compressione video standard", correct: false }
+]},
+
+{question: "Quali sono alcuni consigli pratici e misure di sicurezza fondamentali per la protezione dei dati nei data center?",
+answers: [
+{ text: "Implementare sistemi di autenticazione robusta, aggiornare regolarmente software e firmware, effettuare backup frequenti e monitorare costantemente le reti", correct: true },
+{ text: "Ignorare gli aggiornamenti software per evitare interruzioni", correct: false },
+{ text: "Condividere le credenziali di accesso tra più utenti per facilitare il lavoro", correct: false },
+{ text: "Disabilitare i sistemi di monitoraggio per ridurre i costi energetici", correct: false }
+]},
+
+{question: "Quali misure immediate di sicurezza è importante mettere in pratica per proteggere informazioni personali e professionali?",
+answers: [
+{ text: "Utilizzare password robuste, adottare strategie di sensibilizzazione contro l’ingegneria sociale e collaborare con i colleghi per conoscere la normativa NIS 2", correct: true },
+{ text: "Condividere le password con colleghi per facilitare l’accesso", correct: false },
+{ text: "Ignorare la normativa NIS 2 perché non riguarda il personale scolastico", correct: false },
+{ text: "Evitare di aggiornare i sistemi per non creare problemi di compatibilità", correct: false }
+]},
+
+{question: "Perché è importante discutere e conoscere la normativa europea NIS 2 all’interno degli istituti scolastici?",
+answers: [
+{ text: "Per garantire la sicurezza dei servizi digitali, proteggere le infrastrutture e mitigare le minacce cibernetiche", correct: true },
+{ text: "Per aumentare il carico burocratico senza benefici pratici", correct: false },
+{ text: "Per limitare l’uso delle tecnologie digitali agli insegnanti", correct: false },
+{ text: "Per evitare di implementare misure di sicurezza", correct: false }
+]},
+
+{question: "Cos’è l’autenticazione a due fattori (2FA) e perché è importante?",
+answers: [
+{ text: "È un metodo di sicurezza che richiede due diversi fattori di verifica per accedere a un account, riducendo il rischio di accessi non autorizzati anche se la password viene rubata", correct: true },
+{ text: "È un sistema che elimina completamente la necessità della password", correct: false },
+{ text: "È un metodo che utilizza solo l’invio di email per verificare l’identità", correct: false },
+{ text: "È un sistema meno sicuro rispetto all’uso di sole password complesse", correct: false }
+]},
+
+{question: "Qual è il metodo più comune per il secondo fattore nell’autenticazione a due fattori?",
+answers: [
+{ text: "Un codice numerico inviato tramite OTP o SMS", correct: true },
+{ text: "Un secondo indirizzo email", correct: false },
+{ text: "Una domanda di sicurezza", correct: false },
+{ text: "L’impronta digitale senza password", correct: false }
+]},
+
+{question: "Che cos’è l’autenticazione a tre fattori (3FA) e dove viene comunemente utilizzata?",
+answers: [
+{ text: "È un metodo che richiede tre fattori di verifica ed è usato ad esempio nello SPID", correct: true },
+{ text: "È un sistema che richiede tre password diverse", correct: false },
+{ text: "È un’autenticazione che elimina la necessità di password", correct: false },
+{ text: "È un metodo usato solo nelle reti aziendali senza connessione internet", correct: false }
+]},
+
+{question: "Che cos’è la valutazione di impatto del trattamento (D.P.I.A.) secondo il GDPR?",
+answers: [
+{ text: "Un onere a carico del titolare del trattamento per valutare rischi e impatti sulla privacy dei dati personali", correct: true },
+{ text: "Un documento che autorizza il trattamento dei dati senza limiti", correct: false },
+{ text: "Un controllo effettuato solo dall’Autorità Garante", correct: false },
+{ text: "Un tipo di crittografia per proteggere i dati", correct: false }
+]},
+
+{question: "Cosa significa il principio di accountability nel GDPR?",
+answers: [
+{ text: "La responsabilità del titolare del trattamento di rispettare e dimostrare il rispetto delle norme sulla protezione dati", correct: true },
+{ text: "L’obbligo di archiviare tutti i dati senza restrizioni", correct: false },
+{ text: "L’esclusione del titolare dal controllo sul trattamento dei dati", correct: false },
+{ text: "La possibilità di cedere i dati a terzi senza consenso", correct: false }
+]},
+
+{question: "Chi è il DPO (Data Protection Officer) e qual è il suo ruolo principale?",
+answers: [
+{ text: "Una figura specializzata che supervisiona e organizza la gestione e la protezione dei dati personali in conformità alle normative", correct: true },
+{ text: "Un tecnico informatico che si occupa solo della sicurezza dei server", correct: false },
+{ text: "Un dipendente che archivia documenti cartacei", correct: false },
+{ text: "Un consulente legale esterno senza ruolo operativo", correct: false }
+]},
+
+{question: "Qual è il principale dovere delle istituzioni scolastiche riguardo alla privacy?",
+answers: [
+{ text: "Rispettare, tutelare e proteggere i dati personali trattati, specialmente quelli di soggetti minorenni", correct: true },
+{ text: "Trattare tutti i dati personali senza limitazioni", correct: false },
+{ text: "Conservare i dati personali solo in formato cartaceo", correct: false },
+{ text: "Condividere liberamente i dati con enti esterni", correct: false }
+]},
+
+{question: "Quali dati possono trattare le istituzioni scolastiche?",
+answers: [
+{ text: "Solo i dati necessari per le finalità istituzionali di interesse pubblico, nel rispetto dei principi di finalità e non eccedenza", correct: true },
+{ text: "Tutti i dati personali raccolti senza restrizioni", correct: false },
+{ text: "Dati personali di qualsiasi natura anche senza consenso", correct: false },
+{ text: "Soltanto dati anonimi", correct: false }
+]},
+
+{question: "Perché proteggere i dati personali nelle scuole è particolarmente delicato?",
+answers: [
+{ text: "Perché coinvolge dati di minori e ambienti tecnologici complessi che richiedono attenzione e strategie specifiche", correct: true },
+{ text: "Perché la maggior parte dei dati trattati riguarda solo il personale scolastico", correct: false },
+{ text: "Perché la normativa privacy non si applica agli studenti", correct: false },
+{ text: "Perché i dati vengono trattati esclusivamente in forma anonima", correct: false }
+]},
+
+				//nuovo blocco A_A2_proteg_dati_personali_privacy_slides
+
+{  question: "Cosa si intende per dipendenza da sistemi automatici?",
+  answers: [
+    { text: "Affidarsi eccessivamente a strumenti digitali o IA senza verifica umana", correct: true },
+    { text: "Utilizzare un computer per scrivere un documento", correct: false },
+    { text: "Usare un calendario elettronico per segnare appuntamenti", correct: false },
+    { text: "Connettersi a Internet tramite Wi-Fi", correct: false }
+  ]},
+{  question: "Qual è un rischio concreto della dipendenza eccessiva da sistemi automatici?",
+  answers: [
+    { text: "Riduzione della capacità critica e decisionale autonoma", correct: true },
+    { text: "Miglioramento della precisione nelle decisioni", correct: false },
+    { text: "Maggiore rapidità nelle operazioni", correct: false },
+    { text: "Accesso immediato a informazioni affidabili", correct: false }
+  ]},
+{  question: "Come si può ridurre il rischio di dipendenza da sistemi automatici?",
+  answers: [
+    { text: "Mantenere sempre un controllo umano sui risultati", correct: true },
+    { text: "Disattivare ogni tecnologia digitale", correct: false },
+    { text: "Usare solo software gratuiti", correct: false },
+    { text: "Affidarsi solo a un’unica piattaforma", correct: false }
+  ]},
+{  question: "Quale comportamento è sintomo di dipendenza da sistemi automatici?",
+  answers: [
+    { text: "Prendere decisioni senza verificare le informazioni fornite dall’IA", correct: true },
+    { text: "Controllare più fonti per confermare un dato", correct: false },
+    { text: "Usare strumenti digitali come supporto, ma verificare i risultati", correct: false },
+    { text: "Integrare analisi umana e dati tecnologici", correct: false }
+  ]},
+{  question: "Che cosa regola il GDPR nell’Unione Europea?",
+  answers: [
+    { text: "La protezione dei dati personali e la privacy dei cittadini", correct: true },
+    { text: "Le tasse sul commercio internazionale", correct: false },
+    { text: "Le norme per la sicurezza sul lavoro", correct: false },
+    { text: "Le procedure per le elezioni europee", correct: false }
+  ]},
+{  question: "Quale tra i seguenti è considerato un dato personale secondo il GDPR?",
+  answers: [
+    { text: "Il nome e il cognome di una persona", correct: true },
+    { text: "Il colore preferito", correct: false },
+    { text: "Un numero casuale generato dal computer", correct: false },
+    { text: "Il prezzo di un prodotto in un negozio", correct: false }
+  ]},
+{  question: "Qual è uno dei principi fondamentali del GDPR?",
+  answers: [
+    { text: "Minimizzazione dei dati", correct: true },
+    { text: "Archiviazione illimitata dei dati", correct: false },
+    { text: "Vendita dei dati senza consenso", correct: false },
+    { text: "Uso dei dati solo per scopi pubblicitari", correct: false }
+  ]},
+{  question: "Cosa significa 'consenso esplicito' secondo il GDPR?",
+  answers: [
+    { text: "Autorizzazione chiara e specifica data dall'interessato", correct: true },
+    { text: "Silenzio o mancata opposizione dell’utente", correct: false },
+    { text: "Approvazione implicita da parte dell’amministrazione", correct: false },
+    { text: "Autorizzazione verbale senza registrazione", correct: false }
+  ]},
+{  question: "Nel contesto dell'intelligenza artificiale, cosa si intende per 'bias' nei dati di addestramento?",
+  answers: [
+    { text: "Un malfunzionamento temporaneo del software", correct: false },
+    { text: "Una distorsione o pregiudizio che influenza i risultati", correct: true },
+    { text: "Un processo per migliorare l’efficienza del modello", correct: false },
+    { text: "Un errore di calcolo dovuto a mancanza di memoria", correct: false }
+  ]},
+{  question: "Quale tra i seguenti è un esempio di bias nei sistemi di IA?",
+  answers: [
+    { text: "Il modello traduce correttamente testi in più lingue", correct: false },
+    { text: "Il modello favorisce determinate risposte a causa di dati squilibrati", correct: true },
+    { text: "Il modello riduce i tempi di calcolo", correct: false },
+    { text: "Il modello funziona senza connessione internet", correct: false }
+  ]},
+{  question: "Come si può ridurre il bias in un sistema di IA?",
+  answers: [
+    { text: "Utilizzando dataset diversificati e bilanciati", correct: true },
+    { text: "Evitando l’uso di algoritmi complessi", correct: false },
+    { text: "Limitando il numero di test sul modello", correct: false },
+    { text: "Riducendo la potenza di calcolo", correct: false }
+  ]},
+{  question: "Perché il bias nei dati di addestramento può essere un problema?",
+  answers: [
+    { text: "Può portare a decisioni errate o discriminatorie", correct: true },
+    { text: "Rende l'interfaccia grafica meno intuitiva", correct: false },
+    { text: "Aumenta il consumo di energia", correct: false },
+    { text: "Causa un rallentamento temporaneo del sistema", correct: false }
+  ]},  
+{    question: "Quali sono alcune applicazioni pratiche dell'intelligenza artificiale negli uffici amministrativi scolastici?",
+    answers: [
+      { text: "Utilizzo di chatbot per risposte rapide, generazione automatica di testi, sintesi e semplificazione di documenti complessi, e creazione di contenuti visivi personalizzati.", correct: true },
+      { text: "Impiego esclusivo di software tradizionali senza automazione, affidamento totale al personale per tutte le risposte e nessun uso di strumenti digitali per la creazione di contenuti.", correct: false },
+      { text: "Sostituzione completa del personale amministrativo con robot, abolizione di qualsiasi controllo umano sulle informazioni e uso limitato solo a sistemi di archiviazione cartacea.", correct: false },
+      { text: "Applicazione di tecnologie IA solo per scopi ludici, esclusione dell’automazione nei processi e uso limitato a software di grafica tradizionale senza integrazione IA.", correct: false }
+    ]  },
+{    question: "Quali sono gli obblighi principali per gli istituti scolastici secondo il Regolamento europeo AI Act?",
+    answers: [
+      { text: "Evitare la condivisione di dati sensibili, mappare internamente gli strumenti di IA utilizzati, formare il personale sull’uso responsabile, adottare un regolamento interno e fornire informative chiare ai fornitori.", correct: true },
+      { text: "Consentire la libera circolazione dei dati, limitare la formazione solo ai dirigenti scolastici, evitare regolamenti interni per favorire la flessibilità e gestire i fornitori senza necessità di informativa.", correct: false },
+      { text: "Delegare completamente la gestione dell’IA ai fornitori esterni senza mappatura interna, evitare di regolamentare l’uso dell’IA nelle scuole e limitare la formazione al minimo indispensabile.", correct: false },
+      { text: "Conservare dati sensibili senza limitazioni, escludere il personale docente dalla formazione e non comunicare con i fornitori per non creare vincoli.", correct: false }
+    ]  },
+{    question: "Quali sono i principi chiave del Regolamento europeo AI Act da rispettare negli istituti scolastici?",
+    answers: [
+      { text: "Garantire trasparenza nelle operazioni, mantenere supervisione umana attiva, documentare accuratamente l’uso dell’IA e valutare preventivamente i rischi associati.", correct: true },
+      { text: "Promuovere l’autonomia totale dei sistemi, limitare la supervisione umana solo ai casi critici, affidarsi esclusivamente a report automatici e gestire i rischi dopo l’implementazione.", correct: false },
+      { text: "Favorire l’adozione rapida senza necessità di documentazione, effettuare valutazioni periodiche ma non preventive, e sostituire la supervisione umana con controlli algoritmici.", correct: false },
+      { text: "Mantenere riservatezza assoluta sull’uso delle tecnologie IA, delegare ogni decisione ai sistemi automatizzati e minimizzare la comunicazione degli impatti agli utenti.", correct: false }
+    ]  },
+{    question: "Che cos’è l’intelligenza artificiale?",
+    answers: [
+      { text: "Un sistema basato su macchine, progettato per operare con autonomia e generare output come previsioni, raccomandazioni o decisioni che influenzano ambienti fisici o virtuali.", correct: true },
+      { text: "Un software che automatizza esclusivamente operazioni ripetitive senza capacità di apprendimento o adattamento.", correct: false },
+      { text: "Un programma limitato a simulare emozioni umane senza alcuna capacità di influenzare l’ambiente.", correct: false },
+      { text: "Un insieme di regole fisse applicate da un computer senza possibilità di modifica o evoluzione.", correct: false }
+    ]},
+  {    question: "Qual è l'obiettivo principale nell'interazione con i sistemi di intelligenza artificiale per il personale scolastico?",
+    answers: [
+      { text: "Guidare il personale ad un uso consapevole dell’IA, riconoscendone potenzialità e rispettando le regole.", correct: true },
+      { text: "Incoraggiare l’adozione spontanea e non regolamentata di strumenti IA per aumentare la produttività.", correct: false },
+      { text: "Limitare l’uso dell’IA solo a figure tecniche senza coinvolgimento didattico.", correct: false },
+      { text: "Affidare ogni decisione educativa esclusivamente agli algoritmi di intelligenza artificiale.", correct: false }
+    ]
+  },
+					//nuovo blocco A_A1_sistemi di IA slides
+  {
+    question: "Qual è l’obiettivo principale dell’assistenza agli alunni con disabilità nel contesto del DigComp?",
+    answers: [
+      { text: "Favorire l’autonomia, l’inclusione e la partecipazione attiva degli studenti con bisogni educativi speciali.", correct: true },
+      { text: "Isolare gli studenti con disabilità per evitare interferenze.", correct: false },
+      { text: "Limitare l’uso della tecnologia per questi studenti.", correct: false },
+      { text: "Sostituire completamente l’insegnante con tecnologie digitali.", correct: false }
+    ]
+  },
+  {
+    question: "Quali competenze si vogliono fornire agli alunni con disabilità secondo il quadro DigComp?",
+    answers: [
+      { text: "Competenze digitali per navigare nel mondo digitale e migliorare comunicazione, apprendimento e interazione sociale.", correct: true },
+      { text: "Competenze manuali per attività artigianali.", correct: false },
+      { text: "Competenze linguistiche solo in lingua straniera.", correct: false },
+      { text: "Competenze sportive per attività fisiche.", correct: false }
+    ]
+  },
+  {
+    question: "L’approccio DigComp per alunni con bisogni educativi speciali si concentra su:",
+    answers: [
+      { text: "Individuare e adempiere un bisogno importante attraverso l’integrazione delle tecnologie digitali.", correct: true },
+      { text: "Escludere gli studenti dal contesto digitale.", correct: false },
+      { text: "Utilizzare solo strumenti tradizionali senza tecnologia.", correct: false },
+      { text: "Garantire solo la presenza fisica senza supporto digitale.", correct: false }
+    ]
+  },
+  {
+    question: "L’inclusione digitale per alunni con disabilità mira a:",
+    answers: [
+      { text: "Migliorare la loro comunicazione, apprendimento e interazione sociale.", correct: true },
+      { text: "Limitare l’uso di dispositivi digitali.", correct: false },
+      { text: "Favorire l’isolamento dagli altri studenti.", correct: false },
+      { text: "Sostituire l’interazione umana con la tecnologia.", correct: false }
+    ]
+  },
+  {
+    question: "Qual è una delle abilità fondamentali per sviluppare la competenza 'Individuare bisogni e risposte tecnologiche'?",
+    answers: [
+      { text: "Analizzare le esigenze tecnologiche e identificare le soluzioni più adatte.", correct: true },
+      { text: "Scrivere codici complessi per software.", correct: false },
+      { text: "Gestire la contabilità dell'istituto.", correct: false },
+      { text: "Organizzare eventi scolastici.", correct: false }
+    ]
+  },
+  {
+    question: "Cosa significa valutare le tecnologie disponibili per soddisfare le esigenze?",
+    answers: [
+      { text: "Selezionare le tecnologie più adeguate in base alle necessità rilevate.", correct: true },
+      { text: "Acquistare la tecnologia più costosa disponibile.", correct: false },
+      { text: "Ignorare le esigenze e usare sempre lo stesso strumento.", correct: false },
+      { text: "Delegare completamente la scelta al reparto IT senza consultazioni.", correct: false }
+    ]
+  },
+  {
+    question: "Quale abilità riguarda l’uso di strumenti e metodologie per la valutazione delle esigenze tecnologiche?",
+    answers: [
+      { text: "Utilizzare strumenti e metodologie per valutare le esigenze tecnologiche.", correct: true },
+      { text: "Sviluppare applicazioni mobile.", correct: false },
+      { text: "Effettuare la manutenzione hardware.", correct: false },
+      { text: "Gestire il personale scolastico.", correct: false }
+    ]
+  },
+  {
+    question: "Perché è importante comunicare efficacemente le esigenze tecnologiche e le soluzioni proposte?",
+    answers: [
+      { text: "Per garantire che tutti i soggetti coinvolti comprendano e supportino le soluzioni.", correct: true },
+      { text: "Per evitare di dover collaborare con altri.", correct: false },
+      { text: "Per limitare l’accesso alle informazioni.", correct: false },
+      { text: "Per nascondere problemi tecnici.", correct: false }
+    ]
+  },
+  {
+    question: "Qual è lo scopo principale delle tecnologie assistive menzionate?",
+    answers: [
+      { text: "Migliorare l’accesso alle informazioni e ai contenuti online.", correct: true },
+      { text: "Creare contenuti multimediali avanzati.", correct: false },
+      { text: "Gestire i database scolastici.", correct: false },
+      { text: "Organizzare eventi scolastici.", correct: false }
+    ]
+  },
+  {
+    question: "Quali sono esempi di tecnologie assistive per l’accesso ai contenuti online?",
+    answers: [
+      { text: "Lettori di schermo e strumenti di riconoscimento vocale.", correct: true },
+      { text: "Software di contabilità e gestione magazzino.", correct: false },
+      { text: "Programmi di grafica e video editing.", correct: false },
+      { text: "Applicazioni per la gestione delle supplenze.", correct: false }
+    ]
+  },
+  {
+    question: "A cosa serve la riproduzione vocale per il parlato nelle tecnologie assistive?",
+    answers: [
+      { text: "Permette a persone con capacità di comunicazione orale limitata o inesistente di comunicare.", correct: true },
+      { text: "Migliora la qualità audio delle registrazioni musicali.", correct: false },
+      { text: "Supporta la traduzione automatica di testi.", correct: false },
+      { text: "Facilita la gestione delle email.", correct: false }
+    ]
+  },
+  {
+    question: "Chi può beneficiare delle opzioni di riproduzione vocale per il parlato?",
+    answers: [
+      { text: "Persone con capacità di comunicazione orale limitata o inesistente.", correct: true },
+      { text: "Solo gli insegnanti.", correct: false },
+      { text: "Solo il personale amministrativo.", correct: false },
+      { text: "Tutti gli studenti senza distinzione.", correct: false }
+    ]
+  },
+  {
+    question: "Qual è un uso pratico degli strumenti di riconoscimento vocale nelle tecnologie assistive?",
+    answers: [
+      { text: "Consentire la dettatura di testi per facilitare l’accesso alle informazioni.", correct: true },
+      { text: "Creare presentazioni multimediali.", correct: false },
+      { text: "Gestire le convocazioni nelle scuole.", correct: false },
+      { text: "Effettuare backup dei dati scolastici.", correct: false }
+    ]
+  },
+
+  							//nuovo blocco A_A1_Individuare_bisogni_slide
+  {
+    question: "Durante le operazioni di scrutinio finale del secondo quadrimestre, la piattaforma del registro elettronico va in crash. Quali competenze trasversali emergono nella gestione del problema?",
+    answers: [
+      { text: "Diagnostica tecnica, gestione del tempo e comunicazione interfunzionale.", correct: true },
+      { text: "Programmazione informatica avanzata e design grafico.", correct: false },
+      { text: "Competenze finanziarie e legali.", correct: false },
+      { text: "Marketing e pubbliche relazioni.", correct: false }
+    ]
+  },
+  {
+    question: "Durante le operazioni di scrutinio finale del secondo quadrimestre, la piattaforma del registro elettronico va in crash. Qual è la prima fase dell’attività organizzata per affrontare il problema?",
+    answers: [
+      { text: "Pianificazione delle azioni alternative.", correct: false },
+      { text: "Diagnosi del problema.", correct: true },
+      { text: "Documentazione e chiusura del caso.", correct: false },
+      { text: "Attivazione dei canali di supporto.", correct: false }
+    ]
+  },
+  {
+    question: "Durante le operazioni di scrutinio finale del secondo quadrimestre, la piattaforma del registro elettronico va in crash. Quali strumenti utilizza l’assistente amministrativo per affrontare il problema?",
+    answers: [
+      { text: "Browser con strumenti di diagnostica, software helpdesk, PEC, comunicazione interna, software per report.", correct: true },
+      { text: "Solo telefono e posta ordinaria.", correct: false },
+      { text: "Software di grafica e marketing.", correct: false },
+      { text: "Software di contabilità e gestione magazzino.", correct: false }
+    ]
+  },
+  {
+    question: "Durante le operazioni di scrutinio finale del secondo quadrimestre, la piattaforma del registro elettronico va in crash. Chi viene aggiornato costantemente durante la gestione del problema?",
+    answers: [
+      { text: "Il DSGA.", correct: true },
+      { text: "I docenti.", correct: false },
+      { text: "Le famiglie.", correct: false },
+      { text: "Il personale ATA.", correct: false }
+    ]
+  },
+  {
+    question: "Qual è la prima fascia costituita dal sistema GPS?",
+    answers: [
+      { text: "Docenti non abilitati ma con requisiti minimi.", correct: false },
+      { text: "Docenti abilitati o specializzati.", correct: true },
+      { text: "Docenti supplenti temporanei.", correct: false },
+      { text: "Docenti di ruolo.", correct: false }
+    ]
+  },
+  {
+    question: "A cosa sono collegate le Graduatorie di Istituto?",
+    answers: [
+      { text: "Sono indipendenti dalle GPS.", correct: false },
+      { text: "Sono collegate alle GPS e utilizzate per supplenze brevi e temporanee.", correct: true },
+      { text: "Sono utilizzate solo per supplenze annuali.", correct: false },
+      { text: "Sono utilizzate esclusivamente per il personale ATA.", correct: false }
+    ]
+  },
+  {
+    question: "Quale attività svolge l’assistente amministrativo nella prima posizione economica?",
+    answers: [
+      { text: "Organizza incontri formativi per il personale scolastico.", correct: false },
+      { text: "Supporta gli aspiranti, verifica la completezza delle domande e pubblica le graduatorie nel rispetto della privacy.", correct: true },
+      { text: "Gestisce i contratti di supplenza.", correct: false },
+      { text: "Svolge attività di monitoraggio delle cattedre scoperte.", correct: false }
+    ]
+  },
+  {
+    question: "Quale attività è prevista nel processo di gestione interna ed esterna della seconda posizione economica?",
+    answers: [
+      { text: "Solo pubblicazione delle graduatorie.", correct: false },
+      { text: "Monitoraggio delle cattedre scoperte, gestione supplenze brevi e accertamento titoli tramite SIDI.", correct: true },
+      { text: "Supporto agli aspiranti con chatbot dedicati.", correct: false },
+      { text: "Verifica formale delle domande e assegnazione punteggi.", correct: false }
+    ]
+  },
+  {
+    question: "Quale piattaforma utilizza l’assistente amministrativo per l’accesso e la profilatura?",
+    answers: [
+      { text: "Piattaforma esterna di gestione documentale.", correct: false },
+      { text: "SIDI (Sistema Informativo dell'Istruzione).", correct: true },
+      { text: "Sistema di posta elettronica certificata.", correct: false },
+      { text: "Forum online dedicati al personale.", correct: false }
+    ]
+  },
+  {
+    question: "Quali sono le due fasce principali costituite dal sistema GPS?",
+    answers: [
+      { text: "Prima fascia: docenti non abilitati; Seconda fascia: docenti abilitati.", correct: false },
+      { text: "Prima fascia: docenti abilitati o specializzati; Seconda fascia: docenti non ancora abilitati ma con requisiti minimi.", correct: true },
+      { text: "Prima fascia: docenti supplenti; Seconda fascia: docenti di ruolo.", correct: false },
+      { text: "Prima fascia: insegnanti temporanei; Seconda fascia: insegnanti permanenti.", correct: false }
+    ]
+  },
+  {
+    question: "Per quali tipi di supplenze sono utilizzate le GPS?",
+    answers: [
+      { text: "Supplenze brevi e temporanee.", correct: false },
+      { text: "Supplenze annuali o fino al termine delle attività didattiche.", correct: true },
+      { text: "Solo supplenze annuali.", correct: false },
+      { text: "Solo supplenze per personale ATA.", correct: false }
+    ]
+  },
+  {
+    question: "Qual è il ruolo dell’assistente amministrativo nella prima posizione economica riguardo alla valutazione delle istanze GPS?",
+    answers: [
+      { text: "Gestisce la pubblicazione dei contratti di lavoro.", correct: false },
+      { text: "Partecipa a incontri formativi, supporta gli aspiranti, controlla formalmente le domande, assegna punteggi e pubblica le graduatorie.", correct: true },
+      { text: "Coordina le supplenze tra scuole e UST.", correct: false },
+      { text: "Monitora le assenze del personale docente.", correct: false }
+    ]
+  },
+  {
+    question: "Cosa comprende la gestione interna ed esterna nella seconda posizione economica?",
+    answers: [
+      { text: "Solo la gestione delle supplenze brevi.", correct: false },
+      { text: "Organizzazione di incontri formativi, monitoraggio delle cattedre scoperte, accesso a SIDI, gestione convocazioni e contratti, e accertamento titoli.", correct: true },
+      { text: "Solo la pubblicazione delle graduatorie.", correct: false },
+      { text: "Solo la gestione delle comunicazioni con i docenti.", correct: false }
+    ]
+  },
+  {
+    question: "Quale sistema è utilizzato per la gestione documentale nella Prima posizione economica?",
+    answers: [
+      { text: "Protocollo Informatico", correct: false },
+      { text: "Sistema proprietario per la gestione documentale", correct: true },
+      { text: "SIDI area convocazioni", correct: false },
+      { text: "Firma elettronica avanzata", correct: false }
+    ]
+  },
+  {
+    question: "Quale sistema informativo è utilizzato per la valutazione GPS nella Prima posizione economica?",
+    answers: [
+      { text: "SIDI area valutazione GPS", correct: true },
+      { text: "Piattaforme di gestione del personale", correct: false },
+      { text: "Sistema proprietario per la gestione documentale", correct: false },
+      { text: "Protocollo Informatico", correct: false }
+    ]
+  },
+  {
+    question: "Quale sistema di posta è utilizzato nella gestione della Prima posizione economica?",
+    answers: [
+      { text: "Solo posta elettronica certificata", correct: false },
+      { text: "Posta elettronica ordinaria e certificata", correct: true },
+      { text: "Solo posta cartacea", correct: false },
+      { text: "Nessun sistema di posta", correct: false }
+    ]
+  },
+  {
+    question: "A cosa servono le piattaforme di comunicazione e collaborazione nella Prima posizione economica?",
+    answers: [
+      { text: "Per facilitare la comunicazione interna tra uffici e scuole", correct: true },
+      { text: "Per inviare solo comunicazioni esterne", correct: false },
+      { text: "Per la gestione solo delle graduatorie", correct: false },
+      { text: "Per la gestione esclusiva del personale", correct: false }
+    ]
+  },
+  {
+    question: "Quali strumenti online possono aiutare lo scambio di informazioni e aggiornamenti nella Prima posizione economica?",
+    answers: [
+      { text: "Gruppi e forum online", correct: true },
+      { text: "Solo e-mail", correct: false },
+      { text: "Solo incontri in presenza", correct: false },
+      { text: "Solo comunicazioni telefoniche", correct: false }
+    ]
+  },
+  {
+    question: "Quale strumento in più è previsto per la Seconda posizione economica rispetto alla Prima?",
+    answers: [
+      { text: "Firma elettronica avanzata per la sottoscrizione dei contratti", correct: true },
+      { text: "Sistema proprietario per la gestione documentale", correct: false },
+      { text: "Protocollo Informatico", correct: false },
+      { text: "SIDI area valutazione GPS", correct: false }
+    ]
+  },
+  {
+    question: "Quale piattaforma aggiuntiva è utilizzata nella Seconda posizione economica per la gestione del personale?",
+    answers: [
+      { text: "Piattaforme di gestione del personale", correct: true },
+      { text: "Piattaforme di collaborazione tra uffici", correct: false },
+      { text: "SIDI area valutazione GPS", correct: false },
+      { text: "Forum online", correct: false }
+    ]
+  },
+  {
+    question: "Quali aree copre il sistema SIDI nella Seconda posizione economica?",
+    answers: [
+      { text: "Valutazione GPS, Convocazioni, Gestione Giuridica e Retributiva contratti", correct: true },
+      { text: "Solo valutazione GPS", correct: false },
+      { text: "Solo convocazioni", correct: false },
+      { text: "Solo gestione documentale", correct: false }
+    ]
+  },
+  {
+    question: "Qual è uno degli obiettivi nella gestione efficiente delle graduatorie (Seconda posizione economica)?",
+    answers: [
+      { text: "Ignorare la verifica dei titoli", correct: false },
+      { text: "Ottimizzare i processi per la verifica e validazione dei titoli e punteggi", correct: true },
+      { text: "Aumentare i tempi di attesa per la firma dei contratti", correct: false },
+      { text: "Evitare il coordinamento tra uffici", correct: false }
+    ]
+  },
+  {
+    question: "Come si migliora il coordinamento tra UST e scuole nella gestione delle graduatorie?",
+    answers: [
+      { text: "Utilizzando canali di comunicazione fluidi come messaggistica ed e-mail", correct: true },
+      { text: "Spostando tutte le comunicazioni su carta", correct: false },
+      { text: "Limitando la comunicazione ai soli dirigenti", correct: false },
+      { text: "Evitate comunicazioni tra uffici", correct: false }
+    ]
+  },
+  {
+    question: "Cosa implica la comunicazione trasparente nelle procedure GPS?",
+    answers: [
+      { text: "Gestire i dati in maniera trasparente evitando modalità analogiche", correct: true },
+      { text: "Nascondere informazioni agli aspiranti", correct: false },
+      { text: "Non comunicare nulla agli utenti", correct: false },
+      { text: "Comunicare solo tramite incontri in presenza", correct: false }
+    ]
+  },
+  {
+    question: "Quale supporto è previsto per il problem solving agli aspiranti GPS?",
+    answers: [
+      { text: "FAQ e chatbot dedicati", correct: true },
+      { text: "Solo incontri telefonici", correct: false },
+      { text: "Nessun supporto", correct: false },
+      { text: "Solo comunicazioni via fax", correct: false }
+    ]
+  },
+  {
+    question: "Cosa si intende per monitoraggio e feedback nella gestione GPS?",
+    answers: [
+      { text: "Raccogliere dati sulle assegnazioni e feedback per migliorare il sistema", correct: true },
+      { text: "Ignorare i dati raccolti", correct: false },
+      { text: "Raccogliere solo dati senza analisi", correct: false },
+      { text: "Non raccogliere feedback dagli aspiranti", correct: false }
+    ]
+  },
+  {
+    question: "Come si tutela la privacy nell’individuazione del personale supplente?",
+    answers: [
+      { text: "Gestendo con attenzione le informazioni personali", correct: true },
+      { text: "Pubblicando tutte le informazioni personali", correct: false },
+      { text: "Non proteggendo alcun dato", correct: false },
+      { text: "Diffondendo i dati solo via e-mail", correct: false }
+    ]
+  },
+  {
+    question: "Qual è l’uso delle firme elettroniche nella gestione GPS (Seconda posizione economica)?",
+    answers: [
+      { text: "Per la contrattualizzazione e conservazione digitale", correct: true },
+      { text: "Solo per la firma cartacea", correct: false },
+      { text: "Non sono utilizzate firme elettroniche", correct: false },
+      { text: "Solo per la comunicazione interna", correct: false }
+    ]
+  },
+  {
+    question: "Quale formazione è prevista per il personale coinvolto nella gestione GPS?",
+    answers: [
+      { text: "Formazione su normativa e strumenti tecnologici", correct: true },
+      { text: "Nessuna formazione", correct: false },
+      { text: "Solo formazione informale tra colleghi", correct: false },
+      { text: "Formazione solo su strumenti cartacei", correct: false }
+    ]
+  },
+  {
+    question: "Cosa presuppone l’approccio al sistema GPS da parte degli assistenti amministrativi?",
+    answers: [
+      { text: "La consapevolezza dell’importanza della gestione dei dati e dell’uso delle tecnologie disponibili.", correct: true },
+      { text: "La riduzione dell’utilizzo di tecnologie per evitare errori.", correct: false },
+      { text: "L’eliminazione delle procedure cartacee senza controllo umano.", correct: false },
+      { text: "L’uso esclusivo di strumenti analogici per garantire la sicurezza.", correct: false }
+    ]
+  },
+  {
+    question: "Qual è una delle strategie operative per la gestione efficiente delle istanze GPS (Prima posizione economica)?",
+    answers: [
+      { text: "Ignorare la privacy degli utenti", correct: false },
+      { text: "Gestione e analisi dei dati personali", correct: true },
+      { text: "Evitare la formazione del personale", correct: false },
+      { text: "Non fornire supporto agli aspiranti", correct: false }
+    ]
+  },
+  {
+    question: "Cosa significa comunicazione trasparente nella gestione delle istanze GPS?",
+    answers: [
+      { text: "Non condividere alcuna informazione con gli utenti", correct: false },
+      { text: "Trasparenza nelle procedure attraverso la gestione dei dati personali degli istanti", correct: true },
+      { text: "Diffondere tutte le informazioni senza filtri", correct: false },
+      { text: "Limitare la comunicazione ai soli docenti abilitati", correct: false }
+    ]
+  },
+  {
+    question: "Quale strumento di supporto è menzionato per il problem solving degli aspiranti GPS?",
+    answers: [
+      { text: "FAQ e chatbot dedicati", correct: true },
+      { text: "Supporto telefonico senza limiti", correct: false },
+      { text: "Solo email", correct: false },
+      { text: "Incontri settimanali obbligatori", correct: false }
+    ]
+  },
+  {
+    question: "Quale precauzione viene adottata nella pubblicazione delle graduatorie GPS per tutelare la privacy?",
+    answers: [
+      { text: "Limitare la diffusione delle informazioni personali degli utenti", correct: true },
+      { text: "Pubblicare tutte le informazioni senza filtro", correct: false },
+      { text: "Condividere solo con i dirigenti scolastici", correct: false },
+      { text: "Non pubblicare le graduatorie", correct: false }
+    ]
+  },
+  {
+    question: "Cosa comprende la formazione interna del personale per la gestione delle istanze GPS?",
+    answers: [
+      { text: "Normativa e utilizzo degli strumenti tecnologici", correct: true },
+      { text: "Solo la normativa senza strumenti tecnologici", correct: false },
+      { text: "Solo formazione informale tra colleghi", correct: false },
+      { text: "Nessuna formazione è prevista", correct: false }
+    ]
+  },
+// nuovo blocco A1 Q testo caso
+  {
+    question: "Qual è il problema principale che rallenta l’attività della segreteria?",
+    answers: [
+      { text: "Il numero crescente di comunicazioni scolastiche da predisporre manualmente.", correct: true },
+      { text: "La mancanza di personale qualificato.", correct: false },
+      { text: "L’uso di strumenti informatici obsoleti.", correct: false },
+      { text: "La scarsa collaborazione tra docenti e segreteria.", correct: false }
+    ]
+  },
+  {
+    question: "Cosa propone il DSGA per velocizzare la predisposizione delle comunicazioni?",
+    answers: [
+      { text: "Assumere più personale amministrativo.", correct: false },
+      { text: "Testare un assistente virtuale come ChatGPT per generare bozze di documenti.", correct: true },
+      { text: "Ridurre il numero di comunicazioni da inviare.", correct: false },
+      { text: "Utilizzare modelli cartacei precompilati.", correct: false }
+    ]
+  },
+  {
+    question: "Quali passaggi sono previsti nell’articolazione dell’attività di gestione delle comunicazioni?",
+    answers: [
+      { text: "Selezione della comunicazione, predisposizione del prompt, revisione e approvazione del testo.", correct: true },
+      { text: "Predisposizione del testo, invio e archiviazione.", correct: false },
+      { text: "Redazione, pubblicazione e feedback.", correct: false },
+      { text: "Formazione del personale, test del sistema e monitoraggio.", correct: false }
+    ]
+  },
+  {
+    question: "Qual è il compito della prima posizione economica nell’uso dell’assistente virtuale?",
+    answers: [
+      { text: "Redigere la bozza della circolare, correggerla e inviarla al DSGA per la pubblicazione.", correct: true },
+      { text: "Gestire la pubblicazione della circolare sul sito web della scuola.", correct: false },
+      { text: "Sviluppare l’immagine da pubblicare insieme alla comunicazione.", correct: false },
+      { text: "Monitorare il rispetto delle normative sulla privacy.", correct: false }
+    ]
+  },
+  {
+    question: "Quale ulteriore responsabilità ha la seconda posizione economica?",
+    answers: [
+      { text: "Gestire la pubblicazione della circolare sul sito web della scuola e predisporre un articolo divulgativo corredato da immagine IA.", correct: true },
+      { text: "Solo redigere la bozza della circolare interna.", correct: false },
+      { text: "Controllare la correttezza formale del testo scritto dall’assistente virtuale.", correct: false },
+      { text: "Organizzare corsi di formazione per il personale.", correct: false }
+    ]
+  },
+  {
+    question: "Come deve essere scritto l’articolo pubblicato sul sito web dalla seconda posizione economica?",
+    answers: [
+      { text: "In forma accessibile e divulgativa per facilitare la comprensione dell’utenza.", correct: true },
+      { text: "In stile tecnico e dettagliato per gli addetti ai lavori.", correct: false },
+      { text: "Con un linguaggio formale e burocratico.", correct: false },
+      { text: "In modo sintetico e con abbreviazioni.", correct: false }
+    ]
+  },
+
+//nuovo blocco domande da interazione IA
+    {
+        question: "A cosa corrisponde l'AI Act?",
+        answers: [
+            { text: "Regolamento europeo 2024/1689 sull’intelligenza artificiale. Definisce principi, obblighi e classificazione dei sistemi di IA in base al rischio per i diritti fondamentali.", correct: true },
+            { text: "Protocollo ONU sul controllo delle esportazioni di tecnologie IA.", correct: false },
+            { text: "Legge italiana del 2023 sull’uso delle piattaforme digitali nella PA.", correct: false },
+            { text: "Documento tecnico dell’IEEE sugli standard di machine learning.", correct: false }
+        ]
+    },{
+        question: "Cosa si intende con Autonomia operativa?",
+        answers: [
+            { text: "Capacità di un sistema di IA di raccogliere dati, analizzarli e produrre output senza istruzioni predefinite o controllo diretto umano.", correct: true },
+            { text: "Uso di robot per svolgere mansioni senza supervisione umana per lunghi periodi.", correct: false },
+            { text: "Capacità di un drone di ricaricare le proprie batterie in autonomia.", correct: false },
+            { text: "Modalità di esecuzione offline di un software di IA.", correct: false }
+        ]
+    },{
+        question: "Cosa si intende con Bias?",
+        answers: [
+            { text: "Distorsione nei dati o negli algoritmi che può portare il sistema a produrre risultati discriminatori o non attendibili.", correct: true },
+            { text: "Processo di bilanciamento delle classi nei dati di addestramento.", correct: false },
+            { text: "Tecnica per ottimizzare la velocità di calcolo degli algoritmi IA.", correct: false },
+            { text: "Parametro che indica il margine di errore di un modello predittivo.", correct: false }
+        ]
+    },{
+        question: "Cosa si intende con Chatbot?",
+        answers: [
+            { text: "Assistente virtuale che utilizza l’IA per rispondere automaticamente a domande o fornire informazioni, simulando un dialogo con un essere umano.", correct: true },
+            { text: "Sistema di IA specializzato nell’analisi dei dati testuali.", correct: false },
+            { text: "Software per il riconoscimento vocale in tempo reale.", correct: false },
+            { text: "Algoritmo per la traduzione automatica di testi.", correct: false }
+        ]
+    },{
+        question: "Cosa si intende con Classificazione del rischio?",
+        answers: [
+            { text: "Sistema di categorizzazione dell’IA previsto dall’AI Act: rischio inaccettabile (vietato), alto (regolato), limitato (trasparente), minimo o nullo (non regolato).", correct: true },
+            { text: "Procedura interna per valutare il rischio informatico di un’applicazione.", correct: false },
+            { text: "Metodo di classificazione dei dati sensibili previsto dal GDPR.", correct: false },
+            { text: "Scala di valutazione dell’impatto ambientale di un sistema IA.", correct: false }
+        ]
+    },{
+        question: "Cosa si intende con Generatore di testo?",
+        answers: [
+            { text: "Strumento di IA capace di creare testi coerenti e pertinenti a partire da un prompt, utile per bozze, riassunti o comunicazioni.", correct: true },
+            { text: "Software per la sintesi vocale.", correct: false },
+            { text: "Sistema di riconoscimento ottico dei caratteri (OCR).", correct: false },
+            { text: "Modulo di IA per la traduzione automatica di testi.", correct: false }
+        ]
+    },{
+        question: "Cosa si intende con GDPR?",
+        answers: [
+            { text: "Regolamento generale sulla protezione dei dati personali. Impone limiti all’uso di dati sensibili, anche da parte dei sistemi di IA.", correct: true },
+            { text: "Normativa europea sul commercio elettronico.", correct: false },
+            { text: "Regolamento UE sulla sicurezza dei prodotti elettronici.", correct: false },
+            { text: "Accordo internazionale sullo scambio di dati tra governi.", correct: false }
+        ]
+    },{
+        question: "Cosa si intende con Mappatura degli strumenti?",
+        answers: [
+            { text: "Attività interna alla scuola per identificare, elencare e monitorare gli strumenti di IA in uso, anche se a basso rischio.", correct: true },
+            { text: "Registro nazionale delle applicazioni IA autorizzate.", correct: false },
+            { text: "Analisi dei costi dei software utilizzati in un ente pubblico.", correct: false },
+            { text: "Inventario dei dispositivi hardware presenti in un laboratorio.", correct: false }
+        ]
+    },{
+        question: "Cosa si intende con Output?",
+        answers: [
+            { text: "Risultato generato da un sistema di IA in risposta a un comando o a un input fornito dall’utente.", correct: true },
+            { text: "Processo di addestramento di un modello IA.", correct: false },
+            { text: "Set di dati utilizzato per testare un algoritmo.", correct: false },
+            { text: "Fase di raccolta dei dati per un sistema IA.", correct: false }
+        ]
+    },{
+        question: "Cosa si intende con Prompt?",
+        answers: [
+            { text: "Comando o domanda inserita in un sistema di IA per generare una risposta o attivare una funzione. È l’elemento chiave per interagire efficacemente con l’intelligenza artificiale.", correct: true },
+            { text: "Formato di esportazione dei dati da un sistema IA.", correct: false },
+            { text: "Protocollo di comunicazione tra due sistemi informatici.", correct: false },
+            { text: "Parametro di configurazione di un algoritmo.", correct: false }
+        ]
+    },{
+        question: "Cosa si intende con Supervisione umana?",
+        answers: [
+            { text: "Principio secondo cui ogni decisione automatizzata deve poter essere compresa, verificata e controllata da una persona in carne ed ossa.", correct: true },
+            { text: "Monitoraggio delle prestazioni di un server IA.", correct: false },
+            { text: "Gestione manuale di un database scolastico.", correct: false },
+            { text: "Revisione periodica delle licenze software.", correct: false }
+        ]
+    },{
+        question: "Cosa si intende con Tracciabilità?",
+        answers: [
+            { text: "Caratteristica richiesta ai sistemi di IA per permettere la ricostruzione dei processi decisionali e garantire trasparenza e responsabilità.", correct: true },
+            { text: "Sistema di localizzazione GPS integrato in robot e droni.", correct: false },
+            { text: "Metodo di autenticazione a due fattori per l’accesso ai sistemi IA.", correct: false },
+            { text: "Registro dei dipendenti autorizzati a usare un’applicazione IA.", correct: false }
+        ]
+    },
+//nuovo blocco Sistemi di IA glossario
    {
     question: "A cosa si riferisce l'identità digitale?",
     answers: [
