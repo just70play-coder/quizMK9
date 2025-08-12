@@ -1,7 +1,409 @@
 // Libreria di domande
 
 const questions = [
+				// Prima posizione economica - Fase 1, 2, 3
 
+{question: "Qual è il primo passo nell'analisi preliminare di un file Excel PCTO ricevuto dalla segreteria didattica?", answers: [
+  {text: "Aprire il file Excel e individuare errori generici come celle vuote o formati errati", correct: true},
+  {text: "Inviare subito il file senza verificarlo", correct: false},
+  {text: "Stampare il file per archiviarlo", correct: false},
+  {text: "Cancellare tutte le celle con errori senza segnalarle", correct: false}
+]},
+{question: "Come si evidenziano errori o dati mancanti in un file Excel durante la verifica?", answers: [
+  {text: "Utilizzando colori o commenti manualmente sulle celle interessate", correct: true},
+  {text: "Nascondendo le righe con errori", correct: false},
+  {text: "Eliminando i dati sbagliati senza segnalarli", correct: false},
+  {text: "Ignorando gli errori", correct: false}
+]},
+{question: "Durante la verifica dei link e recapiti nel file PCTO, cosa bisogna fare?", answers: [
+  {text: "Cliccare sui link, annotare se funzionano e se si riferiscono ad aziende reali o pagine inattive", correct: true},
+  {text: "Eliminare i link non funzionanti senza segnalarli", correct: false},
+  {text: "Modificare i link senza comunicare le modifiche", correct: false},
+  {text: "Lasciare i link così come sono", correct: false}
+]},
+{question: "Qual è il modo corretto per segnalare problemi trovati nel file Excel PCTO?", answers: [
+  {text: "Inserire le segnalazioni nella colonna “Note” del file", correct: true},
+  {text: "Inviare un messaggio vocal senza allegare il file", correct: false},
+  {text: "Rimuovere i dati problematici senza spiegazioni", correct: false},
+  {text: "Stampare il file e consegnarlo senza indicazioni", correct: false}
+]},
+{question: "Quali sono le azioni finali dopo aver completato la verifica del file PCTO?", answers: [
+  {text: "Salvare il file corretto con nome rinominato e inviarlo via email alla segreteria didattica", correct: true},
+  {text: "Non salvare il file e mandare solo una email senza allegati", correct: false},
+  {text: "Stampare il file e lasciarlo sulla scrivania", correct: false},
+  {text: "Inviarlo a un collega senza segnalarlo alla segreteria", correct: false}
+]},
+
+				// Seconda posizione economica - Fase 1, 2, 3
+
+{question: "Come va organizzato il file Excel per il controllo approfondito dei dati PCTO?", answers: [
+  {text: "Ordinando i dati per tipologia, ad esempio per azienda o studente", correct: true},
+  {text: "Lasciando i dati disordinati", correct: false},
+  {text: "Cancellando i dati duplicati senza controlli", correct: false},
+  {text: "Stampando il file senza modificarlo", correct: false}
+]},
+{question: "Quali verifiche sono fondamentali per controllare la coerenza dei dati in un file PCTO?", answers: [
+  {text: "Verificare orari sovrapposti e nomi duplicati", correct: true},
+  {text: "Verificare solo i nomi degli studenti", correct: false},
+  {text: "Controllare solo i numeri di telefono", correct: false},
+  {text: "Non effettuare alcun controllo", correct: false}
+]},
+{question: "Quali strumenti online possono essere usati per verificare l’esistenza e attività delle aziende?", answers: [
+  {text: "Iscrizione camera di commercio, visure camerali, siti web e contatti aziendali", correct: true},
+  {text: "Solo social media aziendali", correct: false},
+  {text: "Solo il sito web aziendale senza ulteriori verifiche", correct: false},
+  {text: "Non usare strumenti online", correct: false}
+]},
+{question: "Come si valuta l’affidabilità di un dominio web aziendale?", answers: [
+  {text: "Controllando l’autenticità dei domini (.gov, .edu, .org) e utilizzando WHOIS per verificare il registrante", correct: true},
+  {text: "Valutando solo il design del sito", correct: false},
+  {text: "Affidandosi solo all’indirizzo email", correct: false},
+  {text: "Non effettuando alcuna verifica", correct: false}
+]},
+{question: "Come si può assegnare un punteggio interno di attendibilità alle fonti?", answers: [
+  {text: "Valutando criteri come autenticità, completezza e aggiornamento, con punteggio da 1 a 5", correct: true},
+  {text: "Assegnando punteggi casuali senza criteri", correct: false},
+  {text: "Non assegnando alcun punteggio", correct: false},
+  {text: "Assegnando sempre punteggio massimo", correct: false}
+]},
+{question: "Cosa deve contenere il report finale redatto dall’assistente amministrativo?", answers: [
+  {text: "Le criticità riscontrate, proposte di aggiornamento procedure e documentazione archiviata in Drive condiviso", correct: true},
+  {text: "Solo l’elenco delle aziende", correct: false},
+  {text: "Solo le email ricevute", correct: false},
+  {text: "Nessun documento, solo comunicazioni orali", correct: false}
+]},
+{question: "Qual è la corretta procedura dopo aver redatto il report finale sulle verifiche PCTO?", answers: [
+  {text: "Inviare il report al referente PCTO, proporre aggiornamenti e archiviare la documentazione", correct: true},
+  {text: "Tenere il report per sé senza condividerlo", correct: false},
+  {text: "Eliminare il report dopo qualche giorno", correct: false},
+  {text: "Non inviare alcun report", correct: false}
+]},
+
+					// Prima posizione economica
+
+{question: "Quali dati permettono di valutare se una fonte digitale aziendale è attendibile?", answers: [
+  {text: "Estensione dominio (.gov, .edu, .org), contatti verificabili, autorevolezza contenuto e confronto con banche dati autorevoli", correct: true},
+  {text: "Solo la presenza del logo aziendale", correct: false},
+  {text: "L’aspetto grafico del sito web", correct: false},
+  {text: "Il numero di like sui social media", correct: false}
+]},
+{question: "Come si può segnalare un’anomalia in un documento caricato da un’azienda partner nel portale PCTO?", answers: [
+  {text: "Inviando una segnalazione via email all’ufficio PCTO con il file evidenziato", correct: true},
+  {text: "Ignorando l’anomalia e procedendo", correct: false},
+  {text: "Modificando direttamente il file senza informare nessuno", correct: false},
+  {text: "Cancellando il documento", correct: false}
+]},
+{question: "In che modo si può contribuire a migliorare la qualità dei dati caricati nei sistemi digitali scolastici?", answers: [
+  {text: "Controllando la coerenza dei dati, standardizzando formati e adottando etichette comuni", correct: true},
+  {text: "Inserendo dati casuali per riempire i campi vuoti", correct: false},
+  {text: "Lasciando i dati così come sono ricevuti", correct: false},
+  {text: "Bloccare l’accesso ai dati esterni", correct: false}
+]},
+
+
+					// Seconda posizione economica
+
+{question: "Come può essere strutturata una verifica sistematica dell’affidabilità dei contenuti digitali ricevuti da aziende esterne?", answers: [
+  {text: "Progettando una checklist digitale condivisa con criteri di verifica, strumenti e responsabilità assegnate", correct: true},
+  {text: "Facendo una verifica a caso quando possibile", correct: false},
+  {text: "Affidando il controllo a una sola persona senza strumenti", correct: false},
+  {text: "Non effettuando alcuna verifica", correct: false}
+]},
+{question: "Come l’analisi critica dei dati può influenzare le decisioni organizzative nell’ambito PCTO?", answers: [
+  {text: "Permette di evitare convenzioni non sicure, tutelare gli studenti e programmare attività formative mirate", correct: true},
+  {text: "Non ha alcun impatto sulle decisioni", correct: false},
+  {text: "Serve solo a criticare i colleghi", correct: false},
+  {text: "Ritarda inutilmente i processi", correct: false}
+]},
+{question: "Quali strumenti digitali possono essere usati per collaborare efficacemente con il team nella valutazione e revisione dei dati?", answers: [
+  {text: "Google Sheets, strumenti online per analisi domini come Whois, Google Drive per archiviazione condivisa", correct: true},
+  {text: "Solo posta cartacea e telefono", correct: false},
+  {text: "App di messaggistica senza documentazione", correct: false},
+  {text: "Solo software proprietari non condivisi", correct: false}
+]},				
+
+{question: "Qual è il compito dell’assistente amministrativo riguardo la documentazione digitale ricevuta da aziende esterne per il PCTO?", answers: [
+  {text: "Verificare l’attendibilità, segnalare criticità e contribuire a definire procedure standard di controllo", correct: true},
+  {text: "Archiviare semplicemente la documentazione senza controlli", correct: false},
+  {text: "Condividere la documentazione con studenti senza verifiche", correct: false},
+  {text: "Eliminare tutta la documentazione senza analisi", correct: false}
+]},
+{question: "Qual è uno degli obiettivi formativi principali relativi alla gestione dei dati e contenuti digitali?", answers: [
+  {text: "Analizzare criticamente dati e contenuti provenienti da fonti esterne", correct: true},
+  {text: "Condividere immediatamente tutte le informazioni ricevute", correct: false},
+  {text: "Ignorare le fonti e accettare i dati come veritieri", correct: false},
+  {text: "Non partecipare alle procedure digitali", correct: false}
+]},
+{question: "Cosa deve fare l’assistente amministrativo per garantire l’affidabilità delle informazioni gestite?", answers: [
+  {text: "Collaborare all’adozione di procedure digitali condivise", correct: true},
+  {text: "Usare solo documenti cartacei", correct: false},
+  {text: "Delegare completamente il controllo ad altri uffici", correct: false},
+  {text: "Ignorare le criticità rilevate", correct: false}
+]},
+{question: "Come si riconoscono contenuti non sicuri o parziali?", answers: [
+  {text: "Verificando l’attendibilità delle fonti", correct: true},
+  {text: "Accettando tutti i contenuti senza verifica", correct: false},
+  {text: "Eliminando tutti i contenuti provenienti da fonti esterne", correct: false},
+  {text: "Confrontando solo i dati interni", correct: false}
+]},
+				//nuovo blocco A_A2_valutare dati_testo caso
+
+{question: "Cosa deve fare l'assistente amministrativo se l'informazione richiesta è stata omessa?", answers: [
+  {text: "Provvedere tempestivamente alla pubblicazione nella sezione 'Amministrazione Trasparente', richiedendo agli uffici interni la fornitura del dato con scadenza", correct: true},
+  {text: "Ignorare la richiesta e archiviarla", correct: false},
+  {text: "Rispondere negativamente al richiedente senza pubblicare nulla", correct: false},
+  {text: "Pubblicare solo parzialmente le informazioni", correct: false}
+]},
+{question: "Cosa si crea contestualmente alla protocollazione della richiesta di accesso civico?", answers: [
+  {text: "Un fascicolo digitale dedicato alla richiesta, con tutti i documenti relativi", correct: true},
+  {text: "Un registro cartaceo delle richieste", correct: false},
+  {text: "Un file Excel con i dati della richiesta", correct: false},
+  {text: "Un account PEC per il richiedente", correct: false}
+]},
+{question: "Qual è l'obiettivo della verifica formale della richiesta?", answers: [
+  {text: "Assicurarsi che la richiesta sia completa degli elementi minimi richiesti", correct: true},
+  {text: "Verificare la motivazione della richiesta", correct: false},
+  {text: "Controllare la qualità del documento richiesto", correct: false},
+  {text: "Verificare la competenza del richiedente", correct: false}
+]},
+{question: "Entro quanti giorni deve essere comunicata al richiedente l'avvenuta pubblicazione del dato/documento?", answers: [
+  {text: "Entro 30 giorni dalla protocollazione della richiesta", correct: true},
+  {text: "Entro 10 giorni dalla richiesta", correct: false},
+  {text: "Entro 60 giorni dalla pubblicazione", correct: false},
+  {text: "Non è previsto un termine specifico", correct: false}
+]},
+{question: "Quali canali possono essere utilizzati per inviare la comunicazione al richiedente?", answers: [
+  {text: "PEC, PEO o posta ordinaria, preferibilmente lo stesso canale della richiesta", correct: true},
+  {text: "Solo posta ordinaria", correct: false},
+  {text: "Solo comunicazioni verbali", correct: false},
+  {text: "Solo tramite social network", correct: false}
+]},
+{question: "Cosa si intende per 'Registro digitale delle Richieste di Accesso Civico'?", answers: [
+  {text: "Un registro elettronico per tracciare tutte le richieste ricevute e gestite", correct: true},
+  {text: "Un documento cartaceo da conservare in archivio", correct: false},
+  {text: "Un database pubblico consultabile da tutti", correct: false},
+  {text: "Una lista delle richieste respinte", correct: false}
+]},
+{question: "Perché è importante aggiornare regolarmente le procedure interne di gestione dell'ACS?", answers: [
+  {text: "Per adeguarsi a nuove disposizioni normative e linee guida ANAC e migliorare l'efficacia del processo", correct: true},
+  {text: "Per rinnovare la grafica dei documenti", correct: false},
+  {text: "Per ridurre il numero di richieste", correct: false},
+  {text: "Per aumentare il carico di lavoro", correct: false}
+]},
+{question: "Qual è il primo passo nel processo di gestione interna di una richiesta di Accesso Civico Semplice?", answers: [
+  {text: "Protocollare la richiesta per garantirne tracciabilità e rispetto dei tempi", correct: true},
+  {text: "Inoltrare immediatamente al Dirigente Scolastico", correct: false},
+  {text: "Pubblicare la richiesta sul sito web", correct: false},
+  {text: "Archiviare la richiesta senza protocollarla", correct: false}
+]},
+{question: "Chi riceve e verifica formalmente le richieste di Accesso Civico Semplice nella scuola?", answers: [
+  {text: "L’assistente amministrativo individuato", correct: true},
+  {text: "Il Dirigente Scolastico", correct: false},
+  {text: "Il personale ATA generico", correct: false},
+  {text: "Il referente del servizio IT", correct: false}
+]},
+{question: "Cosa verifica l’assistente amministrativo prima di inoltrare la richiesta al Dirigente Scolastico o altro referente?", answers: [
+  {text: "La correttezza formale della richiesta", correct: true},
+  {text: "La validità della firma digitale", correct: false},
+  {text: "La motivazione della richiesta", correct: false},
+  {text: "La presenza di dati sensibili", correct: false}
+]},
+{question: "Come si verifica se l’informazione richiesta è soggetta a obbligo di pubblicazione?", answers: [
+  {text: "Consultando il sito web della PA per verificare se è stata omessa", correct: true},
+  {text: "Contattando direttamente il richiedente", correct: false},
+  {text: "Attraverso un controllo incrociato con altri enti", correct: false},
+  {text: "Richiedendo una nuova delibera al Dirigente Scolastico", correct: false}
+]},
+{question: "Dove si cerca il dato o documento richiesto nell’ambito della gestione interna?", answers: [
+  {text: "Nel sistema di gestione documentale e nel protocollo informatico", correct: true},
+  {text: "Nel cloud personale del dirigente", correct: false},
+  {text: "Solo nell’archivio cartaceo", correct: false},
+  {text: "Nei social media ufficiali della scuola", correct: false}
+]},
+
+				// Accesso Documentale
+
+{question: "Cos'è l'Accesso Documentale secondo la L. 241/1990?", answers: [
+{text: "Il diritto di prendere visione e ottenere copia di documenti amministrativi per tutelare un interesse giuridico", correct: true},
+{text: "Il diritto di richiedere qualsiasi documento senza motivazione", correct: false},
+{text: "Un accesso limitato ai soli atti contabili", correct: false},
+{text: "L'obbligo per la PA di pubblicare dati sul proprio sito", correct: false}
+]},
+{question: "Chi può presentare una richiesta di Accesso Documentale?", answers: [
+{text: "Chiunque abbia un interesse diretto, concreto e attuale legato al documento", correct: true},
+{text: "Solo i cittadini italiani", correct: false},
+{text: "Chiunque senza necessità di motivare", correct: false},
+{text: "Solo avvocati e rappresentanti legali", correct: false}
+]},
+{question: "Qual è il principale limite dell'Accesso Documentale?", answers: [
+{text: "La tutela della riservatezza e di altri interessi pubblici e privati previsti dalla legge", correct: true},
+{text: "Può essere esercitato solo online", correct: false},
+{text: "Non permette di visionare documenti cartacei", correct: false},
+{text: "È disponibile solo in orario d'ufficio", correct: false}
+]},
+{question: "Come deve essere motivata una richiesta di Accesso Documentale?", answers: [
+{text: "Deve indicare l'interesse giuridico che si intende tutelare", correct: true},
+{text: "Non deve essere motivata", correct: false},
+{text: "Deve indicare solo il nome e cognome del richiedente", correct: false},
+{text: "Deve riportare il numero di protocollo del documento", correct: false}
+]},
+
+			// FOIA - Accesso Civico Generalizzato
+
+{question: "Che cosa introduce il FOIA in Italia?", answers: [
+{text: "Il diritto di chiunque di accedere a dati e documenti detenuti dalla PA, senza necessità di motivare", correct: true},
+{text: "Il diritto di accedere solo ai documenti storici", correct: false},
+{text: "L'obbligo di pubblicazione dei soli atti amministrativi", correct: false},
+{text: "Un accesso riservato ai residenti in Italia", correct: false}
+]},
+{question: "Qual è la finalità principale dell'Accesso Civico Generalizzato (FOIA)?", answers: [
+{text: "Favorire il controllo diffuso sull'operato della PA e promuovere la trasparenza", correct: true},
+{text: "Agevolare solo la ricerca storica", correct: false},
+{text: "Ridurre i tempi di risposta della PA", correct: false},
+{text: "Facilitare la comunicazione interna tra uffici", correct: false}
+]},
+{question: "Chi può esercitare il diritto di accesso civico generalizzato?", answers: [
+{text: "Chiunque, senza necessità di dimostrare un interesse specifico", correct: true},
+{text: "Solo i dipendenti pubblici", correct: false},
+{text: "Solo cittadini con residenza in Italia", correct: false},
+{text: "Solo giornalisti", correct: false}
+]},
+{question: "Quali sono i limiti del FOIA?", answers: [
+{text: "La tutela di interessi pubblici e privati fondamentali come sicurezza, ordine pubblico e privacy", correct: true},
+{text: "È limitato ai soli dati finanziari", correct: false},
+{text: "Non consente richieste via PEC", correct: false},
+{text: "Si applica solo ai ministeri", correct: false}
+]},
+
+				// Accesso Civico Semplice
+
+{question: "Qual è lo scopo dell'Accesso Civico Semplice?", answers: [
+{text: "Vigilare sul corretto adempimento degli obblighi di pubblicazione da parte delle amministrazioni", correct: true},
+{text: "Permettere di richiedere qualsiasi documento senza motivazione", correct: false},
+{text: "Richiedere atti amministrativi per tutelare un interesse giuridico", correct: false},
+{text: "Consultare solo dati statistici", correct: false}
+]},
+{question: "Chi può richiedere l'Accesso Civico Semplice?", answers: [
+{text: "Chiunque, senza necessità di dimostrare un interesse specifico", correct: true},
+{text: "Solo i cittadini italiani", correct: false},
+{text: "Solo i residenti nel comune di riferimento", correct: false},
+{text: "Solo funzionari pubblici", correct: false}
+]},
+{question: "Qual è l'oggetto dell'Accesso Civico Semplice?", answers: [
+{text: "Documenti, informazioni o dati che la PA deve pubblicare ma ha omesso", correct: true},
+{text: "Tutti i documenti interni della PA", correct: false},
+{text: "Solo i bilanci annuali", correct: false},
+{text: "Solo le delibere comunali", correct: false}
+]},
+{question: "Qual è il principale limite dell'Accesso Civico Semplice?", answers: [
+{text: "È limitato alle informazioni per cui sussiste un obbligo di pubblicazione", correct: true},
+{text: "Non si può fare via email", correct: false},
+{text: "È riservato ai soli dipendenti pubblici", correct: false},
+{text: "Si applica solo agli enti locali", correct: false}
+]},
+
+			// Strumenti tecnologici per Accesso Civico Semplice
+
+{question: "Qual è la funzione principale della piattaforma CMS nel sito scolastico?", answers: [
+{text: "Facilitare la pubblicazione, l'aggiornamento rapido e la navigazione della sezione 'Amministrazione Trasparente'", correct: true},
+{text: "Archiviare i documenti cartacei della scuola", correct: false},
+{text: "Proteggere i dati da attacchi informatici", correct: false},
+{text: "Gestire i registri delle presenze degli studenti", correct: false}
+]},
+{question: "A cosa serve il software di protocollo informatico nella gestione dell'accesso civico semplice?", answers: [
+{text: "Garantire la tracciabilità univoca delle richieste dalla ricezione alla gestione", correct: true},
+{text: "Velocizzare la correzione dei compiti", correct: false},
+{text: "Proteggere la posta elettronica da spam", correct: false},
+{text: "Creare automaticamente documenti PDF", correct: false}
+]},
+{question: "Qual è lo scopo principale di un Sistema di Gestione Documentale (DMS) in una scuola?", answers: [
+{text: "Organizzare, indicizzare e reperire rapidamente documenti interni", correct: true},
+{text: "Creare grafici statistici sugli studenti", correct: false},
+{text: "Pubblicare automaticamente le circolari", correct: false},
+{text: "Gestire le pagelle elettroniche", correct: false}
+]},
+{question: "Perché la PEC è importante per l'accesso civico semplice?", answers: [
+{text: "Per ricevere e inviare richieste e risposte con valore legale in modo sicuro", correct: true},
+{text: "Per inviare messaggi promozionali", correct: false},
+{text: "Per fare backup dei documenti scolastici", correct: false},
+{text: "Per registrare le presenze degli alunni", correct: false}
+]},
+				// nuovo blocco A2 Q testo caso - Accesso Civico Semplice
+
+{question: "Qual è lo scopo principale dell'accesso civico semplice?", answers: [
+{text: "Vigilare sul corretto adempimento degli obblighi di pubblicazione da parte delle amministrazioni", correct: true},
+{text: "Permettere l'accesso a tutti i documenti della PA senza limiti", correct: false},
+{text: "Ottenere informazioni riservate", correct: false},
+{text: "Verificare la legittimità degli appalti pubblici", correct: false}
+]},
+{question: "Chi può presentare una richiesta di accesso civico semplice?", answers: [
+{text: "Chiunque, senza necessità di dimostrare un interesse specifico", correct: true},
+{text: "Solo i residenti del comune interessato", correct: false},
+{text: "Solo i cittadini italiani", correct: false},
+{text: "Solo le associazioni di categoria", correct: false}
+]},
+{question: "Qual è l'oggetto dell'accesso civico semplice?", answers: [
+{text: "Documenti, informazioni o dati che la PA ha l'obbligo di pubblicare ma ha omesso", correct: true},
+{text: "Qualsiasi documento interno della PA", correct: false},
+{text: "Solo i bilanci e le delibere", correct: false},
+{text: "Atti riservati alla magistratura", correct: false}
+]},
+{question: "La richiesta di accesso civico semplice deve essere motivata?", answers: [
+{text: "No, non deve essere motivata", correct: true},
+{text: "Sì, sempre", correct: false},
+{text: "Solo per i documenti riservati", correct: false},
+{text: "Solo per le informazioni finanziarie", correct: false}
+]},
+{question: "Qual è il limite principale dell'accesso civico semplice?", answers: [
+{text: "È limitato alle informazioni per cui sussiste un obbligo di pubblicazione", correct: true},
+{text: "Può essere esercitato solo una volta all'anno", correct: false},
+{text: "Si applica solo ai cittadini italiani", correct: false},
+{text: "È valido solo per documenti cartacei", correct: false}
+]},
+				// nuovo blocco A2 Q testo caso - trasparenza e l’accesso agli atti
+
+{question: "Quale decreto legislativo ha introdotto l'accesso civico generalizzato (FOIA) in Italia?", answers: [
+{text: "D.lgs. 97/2016", correct: true},
+{text: "L. 241/1990", correct: false},
+{text: "D.lgs. 33/2013", correct: false},
+{text: "D.lgs. 82/2005", correct: false}
+]},
+{question: "Qual è la principale finalità del D.lgs. 33/2013?", answers: [
+{text: "Rendere trasparente l'attività della Pubblica Amministrazione attraverso obblighi di pubblicazione", correct: true},
+{text: "Regolare il trattamento dei dati personali", correct: false},
+{text: "Introdurre il processo amministrativo telematico", correct: false},
+{text: "Definire il codice dell'amministrazione digitale", correct: false}
+]},
+{question: "Quale legge disciplina l'accesso documentale tradizionale in Italia?", answers: [
+{text: "L. 241/1990", correct: true},
+{text: "D.lgs. 33/2013", correct: false},
+{text: "L. 190/2012", correct: false},
+{text: "D.lgs. 50/2016", correct: false}
+]},
+{question: "Cosa consente l'accesso civico generalizzato introdotto dal FOIA?", answers: [
+{text: "Richiedere dati, documenti e informazioni detenuti dalle PA senza obbligo di motivare la richiesta", correct: true},
+{text: "Accedere solo ai dati pubblicati obbligatoriamente", correct: false},
+{text: "Richiedere atti solo per difendere un interesse diretto", correct: false},
+{text: "Accedere esclusivamente ai documenti contabili", correct: false}
+]},
+{question: "Quali sono gli obblighi di pubblicazione previsti dal D.lgs. 33/2013 per le PA?", answers: [
+{text: "Pubblicare nei siti istituzionali dati, documenti e informazioni relative all'organizzazione e all'attività amministrativa", correct: true},
+{text: "Pubblicare soltanto le delibere comunali", correct: false},
+{text: "Pubblicare esclusivamente bilanci e stipendi dei dirigenti", correct: false},
+{text: "Pubblicare solo i documenti richiesti dai cittadini", correct: false}
+]},
+{question: "Quale tra le seguenti è una delle eccezioni al diritto di accesso civico generalizzato?", answers: [
+{text: "La tutela della sicurezza pubblica e dell'ordine pubblico", correct: true},
+{text: "La mancanza di formato digitale del documento", correct: false},
+{text: "La provenienza del documento da un ente privato", correct: false},
+{text: "L'assenza di firma autografa", correct: false}
+]},
+{question: "Qual è uno dei limiti principali del FOIA in Italia?", answers: [
+{text: "Non possono essere divulgati dati la cui diffusione arrecherebbe pregiudizio a interessi pubblici o privati tutelati dalla legge", correct: true},
+{text: "Si applica solo ai cittadini italiani", correct: false},
+{text: "Può essere esercitato solo una volta all'anno", correct: false},
+{text: "È valido esclusivamente per i documenti cartacei", correct: false}
+]},
 				// nuovo blocco A_A2_valutare_dati_glossario
 
 {question:"Cos'è un cookie?",answers:[
