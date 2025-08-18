@@ -1,6 +1,649 @@
 // Libreria di domande
-
+//nuovo blocco 
 const questions = [
+
+			//nuovo blocco A_A3_Gestire_caso-rev
+
+{question: "Qual è un compito dell’Assistente Amministrativo in prima posizione economica riguardo i fascicoli digitali dei dipendenti?", 
+ answers: [
+  { text: "Strutturare i fascicoli digitali, impostare la nomenclatura archivistica, redigere note di trasmissione e report", correct: true }, 
+  { text: "Archiviare solo documenti cartacei", correct: false },
+  { text: "Gestire esclusivamente i registri studenti", correct: false },
+  { text: "Creare bilanci economici della scuola", correct: false }
+ ]},
+
+{question: "Cosa controlla l’Assistente Amministrativo in prima posizione economica tra SIDI e INPS?", 
+ answers: [
+  { text: "Le incoerenze tra le banche dati e collabora con il consulente previdenziale per la correzione", correct: true }, 
+  { text: "La corrispondenza dei registri di classe", correct: false },
+  { text: "L’allineamento dei libri contabili", correct: false },
+  { text: "La gestione delle presenze giornaliere", correct: false }
+ ]},
+
+{question: "Che tipo di relazioni prepara l’Assistente Amministrativo in prima posizione economica?", 
+ answers: [
+  { text: "Relazioni riepilogative per il DSGA", correct: true }, 
+  { text: "Relazioni sugli scrutini degli studenti", correct: false },
+  { text: "Report di bilancio preventivo", correct: false },
+  { text: "Circolari interne al personale docente", correct: false }
+ ]},
+
+{question: "Qual è la prima fase di attività dell’Assistente Amministrativo in seconda posizione economica?", 
+ answers: [
+  { text: "Analisi iniziale del fabbisogno informativo insieme a DSGA e responsabili di area, definendo obiettivi, priorità e criticità", correct: true }, 
+  { text: "Progettazione del bilancio scolastico", correct: false },
+  { text: "Archiviazione dei registri cartacei", correct: false },
+  { text: "Supervisione delle presenze dei docenti", correct: false }
+ ]},
+
+{question: "Cosa prevede la fase di progettazione dell’archivio digitale per l’Assistente Amministrativo in seconda posizione economica?", 
+ answers: [
+  { text: "Impostare la struttura di archiviazione, definire metadati obbligatori e facoltativi per ogni tipo documentale", correct: true }, 
+  { text: "Creare semplici cartelle sul desktop senza regole", correct: false },
+  { text: "Archiviare documenti cartacei non classificati", correct: false },
+  { text: "Redigere circolari interne per i docenti", correct: false }
+ ]},
+
+{question: "Come supporta i colleghi l’Assistente Amministrativo in seconda posizione economica?", 
+ answers: [
+  { text: "Redige guide pratiche e organizza micro-formazioni su SIDI, Passweb e conservazione documentale", correct: true }, 
+  { text: "Svolge compiti dei docenti in aula", correct: false },
+  { text: "Gestisce esclusivamente il registro elettronico degli studenti", correct: false },
+  { text: "Archivia documenti senza fornire istruzioni", correct: false }
+ ]},
+
+{question: "Come monitora e aggiorna le pratiche l’Assistente Amministrativo in seconda posizione economica?", 
+ answers: [
+  { text: "Crea cruscotti Excel con formule e filtri, segnala anomalie e propone aggiornamenti procedurali", correct: true }, 
+  { text: "Archivia solo documenti cartacei", correct: false },
+  { text: "Aggiorna solo le graduatorie degli studenti", correct: false },
+  { text: "Redige esclusivamente circolari interne", correct: false }
+ ]},
+
+{question: "Qual è il ruolo dell’Assistente Amministrativo in seconda posizione economica nella collaborazione interistituzionale?", 
+ answers: [
+  { text: "Dialogare con INPS, USR o Comune per verificare standard tecnici e aggiornamenti normativi/documentali", correct: true }, 
+  { text: "Redigere esclusivamente bilanci della scuola", correct: false },
+  { text: "Gestire solo registri cartacei interni", correct: false },
+  { text: "Organizzare attività didattiche per gli studenti", correct: false }
+ ]},
+{question: "Qual è un compito dell’assistente amministrativo in prima posizione economica riguardo i fascicoli dei dipendenti?", 
+ answers: [
+  { text: "Comporre fascicoli digitali completi da trasmettere all’INPS", correct: true }, 
+  { text: "Conservare esclusivamente fascicoli cartacei", correct: false },
+  { text: "Gestire i fascicoli solo per gli studenti", correct: false },
+  { text: "Redigere fascicoli finanziari della scuola", correct: false }
+ ]},
+{question: "Quale strumento utilizza l’assistente amministrativo in prima posizione economica per monitorare le pratiche?", 
+ answers: [
+  { text: "Tabelle Excel", correct: true }, 
+  { text: "Moduli cartacei", correct: false },
+  { text: "PEC", correct: false },
+  { text: "Registro elettronico", correct: false }
+ ]},
+{question: "Quali documenti redige l’assistente amministrativo in prima posizione economica con file Word standardizzati?", 
+ answers: [
+  { text: "Modelli di servizio, relazioni di carriera e report di bonifica", correct: true }, 
+  { text: "Circolari interne ai docenti", correct: false },
+  { text: "Schede di valutazione degli studenti", correct: false },
+  { text: "Bilanci preventivi e consuntivi", correct: false }
+ ]},
+{question: "Cosa deve verificare l’assistente amministrativo in prima posizione economica tra SIDI e Passweb?", 
+ answers: [
+  { text: "L’allineamento dei dati", correct: true }, 
+  { text: "La gestione dei registri elettronici", correct: false },
+  { text: "La compatibilità con il bilancio", correct: false },
+  { text: "L’aggiornamento delle presenze", correct: false }
+ ]},
+{question: "Quali metadati deve gestire l’assistente amministrativo in prima posizione economica secondo il sistema documentale d’Istituto?", 
+ answers: [
+  { text: "Data, oggetto e classificazione", correct: true }, 
+  { text: "Codice fiscale, IBAN e firma digitale", correct: false },
+  { text: "Indirizzo e-mail e numero di telefono", correct: false },
+  { text: "Numero di registro elettronico", correct: false }
+ ]},
+{question: "Qual è un compito dell’assistente amministrativo in seconda posizione economica riguardo i fabbisogni informativi?", 
+ answers: [
+  { text: "Valutare i fabbisogni informativi interni e contribuire alla progettazione di sistemi documentali interoperabili", correct: true }, 
+  { text: "Elaborare i bilanci scolastici", correct: false },
+  { text: "Gestire esclusivamente protocolli cartacei", correct: false },
+  { text: "Supervisionare le presenze giornaliere", correct: false }
+ ]},
+{question: "Cosa deve elaborare l’assistente amministrativo in seconda posizione economica per la gestione dei fascicoli digitali?", 
+ answers: [
+  { text: "Modelli di archiviazione strutturata con metadati coerenti", correct: true }, 
+  { text: "Semplici cartelle personali sul desktop", correct: false },
+  { text: "Registri cartacei non classificati", correct: false },
+  { text: "Schede di valutazione degli studenti", correct: false }
+ ]},
+{question: "Cosa fa l’assistente amministrativo in seconda posizione economica riguardo i flussi documentali?", 
+ answers: [
+  { text: "Mappa procedure (Passweb, ricostruzioni, cessazioni), individua criticità e propone soluzioni digitali", correct: true }, 
+  { text: "Archivia esclusivamente documenti cartacei", correct: false },
+  { text: "Registra solo le presenze del personale", correct: false },
+  { text: "Autorizza ferie e permessi", correct: false }
+ ]},
+{question: "Come supporta i colleghi l’assistente amministrativo in seconda posizione economica?", 
+ answers: [
+  { text: "Redigendo linee guida operative o tutorial per ambienti complessi come SIDI, Passweb e conservazione digitale", correct: true }, 
+  { text: "Svolgendo le mansioni dei docenti in classe", correct: false },
+  { text: "Predisponendo circolari sugli orari scolastici", correct: false },
+  { text: "Gestendo il registro elettronico degli studenti", correct: false }
+ ]},
+{question: "Quali strumenti avanzati utilizza l’assistente amministrativo in seconda posizione economica?", 
+ answers: [
+  { text: "Drive condivisi gerarchici, versioning, cruscotti Excel/Power BI, piattaforme di gestione flussi", correct: true }, 
+  { text: "Solo fogli cartacei timbrati", correct: false },
+  { text: "Unicamente email e PEC", correct: false },
+  { text: "Registro cartaceo delle supplenze", correct: false }
+ ]},
+{question: "Qual è un ulteriore compito dell’assistente amministrativo in seconda posizione economica rispetto alla normativa?", 
+ answers: [
+  { text: "Mantenere aggiornata la documentazione su AgID, INPS e GDPR, adeguando le procedure", correct: true }, 
+  { text: "Aggiornare solo le graduatorie degli studenti", correct: false },
+  { text: "Supervisionare gli scrutini finali", correct: false },
+  { text: "Redigere i bilanci della scuola", correct: false }
+ ]},
+{question: "Da quali fonti il personale amministrativo deve raccogliere i dati di carriera e i contratti?", 
+   answers: [
+    { text: "Dal SIDI e dai fascicoli cartacei", correct: true }, 
+    { text: "Esclusivamente dal sito dell’INPS", correct: false },
+    { text: "Solo dalle autocertificazioni dei dipendenti", correct: false },
+    { text: "Unicamente dai registri di presenza", correct: false }
+   ]},
+{question: "Come devono essere denominati i dossier digitali relativi alla posizione assicurativa?", 
+   answers: [
+    { text: "POSIZIONE_ASSICURATIVA_NOMECOGNOME", correct: true }, 
+    { text: "DOSSIER_DIPENDENTE_PROGRESSIVO", correct: false },
+    { text: "ARCHIVIO_DATI_PERSONALI", correct: false },
+    { text: "CONTRATTI_E_DOCUMENTI", correct: false }
+   ]},
+{question: "Quali attività specifiche svolge l’assistente amministrativo?", 
+   answers: [
+    { text: "Inserire dati in Passweb, compilare schede Word/Excel, protocollare documenti e archiviare informazioni nelle cartelle condivise", correct: true }, 
+    { text: "Redigere contratti di lavoro e autorizzare ferie", correct: false },
+    { text: "Controllare la presenza giornaliera del personale docente", correct: false },
+    { text: "Gestire esclusivamente la corrispondenza con INPS e MEF", correct: false }
+   ]},
+{question: "Qual è il compito dell’assistente amministrativo in raccordo con DSGA e consulente INPS?", 
+   answers: [
+    { text: "Predisporre flussi ordinati, coesi e archiviabili digitalmente secondo standard", correct: true }, 
+    { text: "Redigere esclusivamente i contratti di lavoro dei dipendenti", correct: false },
+    { text: "Gestire soltanto la protocollazione cartacea dei documenti", correct: false },
+    { text: "Supervisionare le presenze giornaliere dei dipendenti", correct: false }
+   ]},
+{question: "A quale Area del DigComp PA appartiene la problematica della digitalizzazione dei flussi documentali?", 
+   answers: [
+    { text: "Area 3 - Creazione di contenuti digitali", correct: true }, 
+    { text: "Area 1 - Alfabetizzazione su informazioni e dati", correct: false },
+    { text: "Area 2 - Comunicazione e collaborazione", correct: false },
+    { text: "Area 5 - Risoluzione dei problemi", correct: false }
+   ]},
+{question: "Qual è la conseguenza della mancata digitalizzazione secondo standard dei flussi documentali?", 
+   answers: [
+    { text: "Si producono scarti informativi e richieste di rettifica", correct: true }, 
+    { text: "Si garantisce automaticamente l’integrità dei dati", correct: false },
+    { text: "Si riduce il carico di lavoro amministrativo", correct: false },
+    { text: "Si velocizza il processo di protocollazione cartacea", correct: false }
+   ]},
+{question: "Qual è il compito delle scuole in relazione agli stati matricolari digitali?", 
+   answers: [
+    { text: "Recuperare e ordinare informazioni da contratti, decreti e comunicazioni SIDI rispettando le regole di fascicolazione, registrazione e versamento", correct: true }, 
+    { text: "Gestire solo la corrispondenza cartacea con l’INPS", correct: false },
+    { text: "Redigere autonomamente i contratti senza riferimento al SIDI", correct: false },
+    { text: "Archiviare documenti senza criteri di registrazione e fascicolazione", correct: false }
+   ]},
+{question: "Qual è il compito dell’assistente amministrativo dell’area personale nell’utilizzo di Passweb?", 
+   answers: [
+    { text: "Gestire le informazioni sulla posizione assicurativa dei dipendenti garantendo autenticità, integrità e tracciabilità dei documenti", correct: true }, 
+    { text: "Redigere manualmente le buste paga dei dipendenti", correct: false },
+    { text: "Controllare le presenze giornaliere e autorizzare i permessi", correct: false },
+    { text: "Gestire esclusivamente la corrispondenza con l’INPS senza archiviare documenti", correct: false }
+   ]},
+
+				//nuovo blocco A_A3_Gestire_slide
+
+{question: "A cosa serve il formato JSON?", answers: [
+{ text: "Per lo scambio di dati tra applicazioni web in modo leggibile da macchina", correct: true },
+{ text: "Per creare documenti di testo", correct: false },
+{ text: "Per gestire basi di dati relazionali", correct: false },
+{ text: "Per comprimere file multimediali", correct: false }
+]},
+{question: "Quali sono le caratteristiche principali di JSON?", answers: [
+{ text: "Leggero, flessibile e molto usato nelle API", correct: true },
+{ text: "Gerarchico, complesso e poco usato", correct: false },
+{ text: "Solo testuale, non leggibile da macchine", correct: false },
+{ text: "Standard per la crittografia dei dati", correct: false }
+]},
+{question: "Qual è un esempio di utilizzo di JSON nella PA?", answers: [
+{ text: "Risposta automatica di un servizio digitale come verifica codice fiscale o stato fascicolo SIDI", correct: true },
+{ text: "Pubblicazione di bandi su carta", correct: false },
+{ text: "Gestione manuale dell’albo pretorio", correct: false },
+{ text: "Creazione di documenti PDF", correct: false }
+]},
+{question: "A cosa serve il formato RDF?", answers: [
+{ text: "Per descrivere risorse e relazioni tra dati nel web semantico", correct: true },
+{ text: "Per creare fogli di calcolo", correct: false },
+{ text: "Per inviare email sicure", correct: false },
+{ text: "Per comprimere file multimediali", correct: false }
+]},
+{question: "Quali sono le caratteristiche principali di RDF?", answers: [
+{ text: "Supporta la rappresentazione di significato (metadati) ed è usato nei dati aperti della PA", correct: true },
+{ text: "Formato testuale semplice senza metadati", correct: false },
+{ text: "Solo per uso interno, non aperto", correct: false },
+{ text: "Leggero e adatto a scambio dati tra API", correct: false }
+]},
+{question: "Qual è un esempio di utilizzo di RDF nella PA?", answers: [
+{ text: "Pubblicazione dei metadati relativi all’albo pretorio o a bandi pubblici", correct: true },
+{ text: "Risposta automatica di un servizio digitale", correct: false },
+{ text: "Creazione di PDF per circolari", correct: false },
+{ text: "Invio di email interne", correct: false }
+]},
+{question: "Che cos'è Atom?", answers: [
+{ text: "Un formato basato su XML per la distribuzione di contenuti aggiornabili", correct: true },
+{ text: "Un linguaggio di programmazione", correct: false },
+{ text: "Un database relazionale", correct: false },
+{ text: "Un software per l'archiviazione dei documenti", correct: false }
+]},
+{question: "A cosa serve il formato Atom?", answers: [
+{ text: "Per distribuire feed aggiornabili come articoli, circolari o notizie", correct: true },
+{ text: "Per creare fogli di calcolo", correct: false },
+{ text: "Per comprimere immagini digitali", correct: false },
+{ text: "Per crittografare email", correct: false }
+]},
+{question: "Qual è la differenza principale tra Atom e RSS?", answers: [
+{ text: "Atom è più moderno e standardizzato rispetto a RSS", correct: true },
+{ text: "RSS è basato su XML, Atom no", correct: false },
+{ text: "Atom non può distribuire notizie, RSS sì", correct: false },
+{ text: "RSS supporta solo immagini, Atom solo testo", correct: false }
+]},
+{question: "Cosa significa ATOM nell'acronimo Atom Syndication Format?", answers: [
+{ text: "È il nome dello standard definito dalla RFC 4287", correct: true },
+{ text: "È un software di gestione dati", correct: false },
+{ text: "È un tipo di database", correct: false },
+{ text: "È un linguaggio di markup proprietario", correct: false }
+]},
+{question: "Qual è la caratteristica principale del formato XML?", answers: [
+{ text: "È aperto, strutturato, gerarchico e leggibile da umani e macchine", correct: true },
+{ text: "Memorizza dati tabellari separati da virgole", correct: false },
+{ text: "È un formato chiuso e proprietario", correct: false },
+{ text: "Serve solo per documenti di testo", correct: false }
+]},
+{question: "Per quali servizi digitali pubblici è fondamentale il formato XML?", answers: [
+{ text: "SIDI e PagoPA", correct: true },
+{ text: "Excel e Word", correct: false },
+{ text: "PDF e JPEG", correct: false },
+{ text: "Google Docs e Drive", correct: false }
+]},
+{question: "Qual è la caratteristica principale del formato CSV?", answers: [
+{ text: "Memorizza dati tabellari separati da virgole o punto e virgola", correct: true },
+{ text: "È strutturato e gerarchico come XML", correct: false },
+{ text: "Non può essere letto da fogli di calcolo", correct: false },
+{ text: "È usato solo per immagini", correct: false }
+]},
+{question: "Perché il CSV è adatto alla pubblicazione di open data?", answers: [
+{ text: "Perché è leggibile da qualsiasi editor di testo o foglio di calcolo", correct: true },
+{ text: "Perché è un formato proprietario", correct: false },
+{ text: "Perché è gerarchico e complesso", correct: false },
+{ text: "Perché richiede software specializzati per leggerlo", correct: false }
+]},
+{question: "Qual è lo scopo principale delle linee guida sulla gestione dei documenti informatici?", answers: [
+{ text: "Aggiornare le regole tecniche e unificare le norme in materia", correct: true },
+{ text: "Creare documenti cartacei per l’archivio scolastico", correct: false },
+{ text: "Limitare l’accesso ai documenti digitali agli amministratori", correct: false },
+{ text: "Stampare tutti i dati del registro elettronico", correct: false }
+]},
+{question: "Quale articolo del CAD viene citato nelle linee guida?", answers: [
+{ text: "Art. 71", correct: true },
+{ text: "Art. 21", correct: false },
+{ text: "Art. 15", correct: false },
+{ text: "Art. 50", correct: false }
+]},
+{question: "Quali vantaggi portano le linee guida alla scuola o alla PA?", answers: [
+{ text: "Trasparenza, interoperabilità, automazione e accessibilità", correct: true },
+{ text: "Solo la stampa dei documenti", correct: false },
+{ text: "Accesso limitato ai documenti digitali", correct: false },
+{ text: "Creazione di documenti cartacei standard", correct: false }
+]},
+{question: "Cosa si intende per interoperabilità secondo le linee guida?", answers: [
+{ text: "Compatibilità con altri sistemi informatici", correct: true },
+{ text: "Accesso manuale obbligatorio ai dati", correct: false },
+{ text: "Pubblicazione esclusiva in formato PDF", correct: false },
+{ text: "Sottoscrizione di feed solo dagli amministratori", correct: false }
+]},
+{question: "Cosa sono i metadati?", answers: [
+{ text: "Dati che descrivono altri dati", correct: true },
+{ text: "Dati grezzi senza contesto", correct: false },
+{ text: "Informazioni riservate agli amministratori", correct: false },
+{ text: "Documenti cartacei archiviati in segreteria", correct: false }
+]},
+{question: "Qual è la funzione principale dei metadati?", answers: [
+{ text: "Contestualizzare, comprendere, cercare e riutilizzare i dati", correct: true },
+{ text: "Proteggere i dati da accessi esterni", correct: false },
+{ text: "Stampare documenti", correct: false },
+{ text: "Archiviare dati senza indicazioni", correct: false }
+]},
+{question: "Quali informazioni rispondono alle domande principali dei metadati?", answers: [
+{ text: "Cosa contiene, chi l’ha prodotto, quando, con quale formato", correct: true },
+{ text: "Solo il formato del file", correct: false },
+{ text: "Solo l’autore del documento", correct: false },
+{ text: "Solo la data di aggiornamento", correct: false }
+]},
+{question: "Quale di questi è un esempio di metadati per un dataset scolastico?", answers: [
+{ text: "Titolo: 'Iscrizioni scolastiche 2024', Autore: MIUR, Data aggiornamento: 01/07/2024, Formato: CSV, Licenza: CC-BY 4.0", correct: true },
+{ text: "Elenco degli studenti iscritti senza altre informazioni", correct: false },
+{ text: "Verbale cartaceo del consiglio di istituto", correct: false },
+{ text: "Orario delle lezioni stampato in bacheca", correct: false }
+]},
+{question: "Cosa sono gli open data?", answers: [
+{ text: "Informazioni accessibili a tutti, liberamente utilizzabili e riutilizzabili senza restrizioni di copyright", correct: true },
+{ text: "Dati riservati alle amministrazioni pubbliche", correct: false },
+{ text: "Documenti cartacei archiviati in segreteria", correct: false },
+{ text: "Informazioni disponibili solo dietro richiesta ufficiale", correct: false }
+]},
+{question: "Qual è una caratteristica principale degli open data?", answers: [
+{ text: "Accessibilità senza bisogno di autorizzazioni", correct: true },
+{ text: "Sono sempre in formato PDF non modificabile", correct: false },
+{ text: "Non hanno licenza chiara", correct: false },
+{ text: "Non possono essere riutilizzati", correct: false }
+]},
+{question: "Quali formati sono considerati aperti per gli open data?", answers: [
+{ text: "CSV, JSON, RDF", correct: true },
+{ text: "DOCX e JPG", correct: false },
+{ text: "PDF proprietari e ZIP criptati", correct: false },
+{ text: "Solo formati cartacei digitalizzati", correct: false }
+]},
+{question: "A cosa servono gli open data?", answers: [
+{ text: "Trasparenza, supporto alle decisioni, innovazione e controllo civico", correct: true },
+{ text: "Solo alla stampa di documenti", correct: false },
+{ text: "Solo per archiviazione interna della PA", correct: false },
+{ text: "Per restringere l’accesso ai dati agli esperti", correct: false }
+]},
+{question: "Qual è un esempio di riutilizzo degli open data in ambito scolastico?", answers: [
+{ text: "Sviluppare app, visualizzazioni, studi e progetti educativi", correct: true },
+{ text: "Stampare liste di iscritti su carta", correct: false },
+{ text: "Archiviarli senza condivisione", correct: false },
+{ text: "Bloccare l’accesso ai genitori", correct: false }
+]},
+{question: "Cosa è un dato?", answers: [
+{ text: "Rappresentazione originaria di un fenomeno, evento o fatto", correct: true },
+{ text: "Messaggio che aumenta di valore quando correlato ad altri elementi", correct: false },
+{ text: "Informazione elaborata e memorizzata", correct: false },
+{ text: "Sintesi di più informazioni", correct: false }
+]},
+{question: "Cosa distingue un'informazione da un dato?", answers: [
+{ text: "L'informazione può essere misurata, memorizzata e resa disponibile nel tempo", correct: true },
+{ text: "Il dato è sempre numerico", correct: false },
+{ text: "Il dato è già correlato con altri elementi per aumentare il valore", correct: false },
+{ text: "L'informazione non può essere condivisa", correct: false }
+]},
+{question: "Cosa aumenta il valore di un'informazione?", answers: [
+{ text: "Quando viene correlata ad altri elementi che la arricchiscono", correct: true },
+{ text: "Quando è isolata dal contesto", correct: false },
+{ text: "Quando non è memorizzata", correct: false },
+{ text: "Quando è solo numerica o testuale", correct: false }
+]},
+{question: "Quale affermazione sui dati è corretta?", answers: [
+{ text: "Senza contesto un dato non è interpretabile", correct: true },
+{ text: "Un dato è sempre un messaggio completo e disponibile", correct: false },
+{ text: "I dati non possono essere numerici o testuali", correct: false },
+{ text: "I dati aumentano automaticamente di valore", correct: false }
+]},
+{question: "Quali tipi di dati possono esistere?", answers: [
+{ text: "Testuali, numerici, immagini, suoni", correct: true },
+{ text: "Solo numerici", correct: false },
+{ text: "Solo testuali e numerici", correct: false },
+{ text: "Solo immagini e suoni", correct: false }
+]},
+
+{question: "Cosa fa un Assistente Amministrativo in ambito digitale scolastico?", answers: [
+{ text: "Recupera e archivia dati seguendo procedure standard tramite protocollo o software gestionali", correct: true },
+{ text: "Valuta i fabbisogni informativi dell’ufficio", correct: false },
+{ text: "Supporta i colleghi nella ricerca documentale e filtra informazioni", correct: false },
+{ text: "Personalizza strategie di raccolta dei dati", correct: false }
+]},
+{question: "Qual è il compito principale di chi è in Prima Posizione Economica?", answers: [
+{ text: "Supporta colleghi nella ricerca documentale, filtra informazioni per fabbisogni specifici e utilizza modelli per organizzarle", correct: true },
+{ text: "Recupera e archivia dati tramite procedure standard", correct: false },
+{ text: "Valuta i fabbisogni informativi e guida colleghi nell’accesso a banche dati interne", correct: false },
+{ text: "Gestisce esclusivamente il protocollo cartaceo", correct: false }
+]},
+{question: "Cosa distingue chi è in Seconda Posizione Economica nel contesto scolastico digitale?", answers: [
+{ text: "Valuta i fabbisogni informativi dell’ufficio, personalizza strategie di raccolta e guida colleghi nell’uso di banche dati interne", correct: true },
+{ text: "Recupera dati seguendo procedure standard", correct: false },
+{ text: "Filtra informazioni per fabbisogni specifici senza guidare colleghi", correct: false },
+{ text: "Gestisce solo attività cartacee", correct: false }
+]},
+{question: "Quale livello si occupa principalmente di supportare colleghi e filtrare informazioni in base a fabbisogni specifici?", answers: [
+{ text: "Prima Posizione Economica", correct: true },
+{ text: "Assistente Amministrativo", correct: false },
+{ text: "Seconda Posizione Economica", correct: false },
+{ text: "Dirigente Scolastico", correct: false }
+]},
+{question: "Chi personalizza le strategie di raccolta e gestione dei dati in ambienti digitali?", answers: [
+{ text: "Seconda Posizione Economica", correct: true },
+{ text: "Prima Posizione Economica", correct: false },
+{ text: "Assistente Amministrativo", correct: false },
+{ text: "Collaboratore scolastico", correct: false }
+]},
+			//nuovo bloccoA_A3_Gestire_glossario
+
+{question: "Cos’è un dato aperto (Open Data)?", answers: [
+{ text: "Un’informazione digitale pubblicata in formato aperto, liberamente accessibile e riutilizzabile", correct: true },
+{ text: "Un dato riservato alle PA", correct: false },
+{ text: "Un documento cartaceo scansionato", correct: false },
+{ text: "Un formato proprietario", correct: false }
+]},
+{question: "Quale tra questi è un esempio scolastico di Open Data?", answers: [
+{ text: "Tabelle con numero di iscritti pubblicate in formato CSV", correct: true },
+{ text: "Verbale del collegio docenti in PDF protetto", correct: false },
+{ text: "Circolare interna in formato DOCX", correct: false },
+{ text: "Registro di classe cartaceo", correct: false }
+]},
+{question: "Cos’è un formato aperto?", answers: [
+{ text: "Formato leggibile da software liberi senza restrizioni di licenza", correct: true },
+{ text: "Formato leggibile solo con software proprietari", correct: false },
+{ text: "Formato usato solo per i dati sensibili", correct: false },
+{ text: "Formato compresso", correct: false }
+]},
+{question: "Quale tra questi è un esempio di formato aperto?", answers: [
+{ text: "ODT", correct: true },
+{ text: "DOCX", correct: false },
+{ text: "PSD", correct: false },
+{ text: "PPTX", correct: false }
+]},
+{question: "Cosa si intende per interoperabilità?", answers: [
+{ text: "La capacità dei sistemi digitali di dialogare e condividere informazioni in modo automatico e sicuro", correct: true },
+{ text: "La possibilità di aprire un file su più sistemi operativi", correct: false },
+{ text: "La condivisione di documenti tramite email", correct: false },
+{ text: "L’uso di una stampante di rete", correct: false }
+]},
+{question: "Cos’è un metadato?", answers: [
+{ text: "Informazione strutturata che descrive altri dati", correct: true },
+{ text: "Il formato di compressione di un file", correct: false },
+{ text: "Il codice di accesso a un database", correct: false },
+{ text: "Una copia di backup", correct: false }
+]},
+{question: "A cosa serve un catalogo dei dati (Data Catalog)?", answers: [
+{ text: "A elencare i dataset disponibili presso un’amministrazione", correct: true },
+{ text: "A memorizzare le password di sistema", correct: false },
+{ text: "A convertire i formati dei file", correct: false },
+{ text: "A organizzare le riunioni", correct: false }
+]},
+{question: "Cosa si intende per riusabilità dei dati?", answers: [
+{ text: "Capacità di un dato di essere riutilizzato, combinato o analizzato per nuove finalità", correct: true },
+{ text: "La possibilità di eliminare un dato", correct: false },
+{ text: "La trasformazione di dati cartacei in digitali", correct: false },
+{ text: "L’archiviazione in cloud", correct: false }
+]},
+{question: "Cos’è un sistema informativo scolastico?", answers: [
+{ text: "Insieme di banche dati e applicazioni usate dalla scuola", correct: true },
+{ text: "Un manuale per i docenti", correct: false },
+{ text: "Un archivio cartaceo", correct: false },
+{ text: "Una newsletter scolastica", correct: false }
+]},
+{question: "Cosa significa trasparenza by design?", answers: [
+{ text: "Impostare la gestione documentale per garantire trasparenza fin dall’inizio", correct: true },
+{ text: "Pubblicare tutti i documenti sul sito senza filtri", correct: false },
+{ text: "Usare solo software open source", correct: false },
+{ text: "Rendere pubblici i dati personali degli studenti", correct: false }
+]},
+{question: "Cos’è un sistema di pubblicazione automatica?", answers: [
+{ text: "Un meccanismo che pubblica automaticamente documenti dal software interno al sito", correct: true },
+{ text: "Un social network scolastico", correct: false },
+{ text: "Un programma di traduzione automatica", correct: false },
+{ text: "Un software per creare PDF", correct: false }
+]},
+{question: "A cosa servono gli standard AGID come DCAT-AP_IT?", answers: [
+{ text: "A descrivere i dataset aperti nei cataloghi pubblici", correct: true },
+{ text: "A crittografare i dati scolastici", correct: false },
+{ text: "A creare grafici e statistiche", correct: false },
+{ text: "A formattare i documenti in PDF", correct: false }
+]},
+
+			//nuovo blocco A_A3_Condividere_slide
+
+{question: "Cosa introduce il DPR 13 giugno 2023, n. 81?", answers: [
+{ text: "Il nuovo codice di comportamento dei dipendenti pubblici", correct: true },
+{ text: "Il regolamento sugli appalti pubblici", correct: false },
+{ text: "Le norme sulla sicurezza informatica europea", correct: false },
+{ text: "Il bilancio dello Stato", correct: false }
+]},
+{question: "Cosa disciplina l’articolo 11-bis del DPR 81/2023?", answers: [
+{ text: "L’utilizzo delle tecnologie informatiche", correct: true },
+{ text: "La gestione delle ferie dei dipendenti", correct: false },
+{ text: "L’accesso agli atti amministrativi", correct: false },
+{ text: "L’organizzazione delle riunioni", correct: false }
+]},
+{question: "Cosa disciplina l’articolo 11-ter del DPR 81/2023?", answers: [
+{ text: "L’utilizzo dei mezzi di informazione e dei social media", correct: true },
+{ text: "La gestione del protocollo informatico", correct: false },
+{ text: "Le procedure di gara telematica", correct: false },
+{ text: "L’archiviazione cartacea", correct: false }
+]},
+{question: "Cos’è il Codice dell’Amministrazione Digitale (CAD)?", answers: [
+{ text: "Il testo unico che riunisce e organizza le norme sull’informatizzazione della PA nei rapporti con cittadini e imprese", correct: true },
+{ text: "Il regolamento europeo sulla protezione dei dati", correct: false },
+{ text: "Il manuale per l’uso dei software ministeriali", correct: false },
+{ text: "Il codice penale per i reati informatici", correct: false }
+]},
+{question: "Quando è stato emanato il CAD?", answers: [
+{ text: "Il 7 marzo 2005", correct: true },
+{ text: "Il 13 giugno 2023", correct: false },
+{ text: "Il 1 gennaio 2010", correct: false },
+{ text: "Il 25 maggio 2018", correct: false }
+]},
+{question: "Che cos’è il Syllabus nella pubblica amministrazione?", answers: [
+{ text: "Il documento che descrive il minimo delle conoscenze e abilità digitali richieste a ogni dipendente pubblico non specialista IT", correct: true },
+{ text: "Un manuale di istruzioni per software gestionali", correct: false },
+{ text: "Un registro delle presenze dei dipendenti", correct: false },
+{ text: "Un elenco di leggi e decreti", correct: false }
+]},
+{question: "A chi è rivolto il Syllabus?", answers: [
+{ text: "Ai dipendenti pubblici non specialisti IT", correct: true },
+{ text: "Solo ai dirigenti della PA", correct: false },
+{ text: "Agli studenti universitari", correct: false },
+{ text: "Agli sviluppatori di software per la PA", correct: false }
+]},
+{question: "Qual è uno degli obiettivi del Syllabus?", answers: [
+{ text: "Permettere l’autoverifica delle competenze digitali", correct: true },
+{ text: "Definire il bilancio annuale dell’amministrazione", correct: false },
+{ text: "Fornire linee guida per la privacy", correct: false },
+{ text: "Creare un registro elettronico per la scuola", correct: false }
+]},
+{question: "Il Syllabus può essere utilizzato anche per:", answers: [
+{ text: "Definire corsi di formazione sui fabbisogni rilevati", correct: true },
+{ text: "Sostituire i manuali tecnici", correct: false },
+{ text: "Elaborare bandi di gara", correct: false },
+{ text: "Approvare delibere interne", correct: false }
+]},
+{question: "Qual è l’obiettivo generale del Syllabus?", answers: [
+{ text: "Rendere i dipendenti pubblici capaci di operare in modo sicuro, consapevole, collaborativo e orientato al risultato nella PA digitale", correct: true },
+{ text: "Insegnare a programmare in linguaggi IT complessi", correct: false },
+{ text: "Gestire la contabilità delle amministrazioni", correct: false },
+{ text: "Aumentare il numero di server nelle sedi pubbliche", correct: false }
+]},
+			//nuovo blocco A_A3_Condividere_glossario
+
+{question: "Che cos'è l'Albo on-line in un'istituzione scolastica?", answers: [
+{ text: "È il luogo digitale dove vengono pubblicati atti e provvedimenti adottati dall'Istituzione Scolastica, in sostituzione dell'Albo pretorio fisico", correct: true },
+{ text: "È la sezione del sito scolastico dedicata alla trasparenza amministrativa", correct: false },
+{ text: "È un archivio interno riservato alla segreteria didattica", correct: false },
+{ text: "È un registro elettronico degli studenti", correct: false }
+]},
+{question: "Quale legge ha introdotto l'obbligo dell'Albo on-line?", answers: [
+{ text: "Legge 69/2009", correct: true },
+{ text: "D.lgs. 33/2013", correct: false },
+{ text: "GDPR 2016/679", correct: false },
+{ text: "Legge 104/1992", correct: false }
+]},
+{question: "Che cos'è la sezione Amministrazione Trasparente?", answers: [
+{ text: "Una sezione obbligatoria dei siti delle PA con informazioni sulle attività dell'amministrazione", correct: true },
+{ text: "Un registro elettronico riservato agli organi collegiali", correct: false },
+{ text: "Un archivio interno per atti e delibere scolastiche", correct: false },
+{ text: "Un portale dedicato alla gestione dei dati personali", correct: false }
+]},
+{question: "Quale decreto regola i contenuti e la struttura dell'Amministrazione Trasparente?", answers: [
+{ text: "D.lgs. 14 marzo 2013, n. 33", correct: true },
+{ text: "Legge 69/2009", correct: false },
+{ text: "GDPR 2016/679", correct: false },
+{ text: "D.lgs. 81/2008", correct: false }
+]},
+{question: "Cosa si intende per dato personale?", answers: [
+{ text: "Informazioni che identificano o rendono identificabile, direttamente o indirettamente, una persona fisica", correct: true },
+{ text: "Solo nome e cognome della persona", correct: false },
+{ text: "Informazioni relative esclusivamente alla salute", correct: false },
+{ text: "Informazioni anonime senza alcun legame con un individuo", correct: false }
+]},
+{question: "Chi è il DPO in una scuola?", answers: [
+{ text: "Il consulente in materia di privacy nominato obbligatoriamente in ogni istituto scolastico", correct: true },
+{ text: "Il dirigente scolastico", correct: false },
+{ text: "Il responsabile di laboratorio", correct: false },
+{ text: "Il rappresentante dei genitori", correct: false }
+]},
+{question: "In quale anno è entrata in vigore la normativa europea GDPR?", answers: [
+{ text: "2018", correct: true },
+{ text: "2016", correct: false },
+{ text: "2020", correct: false },
+{ text: "2013", correct: false }
+]},
+{question: "Chi è l'incaricato del trattamento dei dati personali nella scuola?", answers: [
+{ text: "Una persona fisica autorizzata dal titolare a compiere operazioni sui dati personali", correct: true },
+{ text: "Un organo collegiale scolastico", correct: false },
+{ text: "Un soggetto esterno che fornisce servizi IT", correct: false },
+{ text: "Un ispettore ministeriale", correct: false }
+]},
+{question: "Chi è l'interessato ai sensi del GDPR?", answers: [
+{ text: "La persona fisica a cui si riferiscono i dati personali", correct: true },
+{ text: "Il dirigente scolastico", correct: false },
+{ text: "Il DPO", correct: false },
+{ text: "L'incaricato del trattamento", correct: false }
+]},
+{question: "Cosa sono gli organi collegiali della scuola?", answers: [
+{ text: "Organismi di partecipazione democratica che coinvolgono diverse componenti della comunità scolastica", correct: true },
+{ text: "Uffici amministrativi interni alla scuola", correct: false },
+{ text: "Gruppi di lavoro temporanei per progetti specifici", correct: false },
+{ text: "Associazioni di ex studenti", correct: false }
+]},
+{question: "Come si esprime la volontà del Collegio dei Docenti e del Consiglio d'Istituto?", answers: [
+{ text: "Attraverso delibere", correct: true },
+{ text: "Attraverso note interne", correct: false },
+{ text: "Attraverso circolari ministeriali", correct: false },
+{ text: "Attraverso comunicazioni informali", correct: false }
+]},
+{question: "Cosa si intende per trattamento di dati personali?", answers: [
+{ text: "Qualsiasi operazione compiuta su dati personali, con o senza mezzi automatizzati", correct: true },
+{ text: "Solo la raccolta dei dati", correct: false },
+{ text: "Solo la cancellazione dei dati", correct: false },
+{ text: "Solo la conservazione dei dati", correct: false }
+]},
+{question: "Quali misure devono adottare i soggetti che trattano dati personali altrui?", answers: [
+{ text: "Misure particolari per garantirne il corretto e sicuro utilizzo", correct: true },
+{ text: "La pubblicazione dei dati sul sito web", correct: false },
+{ text: "L'accesso libero ai dati per tutti gli utenti", correct: false },
+{ text: "La conservazione illimitata dei dati", correct: false }
+]},
+
 				// Prima posizione economica - Fase 1, 2, 3
 
 {question: "Qual è il primo passo nell'analisi preliminare di un file Excel PCTO ricevuto dalla segreteria didattica?", answers: [
