@@ -2,6 +2,1135 @@
 //nuovo blocco 
 const questions = [
 
+			//nuovo blocco A_A4_Interagire-Glossario
+{question: "Cos'è una circolare online?", answers: [
+  { text: "Documento formale digitale per trasmettere disposizioni o informazioni a gruppi scolastici, veicolabile via email, registro elettronico o area riservata", correct: true },
+  { text: "Comunicazione informale tra docenti senza valore legale", correct: false },
+  { text: "Messaggio pubblicitario inviato agli studenti", correct: false },
+  { text: "Nota interna non tracciata tra uffici", correct: false }
+]},
+{question: "Cosa indica la dematerializzazione?", answers: [
+  { text: "Eliminazione dei documenti cartacei a favore di equivalenti digitali con valore legale, comprensiva di protocollazione, firme elettroniche e archiviazione informatica", correct: true },
+  { text: "Scansione dei documenti senza registrazione ufficiale", correct: false },
+  { text: "Creazione di copie cartacee di documenti digitali", correct: false },
+  { text: "Invio di documenti via email senza archiviazione", correct: false }
+]},
+{question: "Qual è lo scopo dell'email istituzionale?", answers: [
+  { text: "Gestire comunicazioni formali, protocollare documenti e inviare informazioni ai destinatari corretti tramite indirizzo ufficiale della scuola", correct: true },
+  { text: "Inviare messaggi personali tra docenti", correct: false },
+  { text: "Promuovere eventi scolastici su piattaforme social", correct: false },
+  { text: "Archiviare documenti solo per uso interno senza invio", correct: false }
+]},
+{question: "A cosa servono i form personalizzati?", answers: [
+  { text: "Creazione di moduli elettronici per rilevazioni, sondaggi, autorizzazioni o monitoraggi, integrabili con database e protocollazione", correct: true },
+  { text: "Invio di email promozionali a studenti", correct: false },
+  { text: "Gestione di newsletter esterne senza tracciamento", correct: false },
+  { text: "Archiviazione cartacea dei moduli", correct: false }
+]},
+{question: "Qual è la funzione del collegamento tra strumenti?", answers: [
+  { text: "Integrare moduli, email, protocolli e registro elettronico per ridurre duplicazioni, errori e velocizzare risposte amministrative", correct: true },
+  { text: "Creare una chat interna tra studenti", correct: false },
+  { text: "Inviare circolari cartacee non digitalizzate", correct: false },
+  { text: "Archiviare email senza collegarle ad altri strumenti", correct: false }
+]},
+{question: "Cosa comprende la modulistica online?", answers: [
+  { text: "Insieme di moduli digitali compilabili, creati dall’amministrazione, su piattaforme HTML, Google Form, Microsoft Forms, per richieste, comunicazioni o adesioni", correct: true },
+  { text: "Solo documenti cartacei inviati via posta", correct: false },
+  { text: "Messaggi istantanei tra studenti e docenti", correct: false },
+  { text: "Comunicazioni informali senza tracciamento", correct: false }
+]},
+{question: "A cosa servono i monitoraggi e sondaggi digitali?", answers: [
+  { text: "Raccogliere dati su attività scolastiche, soddisfazione utenti o bisogni formativi, esportabili per report o valutazioni aggregate", correct: true },
+  { text: "Inviare notifiche generiche senza raccolta dati", correct: false },
+  { text: "Archiviare documenti cartacei senza analisi", correct: false },
+  { text: "Promuovere eventi scolastici senza statistiche", correct: false }
+]},
+{question: "Cos'è la protocollazione automatica?", answers: [
+  { text: "Registrazione automatizzata dei documenti in entrata o uscita garantendo tracciabilità, data certa e trasparenza nella gestione", correct: true },
+  { text: "Scansione manuale dei documenti senza registrazione ufficiale", correct: false },
+  { text: "Invio di email senza archiviazione digitale", correct: false },
+  { text: "Archiviazione cartacea dei documenti solo per uso interno", correct: false }
+]},
+{question: "Qual è lo scopo della videoconferenza?", answers: [
+  { text: "Comunicazione audio-video in tempo reale per riunioni, formazioni o colloqui, usando piattaforme come Zoom, Teams, Meet, con chat, condivisione schermo e registrazione", correct: true },
+  { text: "Invio di registrazioni video senza interazione in tempo reale", correct: false },
+  { text: "Comunicazione solo via email con allegati video", correct: false },
+  { text: "Pubblicazione di video promozionali sul sito scolastico", correct: false }
+]},
+
+		//nuovo blocco A_A4_Interagire-slides
+
+{question: "Quali funzioni rientrano nella Seconda Posizione Economica in ambito comunicazione e gestione digitale?", 
+ answers: [
+  { text: "Coordinamento comunicazioni tra uffici, creazione e gestione modulistica digitale, membro attivo di audit e sistema qualità, redazione policy e gestione cookies,", correct: true },
+  { text: "Supervisione della posta elettronica e aggiornamento di contenuti sul sito web senza intervento su modulistica digitale", correct: false },
+  { text: "Partecipazione ad audit interni e gestione modulistica, ma senza redazione di policy o gestione cookies", correct: false },
+  { text: "Gestione dei flussi di comunicazione tra uffici e organizzazione di eventi, senza strumenti digitali avanzati", correct: false }
+ ]},
+
+{question: "Quali strumenti vengono utilizzati nella Seconda Posizione Economica per gestione e comunicazione digitale?", 
+ answers: [
+  { text: "CMS per sito web, strumenti di audit e controllo accessi, piattaforme di gestione documentale, chatbot gestionali, strumenti collaborativi avanzati,", correct: true },
+  { text: "CMS per sito web, strumenti collaborativi di base, gestione parziale dei documenti senza audit", correct: false },
+  { text: "Piattaforme di gestione documentale e strumenti di audit, ma senza chatbot o strumenti collaborativi avanzati", correct: false },
+  { text: "Strumenti di comunicazione integrata con accesso limitato e gestione contenuti essenziale, senza controllo completo documentale", correct: false }
+ ]},
+
+{question: "Quali funzioni rientrano nella Prima Posizione Economica in ambito comunicazione interna?", 
+ answers: [
+  { text: "Creazione mailing list, gestione comunicazioni interne, partecipazione a videoconferenze, gestione regolamento accessi", correct: true },
+  { text: "Gestione solo della posta cartacea e archivi fisici", correct: false },
+  { text: "Creazione di contenuti per il sito web senza coinvolgimento del personale", correct: false },
+  { text: "Solo organizzazione di eventi esterni alla scuola", correct: false }
+ ]},
+
+{question: "Quali strumenti vengono utilizzati nella Prima Posizione Economica per comunicazioni interne?", 
+ answers: [
+  { text: "Teleconferenze (Zoom, Teams), mailing list, strumenti per regolamento accessi e policy (documenti condivisi)", correct: true },
+  { text: "Solo email generiche senza tracciamento,", correct: false },
+  { text: "Chat informali tra studenti e personale", correct: false },
+  { text: "App di messaggistica non ufficiali e social personali", correct: false }
+ ]},
+
+{question: "Chi può progettare i form interni in ambito scolastico?", 
+ answers: [
+  { text: "Il personale scolastico o il DSGA in base alle necessità reali", correct: true },
+  { text: "Solo gli studenti rappresentanti d’istituto", correct: false },
+  { text: "Enti esterni senza consultare la scuola", correct: false },
+  { text: "I docenti solo su richiesta del dirigente scolastico", correct: false }
+ ]},
+
+{question: "A cosa serve collegare ogni modulo a email specifiche per area/ufficio?", 
+ answers: [
+  { text: "Per garantire una destinazione mirata e veloce delle richieste", correct: true },
+  { text: "Per inviare notifiche a tutti i dipendenti della scuola", correct: false },
+  { text: "Per archiviare automaticamente tutte le risposte sul server nazionale", correct: false },
+  { text: "Per creare report annuali senza intervento umano", correct: false }
+ ]},
+
+{question: "Quali funzioni possono avere i moduli digitali interni?", 
+ answers: [
+  { text: "Richieste formali, raccolta dati, feedback e valutazioni", correct: true },
+  { text: "Solo iscrizioni agli eventi scolastici", correct: false },
+  { text: "Invio di circolari con valore legale", correct: false },
+  { text: "Comunicazioni informali tra studenti", correct: false }
+ ]},
+
+{question: "Qual è il vantaggio della tracciabilità integrata dei moduli?", 
+ answers: [
+  { text: "Le risposte vengono archiviate digitalmente e, se necessario, protocollate", correct: true },
+  { text: "Le risposte vengono cancellate dopo 24 ore per sicurezza", correct: false },
+  { text: "Tutte le risposte vengono pubblicate sulla bacheca online", correct: false },
+  { text: "Non è possibile risalire al mittente delle risposte", correct: false }
+ ]},
+
+{question: "Perché è importante la standardizzazione dei moduli?", 
+ answers: [
+  { text: "Domande, campi e opzioni di risposta uniformi semplificano la gestione", correct: true },
+  { text: "Permette di eliminare tutte le comunicazioni cartacee", correct: false },
+  { text: "Consente l’invio automatico di notifiche ai cittadini", correct: false },
+  { text: "Riduce il numero di dipendenti necessari alla gestione", correct: false }
+ ]},
+
+{question: "Come viene garantita l’accessibilità dei moduli digitali?", 
+ answers: [
+  { text: "Sono accessibili via sito web scolastico e consultabili da ogni device,", correct: true },
+  { text: "Possono essere compilati solo da PC in laboratorio", correct: false },
+  { text: "Devono essere stampati e riconsegnati a mano", correct: false },
+  { text: "Sono disponibili solo per il DSGA e i docenti", correct: false }
+ ]},
+
+{question: "Qual è la funzione principale della bacheca online?", 
+ answers: [
+  { text: "Comunicare informazioni in modo veloce e informale tra il personale", correct: true },
+  { text: "Pubblicare atti ufficiali con valore legale", correct: false },
+  { text: "Archiviare documenti senza possibilità di condivisione", correct: false },
+  { text: "Inviare notifiche obbligatorie ai cittadini", correct: false }
+ ]},
+
+{question: "Qual è la caratteristica delle circolari online?", 
+ answers: [
+  { text: "Sono atti ufficiali con valore formale e obbligo di conservazione", correct: true },
+  { text: "Sono strumenti informali per comunicazioni interne rapide", correct: false },
+  { text: "Non necessitano di archiviazione perché sono temporanee", correct: false },
+  { text: "Servono esclusivamente a inviare messaggi a studenti e famiglie", correct: false }
+ ]},
+
+{question: "Cos’è un chatbot?", 
+ answers: [
+  { text: "Un software automatico che simula una conversazione e può fornire assistenza o rispondere a domande", correct: true },
+  { text: "Un programma che invia automaticamente email agli utenti", correct: false },
+  { text: "Un sistema per archiviare dati senza interazione con l’utente", correct: false },
+  { text: "Un dispositivo hardware per comunicazioni vocali", correct: false }
+ ]},
+
+{question: "Quali funzioni può svolgere un chatbot?", 
+ answers: [
+  { text: "Fornire risposte, assistenza o gestire richieste anche 24/7", correct: true },
+  { text: "Stampare documenti direttamente dalla rete", correct: false },
+  { text: "Sostituire completamente il personale amministrativo", correct: false },
+  { text: "Creare reti sociali tra studenti senza supervisione", correct: false }
+ ]},
+
+{question: "Un chatbot necessita sempre di intervento umano per funzionare?", 
+ answers: [
+  { text: "Non necessariamente, può operare in maniera autonoma secondo la programmazione", correct: true },
+  { text: "Sì, ogni risposta deve essere confermata da un operatore", correct: false },
+  { text: "Solo durante le ore diurne", correct: false },
+  { text: "Solo per inviare notifiche push ai cittadini", correct: false }
+ ]},
+
+{question: "Qual è la funzione principale della messaggistica interna in ambito scolastico?", 
+ answers: [
+  { text: "Permettere lo scambio riservato di informazioni operative, organizzative o amministrative tra il personale", correct: true },
+  { text: "Inviare comunicazioni ufficiali ai genitori e agli studenti", correct: false },
+  { text: "Pubblicare aggiornamenti sui social della scuola", correct: false },
+  { text: "Sostituire completamente le email istituzionali", correct: false }
+ ]},
+
+{question: "Perché la messaggistica interna deve essere tracciabile?", 
+ answers: [
+  { text: "Per garantire un registro ordinato delle comunicazioni e responsabilità operative", correct: true },
+  { text: "Per condividere messaggi personali tra colleghi", correct: false },
+  { text: "Per inviare comunicazioni non ufficiali senza registrazione", correct: false },
+  { text: "Per sostituire gli archivi cartacei di documenti amministrativi", correct: false }
+ ]},
+
+{question: "Chi può utilizzare la messaggistica interna nella scuola?", 
+ answers: [
+  { text: "Solo il personale dell’ente per comunicazioni interne riservate", correct: true },
+  { text: "Genitori e studenti per richieste amministrative", correct: false },
+  { text: "Qualsiasi cittadino per inviare segnalazioni", correct: false },
+  { text: "Fornitori esterni per inviare fatture direttamente ai docenti", correct: false }
+ ]},
+
+{question: "Qual è il vantaggio dell’invio di notifiche push a cittadini e imprese?", 
+ answers: [
+  { text: "Fornire informazioni tempestive e mirate direttamente agli utenti interessati", correct: true },
+  { text: "Sostituire completamente le comunicazioni ufficiali tramite PEC", correct: false },
+  { text: "Inviare promozioni commerciali senza consenso degli utenti", correct: false },
+  { text: "Limitare la comunicazione solo agli uffici interni della scuola", correct: false }
+ ]},
+
+{question: "Perché è importante saper utilizzare strumenti avanzati come forum o audio-video conferencing?", 
+ answers: [
+  { text: "Per facilitare la comunicazione interattiva e la collaborazione con cittadini e imprese", correct: true },
+  { text: "Per bypassare i canali ufficiali e inviare messaggi non tracciabili", correct: false },
+  { text: "Per sostituire il protocollo informatico nelle comunicazioni ufficiali", correct: false },
+  { text: "Per inviare documenti riservati senza controlli di sicurezza", correct: false }
+ ]},
+
+{question: "Come scegliere lo strumento di comunicazione digitale più appropriato?", 
+ answers: [
+  { text: "In base alla natura e complessità del contenuto, oltre al grado di formalità richiesto", correct: true },
+  { text: "Sempre utilizzando il canale più tecnologico disponibile, indipendentemente dal contenuto", correct: false },
+  { text: "Prediligendo strumenti non ufficiali per rendere la comunicazione più rapida", correct: false },
+  { text: "In base alle preferenze personali del dipendente che invia il messaggio", correct: false }
+ ]},
+
+{question: "Come deve essere scelto il registro linguistico nelle comunicazioni digitali?", 
+ answers: [
+  { text: "Adattandolo al destinatario e allo strumento utilizzato, modulando formalità e tono", correct: true },
+  { text: "Usando sempre un registro burocratico standard senza adattamenti", correct: false },
+  { text: "Imitando il linguaggio colloquiale dei social per tutti i destinatari", correct: false },
+  { text: "Scrivendo solo in linguaggio tecnico per evitare fraintendimenti", correct: false }
+ ]},
+
+{question: "Qual è la funzione principale della PEC per un dipendente della prima posizione economica?", 
+ answers: [
+  { text: "Comunicare ufficialmente con amministrazioni, cittadini e imprese", correct: true },
+  { text: "Inviare comunicazioni informali tra colleghi e uffici interni", correct: false },
+  { text: "Archiviare automaticamente documenti senza protocollazione", correct: false },
+  { text: "Gestire partecipazioni a forum e social media in nome dell’amministrazione", correct: false }
+ ]},
+
+{question: "Cosa comporta il domicilio digitale per le comunicazioni ai cittadini?", 
+ answers: [
+  { text: "È l’indirizzo ufficiale a cui l’amministrazione invia tutte le comunicazioni formali", correct: true },
+  { text: "Serve solo a ricevere comunicazioni elettroniche da altre pubbliche amministrazioni", correct: false },
+  { text: "Permette al cittadino di scegliere se ricevere comunicazioni via PEC o cartacee", correct: false },
+  { text: "Funziona solo come casella di archiviazione personale del cittadino", correct: false }
+ ]},
+
+{question: "Quali strumenti evoluti di comunicazione possono essere utilizzati da una pubblica amministrazione?", 
+ answers: [
+  { text: "Forum, social media e piattaforme partecipative per cittadini, imprese e stakeholder", correct: true },
+  { text: "Solo PEC e posta certificata per comunicazioni interne tra uffici", correct: false },
+  { text: "Chat aziendali o email generiche senza tracciamento ufficiale", correct: false },
+  { text: "Annunci pubblicitari su siti web privati per promuovere i servizi", correct: false }
+ ]},
+
+{question: "Perché è importante conoscere i diversi registri linguistici?", 
+ answers: [
+  { text: "Per adattare il tono e il linguaggio al destinatario e allo strumento di comunicazione", correct: true },
+  { text: "Per inviare comunicazioni formali sempre identiche, indipendentemente dal destinatario", correct: false },
+  { text: "Per creare messaggi criptati destinati solo a dirigenti e personale interno", correct: false },
+  { text: "Per uniformare tutti i documenti a uno stile burocratico standard senza variazioni", correct: false }
+ ]},
+
+{question: "Come si integra la PEC con il protocollo informatico e il sistema di gestione documentale?", 
+ answers: [
+  { text: "Consente la gestione integrata delle comunicazioni ufficiali con cittadini, imprese e altre amministrazioni", correct: true },
+  { text: "Serve a inviare documenti interni non ufficiali senza registrazione formale", correct: false },
+  { text: "Permette di archiviare automaticamente le comunicazioni private dei dipendenti", correct: false },
+  { text: "Funziona solo per esportare documenti verso piattaforme esterne non tracciate", correct: false }
+ ]},
+
+{question: "Qual è lo scopo di utilizzare dati presenti in altre banche dati pubbliche?", 
+ answers: [
+  { text: "Supportare lo svolgimento corretto dei compiti istituzionali dell’amministrazione", correct: true },
+  { text: "Consentire confronti statistici a fini personali del dipendente", correct: false },
+  { text: "Servire a inviare comunicazioni promozionali o informative non istituzionali", correct: false },
+  { text: "Archiviare dati esterni senza alcun collegamento con i processi amministrativi", correct: false }
+ ]},
+
+{question: "Qual è lo scopo principale del DigComp a livello europeo?", 
+ answers: [
+  { text: "Costruire il Digital Skills Indicator per definire obiettivi politici e monitorare il DESI", correct: true },
+  { text: "Creare piattaforme di e-learning per le scuole europee", correct: false },
+  { text: "Sostituire i sistemi di valutazione nazionale delle competenze digitali", correct: false },
+  { text: "Standardizzare l’uso dei software negli uffici pubblici europei", correct: false }
+ ]},
+
+				//nuovo blocco 	A_A3_proteggere_slide
+{question: "Quale strumento utilizza l'assistente amministrativo per la sistemazione della posizione assicurativa?", 
+ answers: [
+  { text: "PASSWEB, la scrivania virtuale per la comunicazione con INPS", correct: true },
+  { text: "SIDI, tramite la funzione per i servizi agli studenti", correct: false },
+  { text: "Modulo cartaceo inviato all’INPS dalla segreteria", correct: false },
+  { text: "Applicazione interna per la gestione dei documenti del personale", correct: false }
+ ]},
+
+{question: "Attraverso quale funzione sul SIDI avviene il collegamento con INPS?", 
+ answers: [
+  { text: "Comunicazione Servizi INPS – Interrogazione diritto a pensione", correct: true },
+  { text: "Gestione organico e assenze del personale", correct: false },
+  { text: "Consultazione registro elettronico delle classi", correct: false },
+  { text: "Elaborazione stipendi e contributi mensili", correct: false }
+ ]},
+
+{question: "Quali aspetti della carriera dei dipendenti gestisce l'assistente amministrativo?", 
+ answers: [
+  { text: "Ricostruzione di carriera e inquadramento del personale", correct: true },
+  { text: "Registrazione delle assenze e delle ferie", correct: false },
+  { text: "Gestione dei contratti di supplenza e incarichi temporanei", correct: false },
+  { text: "Controllo della presenza in aula e dei voti", correct: false }
+ ]},
+
+{question: "Qual è il secondo canale di comunicazione tra l'Istituto e l'INPS per la posizione assicurativa?", 
+ answers: [
+  { text: "La funzione sul SIDI «Comunicazione Servizi Inps» – «Interrogazione diritto a pensione»", correct: true },
+  { text: "Invio di email al referente INPS della provincia per aggiornamenti sulla pensione", correct: false },
+  { text: "Richiesta cartacea tramite protocollo interno della scuola", correct: false },
+  { text: "Telefonata diretta al call center INPS per ogni dipendente", correct: false }
+ ]},
+
+{question: "Cosa permette di conoscere la funzione SIDI «Interrogazione diritto a pensione»?", 
+ answers: [
+  { text: "Gli esiti delle lavorazioni delle posizioni assicurative e il diritto o meno a pensione", correct: true },
+  { text: "Solo il numero di anni di servizio del dipendente senza indicazioni sul diritto a pensione", correct: false },
+  { text: "Le trattenute fiscali settimanali dei dipendenti", correct: false },
+  { text: "La disponibilità dei posti vacanti nell’organico di fatto", correct: false }
+ ]},
+
+{question: "Cosa deve fare la scuola in caso di esito positivo sul diritto a pensione?", 
+ answers: [
+  { text: "Inserire subito la cessazione sul SIDI, collegata all’organico di diritto/fatto", correct: true },
+  { text: "Comunicare solo via email all’Ambito Territoriale Provinciale senza aggiornare SIDI", correct: false },
+  { text: "Aspettare la conferma cartacea dell’INPS prima di aggiornare l’organico", correct: false },
+  { text: "Registrare l’esito solo nei registri interni della scuola senza collegamento con SIDI", correct: false }
+ ]},
+
+{question: "Perché l’inserimento della cessazione sul SIDI è importante?", 
+ answers: [
+  { text: "Perché da quella cessazione risulta un posto vacante e disponibile all’Ambito Territoriale Provinciale", correct: true },
+  { text: "Per aggiornare solo le statistiche interne della scuola senza effetti sull’organico", correct: false },
+  { text: "Per calcolare automaticamente il TFR del dipendente", correct: false },
+  { text: "Per inviare notifiche automatiche ai colleghi della classe", correct: false }
+ ]},
+
+{question: "Come può avvenire la sistemazione della posizione assicurativa su Passweb?", 
+ answers: [
+ { text: "Tramite l’INPS che avvia la richiesta alla Scuola o tramite auto assegnazione da parte della Scuola stessa", correct: true },
+ { text: "Solo tramite l’intervento del dirigente scolastico, che verifica manualmente le posizioni", correct: false },
+ { text: "Attraverso aggiornamenti automatici del sistema Passweb senza intervento della Scuola", correct: false },
+ { text: "Richiedendo direttamente all’INPS di modificare l’estratto conto senza coinvolgere la scuola", correct: false }
+ ]},
+
+{question: "Cosa può fare il dipendente se nota inesattezze nel proprio Estratto conto Previdenziale?", 
+ answers: [
+ { text: "Presentare richieste di variazione (RVPA) tramite il portale INPS con SPID", correct: true },
+ { text: "Segnalare l’errore al collega responsabile della contabilità della scuola", correct: false },
+ { text: "Chiedere modifiche tramite il protocollo cartaceo interno senza usare il portale INPS", correct: false },
+ { text: "Richiedere alla Scuola di aggiornare l’estratto conto senza inoltrare RVPA", correct: false }
+ ]},
+
+{question: "Qual è l’obiettivo del perfezionamento della posizione assicurativa tramite RVPA?", 
+ answers: [
+ { text: "Arrivare all’erogazione delle prestazioni basate sui dati presenti sul conto assicurativo", correct: true },
+ { text: "Verificare solamente la correttezza dei periodi di servizio senza influire sulle prestazioni", correct: false },
+ { text: "Aggiornare automaticamente le informazioni anagrafiche del dipendente sul portale INPS", correct: false },
+ { text: "Consentire al dipendente di modificare autonomamente il proprio stipendio", correct: false }
+ ]},
+
+{question: "Quale ruolo ha l’Assistente Amministrativo oltre alla gestione dei dati?", 
+ answers: [
+ { text: "Essere punto di riferimento per tutto il personale, comunicando con competenza, empatia e disponibilità", correct: true },
+ { text: "Occuparsi solo delle procedure digitali senza contatti con il personale", correct: false },
+ { text: "Supervisionare esclusivamente i dirigenti scolastici", correct: false },
+ { text: "Limitarsi a controllare la correttezza formale dei documenti senza interazioni", correct: false }
+ ]},
+
+{question: "In che modo un ambiente di lavoro sereno influisce sulla scuola?", 
+ answers: [
+ { text: "Migliora la gestione delle piattaforme digitali, l’efficienza amministrativa e la qualità della vita lavorativa", correct: true },
+ { text: "Aumenta solo la velocità di digitazione dei dati", correct: false },
+ { text: "Permette di evitare la comunicazione con gli enti esterni", correct: false },
+ { text: "Rende inutili le procedure di controllo interno", correct: false }
+ ]},
+
+{question: "Qual è un comportamento etico e professionale per un Assistente Amministrativo?", 
+ answers: [
+ { text: "Considerare la propria attività come responsabilità, curando anche benessere e relazioni con il personale", correct: true },
+ { text: "Completare le attività senza interagire con colleghi o studenti", correct: false },
+ { text: "Ignorare le pause e la postura per finire prima il lavoro", correct: false },
+ { text: "Delegare ogni comunicazione a software o dirigenti senza assumersi responsabilità", correct: false }
+ ]},
+
+			//nuovo blocco A_A3_proteggere_glossario
+{question: "Qual è la funzione principale del registro di classe elettronico?", 
+ answers: [
+ { text: "Garantire integrità, riservatezza, sicurezza e legalità dei dati, secondo CAD e GDPR", correct: true },
+ { text: "Sostituire completamente il dirigente scolastico nelle decisioni disciplinari", correct: false },
+ { text: "Gestire esclusivamente le assenze degli studenti senza interazioni con altri sistemi", correct: false },
+ { text: "Archiviarli su supporto cartaceo senza vincoli normativi", correct: false }
+ ]},
+
+{question: "Cosa comporta la conferma in ruolo per un docente?", 
+ answers: [
+ { text: "L'immissione definitiva nel ruolo a tempo indeterminato dopo l'anno di prova", correct: true },
+ { text: "Un periodo di prova supplementare di un anno", correct: false },
+ { text: "La possibilità di svolgere incarichi fuori ruolo senza limiti", correct: false },
+ { text: "La promozione automatica a dirigente scolastico", correct: false }
+ ]},
+
+{question: "Quanto dura il periodo di prova del personale ATA con profilo di elevata qualificazione ex DSGA?", 
+ answers: [
+ { text: "6 mesi", correct: true },
+ { text: "4 mesi", correct: false },
+ { text: "12 mesi", correct: false },
+ { text: "Non è previsto alcun periodo di prova", correct: false }
+ ]},
+
+{question: "Cosa sono i servizi utili ex Se per docenti e ATA?", 
+ answers: [
+ { text: "Servizi prestati successivamente al 01/01/1988 che sono utili per il computo di carriera", correct: true },
+ { text: "Servizi prestati prima del 01/01/1988 che non hanno alcun valore", correct: false },
+ { text: "Solo i servizi prestati in regime di supplenza breve", correct: false },
+ { text: "Servizi non retribuiti prestati volontariamente", correct: false }
+ ]},
+
+{question: "A chi si applica il regime di Trattamento di Fine Servizio (TFS)?", 
+ answers: [
+ { text: "Ai dipendenti pubblici assunti a tempo indeterminato prima del 1° gennaio 2001", correct: true },
+ { text: "Ai docenti assunti dal 1° gennaio 2001", correct: false },
+ { text: "A tutti i lavoratori del settore privato", correct: false },
+ { text: "Solo al personale ATA assunto a tempo determinato", correct: false }
+ ]},
+
+{question: "Quale normativa disciplina il Trattamento di Fine Rapporto (TFR) per i dipendenti pubblici?", 
+ answers: [
+ { text: "DPCM 20 dicembre 1999", correct: true },
+ { text: "D.Lgs. 82/2005", correct: false },
+ { text: "DPR 399/88", correct: false },
+ { text: "Legge 29/79", correct: false }
+ ]},
+
+{question: "Qual è lo scopo principale del PEI nella scuola italiana?", 
+ answers: [
+ { text: "Garantire l'inclusione e il percorso personalizzato per studenti con disabilità", correct: true },
+ { text: "Sostituire il curriculum nazionale obbligatorio", correct: false },
+ { text: "Gestire esclusivamente le attività extracurriculari", correct: false },
+ { text: "Organizzare il calendario scolastico senza consultare le famiglie", correct: false }
+ ]},
+
+{question: "Come vengono codificati i rifiuti chimici di laboratorio?", 
+ answers: [
+ { text: "Secondo il Catalogo Europeo dei Rifiuti (CER) con codice a 6 cifre e eventualmente * se pericolosi", correct: true },
+ { text: "Con numeri arbitrari scelti dal laboratorio", correct: false },
+ { text: "Con codici nazionali non correlati al tipo di sostanza", correct: false },
+ { text: "Non è necessario codificarli se si smaltiscono in sicurezza", correct: false }
+ ]},
+
+		//nuovo blocco A_A3_proteg_salute_benes_caso
+{question: "Quando la Gestione Giuridica del dipendente risulta incompleta, qual è il primo passo dell'assistente amministrativo?", 
+ answers: [
+  { text: "Aprire e elaborare una nuova pratica di ricostruzione e/o inquadramento sul SIDI", correct: true },
+  { text: "Consultare solo il fascicolo cartaceo del dipendente", correct: false },
+  { text: "Inviare una PEC all'INPS senza ulteriori verifiche", correct: false },
+  { text: "Attendere la richiesta di rettifica dall'INPS", correct: false }
+ ]},
+
+{question: "Cosa deve fare l'assistente amministrativo in PASSWEB dopo aver elaborato la pratica su SIDI?", 
+ answers: [
+  { text: "Sistemare tutta la posizione assicurativa dei servizi pre-ruolo e ruolo", correct: true },
+  { text: "Solo registrare il decreto di ricostruzione", correct: false },
+  { text: "Stampare la documentazione senza modificarla", correct: false },
+  { text: "Comunicare ai dipendenti la situazione senza aggiornare PASSWEB", correct: false }
+ ]},
+
+{question: "Quali servizi pre-ruolo precedenti al 31/12/1987 devono essere considerati in PASSWEB?", 
+ answers: [
+  { text: "Devono essere computati o riscattati", correct: true },
+  { text: "Devono essere ignorati se brevi", correct: false },
+  { text: "Devono essere sommati senza controllo", correct: false },
+  { text: "Devono essere trascritti solo se dopo il 1990", correct: false }
+ ]},
+
+{question: "Cosa va inserito nella Lista Servizi da Prestazione in PASSWEB?", 
+ answers: [
+  { text: "Decreti di computo/riscatto DPR 1092/73 e di ricongiungimento secondo la Legge 29/79", correct: true },
+  { text: "Solo i servizi di ruolo attuali", correct: false },
+  { text: "Eventuali assenze brevi non giustificate", correct: false },
+  { text: "I certificati medici dei dipendenti", correct: false }
+ ]},
+
+{question: "Chi approva le posizioni assicurative dopo la lavorazione in PASSWEB?", 
+ answers: [
+  { text: "Il ruolo del validatore, dopo la certificazione dall’esecutore", correct: true },
+  { text: "Il dipendente stesso", correct: false },
+  { text: "L’INPS senza alcuna verifica", correct: false },
+  { text: "Il Direttore dei Servizi Generali senza passare dall’esecutore", correct: false }
+ ]},
+
+{question: "Qual è la funzione principale dell’assistente amministrativo con prima posizione economica?", 
+ answers: [
+  { text: "Verifica dei procedimenti amministrativi e diritto al riallineamento della carriera", correct: true },
+  { text: "Coordinamento dell’intero Ufficio personale", correct: false },
+  { text: "Redazione dei bilanci finanziari", correct: false },
+  { text: "Gestione dei rapporti con i fornitori della scuola", correct: false }
+ ]},
+
+{question: "Quali competenze aggiuntive ha l’assistente amministrativo con seconda posizione economica?", 
+ answers: [
+  { text: "Coordinamento dell’Ufficio personale e gestione delle RVPA e COSPA", correct: true },
+  { text: "Solo verifica dei decreti di inquadramento", correct: false },
+  { text: "Redazione dei contratti di fornitura", correct: false },
+  { text: "Predisposizione del registro delle assenze", correct: false }
+ ]},
+
+{question: "Qual è la competenza di base dell’assistente amministrativo riguardo la prima posizione economica?", answers: [
+{text: "Elaborare un decreto di ricostruzione di carriera, anche in caso di passaggio di ruolo", correct: true},
+{text: "Elaborare solo cedolini stipendiali", correct: false},
+{text: "Gestire esclusivamente le assenze del personale", correct: false},
+{text: "Gestire le comunicazioni con le famiglie", correct: false}
+]},
+
+{question: "Cosa distingue un decreto di ricostruzione di carriera da un decreto di inquadramento?", answers: [
+{text: "Il decreto di inquadramento riguarda lo stipendio iniziale, mentre il decreto di ricostruzione riguarda la carriera pregressa e l’anzianità", correct: true},
+{text: "Il decreto di ricostruzione riguarda solo le assenze", correct: false},
+{text: "Il decreto di inquadramento riguarda esclusivamente la pensione", correct: false},
+{text: "Non c’è differenza significativa", correct: false}
+]},
+
+{question: "Cosa verifica l’assistente amministrativo nella prima posizione economica ai fini del DPR 399/88 art. 4 c. 3?", answers: [
+{text: "Il diritto al riallineamento della carriera per il recupero dell’anzianità economica accantonata", correct: true},
+{text: "Il livello di stipendio minimo previsto", correct: false},
+{text: "Le ore di lavoro straordinario accumulate", correct: false},
+{text: "I permessi retribuiti residui", correct: false}
+]},
+
+{question: "Qual è la competenza aggiuntiva dell’assistente amministrativo con la seconda posizione economica?", answers: [
+{text: "Elaborare un decreto di ricostruzione anche su sentenza", correct: true},
+{text: "Gestire solo i cedolini mensili", correct: false},
+{text: "Controllare le assenze brevi del personale", correct: false},
+{text: "Gestire le comunicazioni interne alla scuola", correct: false}
+]},
+
+{question: "Quali strumenti utilizza l’assistente con seconda posizione economica per la sistemazione della posizione assicurativa?", answers: [
+{text: "La scrivania virtuale PASSWEB per verificare posizioni assegnate da INPS e in auto assegnazione", correct: true},
+{text: "Solo il fascicolo cartaceo del dipendente", correct: false},
+{text: "Il registro delle presenze settimanale", correct: false},
+{text: "Il software di gestione delle assenze", correct: false}
+]},
+
+{question: "Cosa significa che l’assistente procede autonomamente alla lavorazione delle posizioni assicurative?", answers: [
+{text: "Gestisce tutte le funzioni di Passweb relative alla posizione assicurativa senza necessità di supervisione costante", correct: true},
+{text: "Invia solo le richieste all’INPS", correct: false},
+{text: "Si limita a raccogliere i documenti dai dipendenti", correct: false},
+{text: "Verifica esclusivamente le assenze del personale", correct: false}
+]},
+
+{question: "Qual è lo strumento principale per verificare la presenza di tutti i procedimenti amministrativi e le ricostruzioni di carriera dei dipendenti?", answers: [
+{text: "Passweb", correct: false},
+{text: "Gestione Giuridica del SIDI", correct: true},
+{text: "Fascicolo cartaceo", correct: false},
+{text: "PEC dell’INPS", correct: false}
+]},
+
+{question: "Perché è fondamentale consultare la funzione Gestione Giuridica del SIDI prima di procedere alla sistemazione della posizione assicurativa?", answers: [
+{text: "Per aggiornare i contatti del dipendente", correct: false},
+{text: "Per verificare i procedimenti amministrativi e gli inquadramenti economici", correct: true},
+{text: "Per registrare le assenze non giustificate", correct: false},
+{text: "Per elaborare i cedolini", correct: false}
+]},
+
+{question: "Quando si tabellano i dipendenti titolari per controllare il riallineamento della carriera, quali informazioni sono fondamentali?", answers: [
+{text: "Data di nascita e livello di stipendio", correct: false},
+{text: "Data di conferma in ruolo e servizio pre-ruolo riconosciuto", correct: true},
+{text: "Numero di giorni di assenza", correct: false},
+{text: "Tipo di contratto attuale", correct: false}
+]},
+
+{question: "Per i dipendenti immessi in ruolo a partire dall’a.s. 2023/2024, quale cambiamento riguarda il calcolo dei servizi pre-ruolo?", answers: [
+{text: "Non vengono più considerati", correct: false},
+{text: "Saranno considerati solo i primi 4 anni", correct: false},
+{text: "Verranno considerati interamente con una semplice somma algebrica al momento della conferma in ruolo", correct: true},
+{text: "Viene calcolata solo la metà del servizio pre-ruolo", correct: false}
+]},
+
+{question: "Qual è l’obiettivo principale del controllo tramite Gestione Giuridica del SIDI e della tabellazione dei dipendenti titolari?", answers: [
+{text: "Migliorare la produttività del personale", correct: false},
+{text: "Garantire una corretta gestione giuridica ed economica dei dipendenti", correct: true},
+{text: "Controllare le presenze giornaliere", correct: false},
+{text: "Determinare i carichi di lavoro settimanali", correct: false}
+]},
+
+{question: "Qual è lo scopo principale della costituzione del fascicolo pensionistico digitale?", 
+ answers: [
+  { text: "Raccogliere tutti gli atti amministrativi rilevanti per la carriera e la pensione del dipendente", correct: true },
+  { text: "Creare un archivio personale per uso interno dell’assistente amministrativo", correct: false },
+  { text: "Archiviare documenti solo per motivi statistici", correct: false },
+  { text: "Consentire la condivisione con altri uffici senza considerare la completezza dei dati", correct: false }
+ ]},
+
+{question: "Quali documenti devono essere inclusi nel fascicolo pensionistico digitale?", 
+ answers: [
+  { text: "Dichiarazione dei servizi, contratti, riepilogo assenze, congedi, decreti di computo/riscatto e comunicazioni INPS", correct: true },
+  { text: "Solo i contratti di lavoro a tempo indeterminato e le comunicazioni INPS", correct: false },
+  { text: "Solo le assenze con riduzione stipendio o prive di retribuzione", correct: false },
+  { text: "Tutti i documenti tranne quelli relativi ai congedi o ai servizi brevi", correct: false }
+ ]},
+
+{question: "Perché è importante prestare attenzione anche ai servizi brevi o ai decreti di computo/riscatto non ancora valutati?", 
+ answers: [
+  { text: "Perché possono influire sul diritto a pensione e sulla determinazione economica finale", correct: true },
+  { text: "Perché aumentano la quantità di documentazione utile solo per statistiche interne", correct: false },
+  { text: "Solo per rispettare formalità burocratiche senza impatto economico", correct: false },
+  { text: "Perché è necessario trasmetterli all’INPS indipendentemente dal loro valore", correct: false }
+ ]},
+
+{question: "Cosa si intende per 'ricostruzione di carriera' ai fini della gestione giuridica?", 
+ answers: [
+  { text: "Il primo inquadramento stipendiale basato sull’anzianità di servizio riconosciuta, comprensiva di ruolo e pre-ruolo", correct: true },
+  { text: "Solo il calcolo delle ferie maturate dal dipendente", correct: false },
+  { text: "La registrazione delle sole assenze non retribuite", correct: false },
+  { text: "La creazione di un elenco dei documenti amministrativi senza calcolo economico", correct: false }
+ ]},
+
+{question: "Qual è la fase successiva alla costituzione del fascicolo pensionistico digitale?", 
+ answers: [
+  { text: "Interrogare il SIDI su Gestione Giuridica per verificare tutti gli atti amministrativi prodotti nella carriera", correct: true },
+  { text: "Inviare subito tutti i documenti all’INPS senza controllo", correct: false },
+  { text: "Richiedere al dipendente di confermare la completezza dei documenti", correct: false },
+  { text: "Procedere con l’archiviazione cartacea senza verifiche", correct: false }
+ ]},
+
+{question: "Perché la tempestività nella gestione della pratica pensionistica è rilevante anche per la salute e il benessere dei dipendenti?", 
+ answers: [
+  { text: "Perché ritardi o errori possono avere impatto economico e psicologico sul personale coinvolto", correct: true },
+  { text: "Solo per rispettare scadenze interne senza effetti sui dipendenti", correct: false },
+  { text: "Per evitare segnalazioni alla Ragioneria Territoriale dello Stato, indipendentemente dal benessere del personale", correct: false },
+  { text: "Per permettere di archiviare documenti senza ritardi, senza influire sulle persone", correct: false }
+ ]},
+
+{question: "Quale legge regola i periodi di congedo per assistenza a familiari disabili?", 
+ answers: [
+  { text: "Legge 104/1992", correct: true },
+  { text: "DPR 1092/1973", correct: false },
+  { text: "Legge 29/1979", correct: false },
+  { text: "DPR 395/1988", correct: false }
+ ]},
+
+{question: "Quale strumento permette di verificare gli atti amministrativi prodotti durante la carriera del dipendente?", 
+ answers: [
+  { text: "SIDI Gestione Giuridica", correct: true },
+  { text: "Passweb", correct: false },
+  { text: "PEC INPS", correct: false },
+  { text: "Archivio cartaceo della scuola", correct: false }
+ ]},
+
+{question: "Quando è fondamentale consultare anche il fascicolo cartaceo del dipendente?", 
+ answers: [
+  { text: "Se il dipendente ha lunga anzianità di servizio", correct: true },
+  { text: "Solo per dipendenti in prova", correct: false },
+  { text: "Per tutti i nuovi assunti", correct: false },
+  { text: "Mai, il fascicolo digitale è sempre sufficiente", correct: false }
+ ]},
+
+{question: "Cosa si intende per 'decreto di computo/riscatto'?", 
+ answers: [
+  { text: "Atto che riconosce e valuta periodi di servizio non coperti da contribuzione ai fini pensionistici", correct: true },
+  { text: "Documento per il congedo ordinario", correct: false },
+  { text: "Calcolo delle ferie arretrate", correct: false },
+  { text: "Atto di trasferimento del dipendente tra scuole", correct: false }
+ ]},
+
+{question: "Cosa significa 'ricongiunzione' nel contesto pensionistico?", 
+ answers: [
+  { text: "Somma dei periodi assicurativi maturati in diverse gestioni previdenziali", correct: true },
+  { text: "Somma dei servizi brevi non retribuiti", correct: false },
+  { text: "Ricalcolo della retribuzione mensile", correct: false },
+  { text: "Trasferimento del fascicolo digitale tra uffici", correct: false }
+ ]},
+
+{question: "Quale pratica può causare danni economici se non inserita correttamente nel fascicolo digitale?", 
+ answers: [
+  { text: "Decreto di ricongiunzione o computo/riscatto", correct: true },
+  { text: "Ferie ordinarie", correct: false },
+  { text: "Richiesta di permesso breve", correct: false },
+  { text: "Comunicazione interna tra colleghi", correct: false }
+ ]},
+
+{question: "Perché è importante raccogliere tutte le comunicazioni INPS e ATP relative alla pensione?", 
+ answers: [
+  { text: "Per garantire completezza della pratica e evitare errori o ritardi", correct: true },
+  { text: "Solo per archivio statistico interno", correct: false },
+  { text: "Per controllare l’attività del dipendente", correct: false },
+  { text: "Per trasmettere documenti non verificati alla Ragioneria", correct: false }
+ ]},
+
+{question: "Quale documento DPR 29/12/1973 n. 1092 è fondamentale per la Dichiarazione dei servizi?", 
+ answers: [
+  { text: "Articolo 145", correct: true },
+  { text: "Articolo 56", correct: false },
+  { text: "Articolo 12", correct: false },
+  { text: "Articolo 200", correct: false }
+ ]},
+
+{question: "Cosa si intende per 'servizi di ruolo e pre-ruolo riconoscibili'?", 
+ answers: [
+  { text: "Periodi di lavoro effettivamente svolti e legalmente valutabili ai fini stipendiali e pensionistici", correct: true },
+  { text: "Solo i servizi brevi", correct: false },
+  { text: "Solo le assenze non retribuite", correct: false },
+  { text: "Documenti cartacei non digitalizzati", correct: false }
+ ]},
+
+{question: "Qual è l’impatto della corretta gestione della pratica pensionistica sulla stabilità psicologica del dipendente?", 
+ answers: [
+  { text: "Riduce ansia e preoccupazioni legate alla sicurezza economica futura", correct: true },
+  { text: "Non ha alcun impatto psicologico", correct: false },
+  { text: "Serve solo per rispettare scadenze interne", correct: false },
+  { text: "Permette solo di archiviare documenti digitali senza effetti sul dipendente", correct: false }
+ ]},
+
+{question: "Cosa rappresenta l’anzianità di servizio ai fini della ricostruzione di carriera?", 
+ answers: [
+  { text: "L’insieme dei servizi utili riconosciuti, comprensivi di pre-ruolo e ruolo, per determinare lo stipendio e la pensione", correct: true },
+  { text: "Il numero di assenze retribuite", correct: false },
+  { text: "Solo i servizi brevi", correct: false },
+  { text: "I documenti presenti nel fascicolo digitale senza valutazione economica", correct: false }
+ ]},
+
+{question: "Quale gestione SIDI permette di evidenziare eventuali difformità o omissioni nel fascicolo pensionistico?", 
+ answers: [
+  { text: "Gestione Giuridica", correct: true },
+  { text: "Gestione Contabile", correct: false },
+  { text: "Gestione Risorse Umane", correct: false },
+  { text: "Gestione Statistica", correct: false }
+ ]},
+
+{question: "Perché i periodi di congedo non retribuito devono essere comunque considerati nella pratica pensionistica?", 
+ answers: [
+  { text: "Perché possono incidere sulla decorrenza della pensione e sulla contribuzione", correct: true },
+  { text: "Solo per archiviazione interna", correct: false },
+  { text: "Non è necessario considerarli se non retribuiti", correct: false },
+  { text: "Solo per generare report statistici", correct: false }
+ ]},
+
+{question: "Qual è il primo passo per la sistemazione della posizione assicurativa di un dipendente prossimo alla pensione su Passweb?", 
+ answers: [
+  { text: "Consultare il fascicolo digitale e, se necessario, anche quello cartaceo per dipendenti con lunga anzianità", correct: true },
+  { text: "Attendere la comunicazione ufficiale dell’INPS prima di consultare qualsiasi documento", correct: false },
+  { text: "Procedere direttamente all’inserimento dei dati su Passweb senza verificare i fascicoli", correct: false },
+  { text: "Contattare esclusivamente il dipendente per ottenere conferma della sua situazione assicurativa", correct: false }
+ ]},
+
+{question: "Perché è importante l’attenzione e la tempestività nella gestione delle pratiche di cessazione e pensionamento?", 
+ answers: [
+  { text: "Per evitare disguidi burocratici che possono incidere sulla stabilità economica e psicologica dei colleghi", correct: true },
+  { text: "Perché la normativa impone termini strettissimi, altrimenti la pratica viene respinta automaticamente", correct: false },
+  { text: "Solo per rispettare procedure interne, senza reale impatto sul personale", correct: false },
+  { text: "Per ridurre al minimo il lavoro del DSGA senza coinvolgere il personale", correct: false }
+ ]},
+
+{question: "Qual è il compito delle scuole riguardo le posizioni assicurative su Passweb?", 
+   answers: [
+    { text: "Lavorare le posizioni assicurative per tutte le cessazioni, anche in corso d’anno, e in base alle richieste ricevute dall’INPS", correct: true }, 
+    { text: "Aggiornare solo le posizioni dei dipendenti con più di 60 anni", correct: false },
+    { text: "Gestire solo le cessazioni programmate a fine anno scolastico", correct: false },
+    { text: "Inviare comunicazioni all’INPS senza procedere a verifiche interne", correct: false }
+   ]},
+
+{question: "Cosa deve fare l’assistente amministrativo riguardo ai dipendenti prossimi alla pensione o con dimissioni volontarie?", 
+   answers: [
+    { text: "Individuare tempestivamente i dipendenti che avranno il requisito dell’età per la pensione di vecchiaia e quelli che hanno inoltrato la domanda di dimissioni", correct: true }, 
+    { text: "Segnalare solo i dipendenti che hanno già superato l’età pensionabile", correct: false },
+    { text: "Verificare le domande di dimissioni solo se presentate tramite PEC ufficiale", correct: false },
+    { text: "Gestire esclusivamente le richieste cartacee, ignorando quelle online", correct: false }
+   ]},
+
+{question: "Nel caso sul tema 'Proteggere la salute e il benessere e proteggere l’ambiente' per gli Assistenti, in quale Area si inserisce e qual è lo scopo principale?", 
+   answers: [
+    { text: "Area Gestione del personale; evidenziare l'importanza di proteggere salute e benessere anche nella gestione giuridica, retributiva, ricostruzioni di carriera, pensionistica e rapporti con RTS e INPS", correct: true }, 
+    { text: "Area Gestione del personale; concentrarsi solo sugli aspetti normativi senza considerare salute e benessere", correct: false },
+    { text: "Area Organizzazione; focalizzarsi esclusivamente sull'efficienza delle procedure amministrative", correct: false },
+    { text: "Area Amministrativa; gestire esclusivamente pratiche burocratiche senza impatto su salute e benessere", correct: false }
+   ]},
+
+		//nuovo blocco A_A3_Q_testo_caso
+{question: "Nel processo di gestione interna da parte degli assistenti amministrativi (Prima posizione economica), qual è l'importanza della comunicazione con il personale?", 
+   answers: [
+    { text: "Sensibilizzare il personale a fornire documentazione chiara e completa fin dall'inizio", correct: true }, 
+    { text: "Inviare solo comunicazioni generiche senza dettagli", correct: false },
+    { text: "Limitarsi a ricevere documenti senza alcuna istruzione", correct: false },
+    { text: "Lasciare che il personale si organizzi autonomamente senza linee guida", correct: false }
+   ]},
+
+{question: "Cosa comporta la protocollazione, fascicolazione e assegnazione responsabile?", 
+   answers: [
+    { text: "Garantire tracciabilità delle richieste e rispetto dei tempi", correct: true }, 
+    { text: "Solo archiviare i documenti senza controlli", correct: false },
+    { text: "Consentire la gestione casuale delle pratiche", correct: false },
+    { text: "Delegare completamente il controllo al personale esterno", correct: false }
+   ]},
+
+{question: "Durante la rilevazione della richiesta e il trattamento dei dati, cosa deve fare l’assistente amministrativo?", 
+   answers: [
+    { text: "Verificare che l’istanza sia coerente", correct: true }, 
+    { text: "Accettare qualsiasi richiesta senza controllo", correct: false },
+    { text: "Inoltrare direttamente alla RTS", correct: false },
+    { text: "Sostituire i dati ricevuti con valori standard", correct: false }
+   ]},
+
+{question: "Nel processo di gestione interna ed esterna (Seconda posizione economica), cosa comporta la fase di verifica?", 
+   answers: [
+    { text: "Controllare la completezza e correttezza della documentazione", correct: true }, 
+    { text: "Ignorare eventuali documenti mancanti", correct: false },
+    { text: "Trasferire subito i dati nel sistema senza controlli", correct: false },
+    { text: "Inviare documenti incompleti alla RTS", correct: false }
+   ]},
+
+{question: "Cosa include l'inserimento dati a sistema nel processo della Seconda posizione economica?", 
+   answers: [
+    { text: "Aprire pratica, acquisire dati ruolo precedente, valutare e riconoscere servizi e benefici", correct: true }, 
+    { text: "Solo aprire pratica senza ulteriori operazioni", correct: false },
+    { text: "Inserire dati casualmente senza controllo", correct: false },
+    { text: "Elaborare dati solo dopo il decreto RTS", correct: false }
+   ]},
+
+{question: "Cosa avviene nella fase di elaborazione?", 
+   answers: [
+    { text: "Calcolo dell'anzianità riconosciuta e determinazione della nuova fascia stipendiale", correct: true }, 
+    { text: "Invio del decreto senza calcoli", correct: false },
+    { text: "Solo verifica documentale senza calcolo", correct: false },
+    { text: "Archiviazione dei dati senza elaborazione", correct: false }
+   ]},
+
+{question: "Quando il decreto di ricostruzione di carriera deve essere formalizzato per il personale docente?", 
+   answers: [
+    { text: "Entro 90 giorni dal superamento del periodo di prova", correct: true }, 
+    { text: "Entro 30 giorni dalla richiesta del docente", correct: false },
+    { text: "Non ci sono scadenze specifiche", correct: false },
+    { text: "Solo dopo conferma RTS", correct: false }
+   ]},
+
+{question: "Cosa prevede la fase di comunicazione verso la RTS?", 
+   answers: [
+    { text: "Trasmettere il decreto per validazione e applicazione dei nuovi inquadramenti stipendiali", correct: true }, 
+    { text: "Inviare solo una copia informale senza validazione", correct: false },
+    { text: "Archiviare senza inviare nulla", correct: false },
+    { text: "Trasmettere documenti solo al Dirigente Scolastico", correct: false }
+   ]},
+
+{question: "Cosa comporta la fase di rettifica nel processo di gestione?", 
+   answers: [
+    { text: "Eventuali correzioni conseguenti a rilievi da parte della RTS, con nuova elaborazione, emissione decreto e comunicazione", correct: true }, 
+    { text: "Ignorare rilievi RTS e mantenere il decreto originale", correct: false },
+    { text: "Solo archiviare il rilievo senza modifiche", correct: false },
+    { text: "Sostituire il decreto con un documento generico", correct: false }
+   ]},
+
+{question: "Cosa comprende la fase di archiviazione?", 
+   answers: [
+    { text: "Archiviare correttamente tutta la documentazione relativa alla pratica", correct: true }, 
+    { text: "Eliminare i documenti superflui senza controlli", correct: false },
+    { text: "Archiviare solo i decreti senza la documentazione di supporto", correct: false },
+    { text: "Trasferire i documenti solo su server esterni", correct: false }
+   ]},
+
+{question: "All’interno dell’Area degli assistenti, come sono considerate le mansioni e la loro esigibilità?", 
+   answers: [
+    { text: "Sono equivalenti e fungibili in relazione alle esigenze dell’organizzazione del lavoro", correct: true }, 
+    { text: "Ogni assistente può rifiutare qualsiasi mansione proposta", correct: false },
+    { text: "Le mansioni sono fisse e non modificabili durante l’anno", correct: false },
+    { text: "Sono determinate esclusivamente dal Dirigente Scolastico senza piano annuale", correct: false }
+   ]},
+
+{question: "Chi propone il Piano delle attività all’inizio dell’anno scolastico per gli assistenti amministrativi?", 
+   answers: [
+    { text: "Il DSGA", correct: true }, 
+    { text: "Il Dirigente Scolastico", correct: false },
+    { text: "Il personale ATA autonomamente", correct: false },
+    { text: "Il Ministero dell’Istruzione", correct: false }
+   ]},
+
+{question: "Cosa può proporre il DSGA riguardo agli incarichi di natura organizzativa?", 
+   answers: [
+    { text: "Attribuire incarichi retribuiti con una specifica indennità", correct: true }, 
+    { text: "Assegnare incarichi senza alcuna retribuzione", correct: false },
+    { text: "Vincolare le mansioni solo al personale docente", correct: false },
+    { text: "Rimuovere incarichi già attribuiti dal Dirigente Scolastico", correct: false }
+   ]},
+
+{question: "Per il personale titolare di posizione economica, come può essere trattata l’indennità degli incarichi organizzativi?", 
+   answers: [
+    { text: "Può essere assorbita, in tutto o in parte, fino a concorrenza del valore della posizione economica in godimento", correct: true }, 
+    { text: "Deve essere sempre aggiunta al salario senza limiti", correct: false },
+    { text: "Non è prevista alcuna indennità aggiuntiva", correct: false },
+    { text: "Può essere sostituita con ferie aggiuntive", correct: false }
+   ]},
+
+{question: "Qual è la funzione principale dei software di gestione documentale nella ricostruzione di carriera (prima posizione economica)?", 
+   answers: [
+    { text: "Permettono l'archiviazione digitale, l'indicizzazione e la ricerca rapida dei documenti relativi alle carriere del personale", correct: true }, 
+    { text: "Gestiscono solo la comunicazione interna via email", correct: false },
+    { text: "Calcolano automaticamente l'anzianità senza inserimento dati", correct: false },
+    { text: "Sostituiscono il SIDI nella gestione delle carriere", correct: false }
+   ]},
+
+{question: "Quali strumenti possono essere utilizzati come supporto alla gestione delle pratiche attraverso fogli di calcolo avanzati?", 
+   answers: [
+    { text: "Creare checklist, monitorare lo stato delle pratiche, effettuare simulazioni di calcolo", correct: true }, 
+    { text: "Firmare digitalmente i decreti", correct: false },
+    { text: "Sostituire completamente il software di gestione documentale", correct: false },
+    { text: "Inviare comunicazioni ufficiali alla Ragioneria Territoriale", correct: false }
+   ]},
+
+{question: "Qual è la funzione principale delle piattaforme di comunicazione (es. G Suite, Microsoft 365) nella ricostruzione di carriera?", 
+   answers: [
+    { text: "Gestire la comunicazione interna ed esterna, garantendo tracciabilità e rapidità", correct: true }, 
+    { text: "Archiviare documenti in cloud senza indicizzazione", correct: false },
+    { text: "Calcolare automaticamente l'inquadramento stipendiale", correct: false },
+    { text: "Sostituire il personale amministrativo nella raccolta dei documenti", correct: false }
+   ]},
+
+{question: "Qual è la funzione principale del SIDI nella seconda posizione economica?", 
+   answers: [
+    { text: "Gestire le carriere del personale scolastico e il riconoscimento di servizi e benefici", correct: true }, 
+    { text: "Sostituire i software gestionali specifici", correct: false },
+    { text: "Archiviare documenti solo a livello locale", correct: false },
+    { text: "Inviare automaticamente decreti senza approvazione", correct: false }
+   ]},
+
+{question: "Quali vantaggi offre il SIDI nella gestione centralizzata delle pratiche?", 
+   answers: [
+    { text: "Permette una gestione standardizzata, facilitando la comunicazione con MIM e RTS", correct: true }, 
+    { text: "Elimina la necessità di formazione del personale", correct: false },
+    { text: "Automatizza la firma digitale dei decreti", correct: false },
+    { text: "Sostituisce completamente gli strumenti di comunicazione", correct: false }
+   ]},
+
+{question: "Qual è la funzione dei software gestionali specifici per la ricostruzione di carriera?", 
+   answers: [
+    { text: "Automatizzare il calcolo dell'anzianità, gestire differenze retributive, elaborare e stampare decreti e supportare normative specifiche", correct: true }, 
+    { text: "Gestire esclusivamente la posta elettronica interna", correct: false },
+    { text: "Sostituire il SIDI in tutte le procedure", correct: false },
+    { text: "Effettuare comunicazioni ufficiali al personale senza documentazione", correct: false }
+   ]},
+
+{question: "Qual è il ruolo della posta elettronica ordinaria e certificata nella gestione delle pratiche di ricostruzione di carriera?", 
+   answers: [
+    { text: "Consentire la trasmissione sicura e tracciata di documenti e comunicazioni ufficiali", correct: true }, 
+    { text: "Calcolare l'inquadramento economico del personale", correct: false },
+    { text: "Sostituire il software gestionale e il SIDI", correct: false },
+    { text: "Archiviare automaticamente tutti i documenti digitali senza controllo", correct: false }
+   ]},
+
+{question: "Chi firma digitalmente il Decreto di Ricostruzione di Carriera dopo l’istruttoria dell’assistente amministrativo e la validazione del DSGA?", 
+   answers: [
+    { text: "Il Dirigente Scolastico", correct: true }, 
+    { text: "L’assistente amministrativo", correct: false },
+    { text: "La Ragioneria Territoriale dello Stato", correct: false },
+    { text: "Il personale docente", correct: false }
+   ]},
+
+{question: "Cosa stabilisce formalmente il Decreto di Ricostruzione di Carriera?", 
+   answers: [
+    { text: "L’inquadramento del dipendente nella nuova fascia stipendiale basandosi sui servizi riconosciuti", correct: true }, 
+    { text: "La nomina a dirigente scolastico", correct: false },
+    { text: "Il trasferimento automatico in un’altra scuola", correct: false },
+    { text: "La promozione economica immediata senza valutazione dei servizi", correct: false }
+   ]},
+
+{question: "Quali passaggi compie la Ragioneria Territoriale dello Stato (RTS) dopo aver ricevuto il decreto di ricostruzione di carriera?", 
+   answers: [
+    { text: "Controllo di legittimità e regolarità contabile, visto di regolarità, rifiuto o richiesta di integrazioni", correct: true }, 
+    { text: "Archiviazione immediata senza controlli", correct: false },
+    { text: "Stampa del decreto per la conservazione locale", correct: false },
+    { text: "Invio diretto al Ministero senza verifica", correct: false }
+   ]},
+
+{question: "Quale formazione è prevista per il personale in relazione alla gestione giuridica del personale scolastico?", 
+   answers: [
+    { text: "Partecipare a corsi su normativa e applicativi relativi alla gestione giuridica del personale scolastico", correct: true }, 
+    { text: "Formazione esclusivamente su strumenti informatici non giuridici", correct: false },
+    { text: "Non è prevista alcuna formazione", correct: false },
+    { text: "Segnalazioni tramite e-mail senza corsi formativi", correct: false }
+   ]},
+
+{question: "Quale modalità può essere utilizzata dall’assistente amministrativo in prima posizione economica per comunicare agli interessati le istanze di ricostruzione di carriera?", 
+   answers: [
+    { text: "Form on line o mailing list", correct: true }, 
+    { text: "Telefonate individuali senza registrazione", correct: false },
+    { text: "Solo comunicazioni verbali", correct: false },
+    { text: "Avvisi cartacei non protocollati", correct: false }
+   ]},
+
+{question: "Cosa deve fare l’assistente amministrativo in prima posizione economica dopo aver ricevuto la documentazione per la ricostruzione di carriera?", 
+   answers: [
+    { text: "Raccoglierla e verificarla preliminarmente in formato digitale", correct: true }, 
+    { text: "Spedirla subito alla Ragioneria senza controlli", correct: false },
+    { text: "Archiviare senza protocollare", correct: false },
+    { text: "Chiedere al DSGA di occuparsene direttamente", correct: false }
+   ]},
+
+{question: "Quale attività formativa è prevista per l’assistente amministrativo in prima posizione economica in relazione alla ricostruzione di carriera?", 
+   answers: [
+    { text: "Partecipare a percorsi di formazione sulla gestione documentale e normativa specifica", correct: true }, 
+    { text: "Limitarsi a leggere circolari senza confronto", correct: false },
+    { text: "Seguire corsi su tematiche non attinenti", correct: false },
+    { text: "Delegare totalmente ad altri uffici", correct: false }
+   ]},
+
+{question: "Qual è il primo passo operativo dell’assistente amministrativo in seconda posizione economica nella ricostruzione di carriera?", 
+   answers: [
+    { text: "Analizzare la documentazione", correct: true }, 
+    { text: "Generare subito il decreto digitale", correct: false },
+    { text: "Trasmettere i fascicoli alla RTS senza controlli", correct: false },
+    { text: "Contattare direttamente l’INPS", correct: false }
+   ]},
+
+{question: "Quale credenziale può utilizzare il personale abilitato per accedere al portale SIDI nella procedura di ricostruzione di carriera?", 
+   answers: [
+    { text: "SPID, CIE o credenziali SIDI", correct: true }, 
+    { text: "Un account personale non istituzionale", correct: false },
+    { text: "Password temporanea comunicata da un collega", correct: false },
+    { text: "Solo la firma digitale", correct: false }
+   ]},
+
+{question: "Quale sezione del SIDI deve essere utilizzata per avviare la pratica di ricostruzione di carriera?", 
+   answers: [
+    { text: "Fascicolo Personale Scuola", correct: true }, 
+    { text: "Gestione Alunni", correct: false },
+    { text: "Contabilità e Bilancio", correct: false },
+    { text: "Registro elettronico", correct: false }
+   ]},
+
+{question: "Quale funzione del SIDI permette di registrare i servizi pregressi e i benefici nella pratica di ricostruzione di carriera?", 
+   answers: [
+    { text: "Gestione Servizi Pregressi e Benefici", correct: true }, 
+    { text: "Consultazione assenze", correct: false },
+    { text: "Inserimento voti", correct: false },
+    { text: "Protocollo circolari", correct: false }
+   ]},
+
+{question: "Qual è la fase conclusiva della procedura di ricostruzione di carriera in SIDI prima dell’invio alla Ragioneria Territoriale dello Stato (RTS)?", 
+   answers: [
+    { text: "Generazione ed emissione del decreto digitale", correct: true }, 
+    { text: "Stampa del fascicolo cartaceo", correct: false },
+    { text: "Firma manuale del docente", correct: false },
+    { text: "Archiviazione locale senza invio", correct: false }
+   ]},
+
+{question: "Come deve essere presentata la domanda di Ricostruzione di Carriera da parte del dipendente?", 
+   answers: [
+    { text: "Tramite POLIS dopo il superamento del periodo di prova", correct: true }, 
+    { text: "Con lettera cartacea indirizzata al DSGA", correct: false },
+    { text: "Solo tramite PEC alla Ragioneria Territoriale dello Stato", correct: false },
+    { text: "Attraverso comunicazione telefonica alla segreteria", correct: false }
+   ]},
+
+{question: "Quale documento deve essere prodotto in formato digitale ai fini della ricostruzione di carriera?", 
+   answers: [
+    { text: "La dichiarazione dei servizi", correct: true }, 
+    { text: "Il certificato medico di idoneità", correct: false },
+    { text: "La scheda anagrafica del dipendente", correct: false },
+    { text: "Il cedolino dello stipendio", correct: false }
+   ]},
+
+{question: "Qual è il contratto richiesto per la ricostruzione di carriera?", 
+   answers: [
+    { text: "Il contratto a tempo indeterminato vistato dalla RTS o registrato", correct: true }, 
+    { text: "Il contratto a tempo determinato annuale", correct: false },
+    { text: "Il contratto collettivo nazionale della scuola", correct: false },
+    { text: "Il contratto integrativo d’istituto", correct: false }
+   ]},
+
+{question: "Quale provvedimento deve essere presente tra i documenti per la ricostruzione di carriera?", 
+   answers: [
+    { text: "Il provvedimento di conferma in ruolo", correct: true }, 
+    { text: "L’attestato di servizio civile", correct: false },
+    { text: "La nomina a commissario d’esame", correct: false },
+    { text: "Il certificato di nascita", correct: false }
+   ]},
+
+{question: "Quali certificazioni possono essere richieste nella procedura di ricostruzione di carriera?", 
+   answers: [
+    { text: "Certificazioni di servizio o autocertificazioni dettagliate", correct: true }, 
+    { text: "Certificazioni di residenza e stato di famiglia", correct: false },
+    { text: "Certificazioni mediche", correct: false },
+    { text: "Certificazioni linguistiche", correct: false }
+   ]},
+
+{question: "Quale titolo deve essere presentato per dimostrare l’accesso al profilo professionale?", 
+   answers: [
+    { text: "Il titolo di studio che ha consentito l’accesso (laurea o diploma)", correct: true }, 
+    { text: "Un attestato di frequenza a corsi online", correct: false },
+    { text: "Il diploma di scuola media inferiore", correct: false },
+    { text: "Un patentino informatico", correct: false }
+   ]},
+
+{question: "Per quali casi sono richiesti documenti aggiuntivi nella ricostruzione di carriera?", 
+   answers: [
+    { text: "Per servizi particolari che necessitano di specifica documentazione", correct: true }, 
+    { text: "Per ogni contratto di supplenza inferiore ai 30 giorni", correct: false },
+    { text: "Per chi non ha superato il periodo di prova", correct: false },
+    { text: "Per chi ha cambiato scuola nello stesso anno scolastico", correct: false }
+   ]},
+
+{question: "Che cosa consiste la ricostruzione di carriera del personale scolastico?", 
+   answers: [
+    { text: "Nella valutazione del servizio a tempo determinato e in altro ruolo svolto prima dell’immissione in ruolo attuale", correct: true }, 
+    { text: "Nell’attribuzione di un nuovo profilo professionale", correct: false },
+    { text: "Nel trasferimento ad altra istituzione scolastica", correct: false },
+    { text: "Nell’adeguamento del contratto alla normativa GDPR", correct: false }
+   ]},
+
+{question: "Quando può essere richiesta la ricostruzione di carriera per il personale scolastico?", 
+   answers: [
+    { text: "Solo dopo il superamento dell’anno di prova e la conferma in ruolo (docenti) o del periodo di prova (ATA)", correct: true }, 
+    { text: "Al momento della stipula del contratto a tempo indeterminato", correct: false },
+    { text: "Dopo cinque anni di servizio continuativo", correct: false },
+    { text: "Contestualmente alla presa di servizio nella nuova sede", correct: false }
+   ]},
+   {question: "Chi è competente al riconoscimento dei servizi agli effetti della carriera del personale scolastico a tempo indeterminato dal 1° settembre 2000?", 
+   answers: [
+    { text: "L’Istituzione Scolastica, ai sensi dell’art. 14 D.P.R. 275/1999", correct: true }, 
+    { text: "Il Ministero dell’Istruzione in via esclusiva", correct: false },
+    { text: "La Ragioneria Territoriale dello Stato", correct: false },
+    { text: "L’Ufficio scolastico regionale", correct: false }
+   ]},
 			//nuovo blocco A_A3_Gestire_caso-rev
 
 {question: "Qual è un compito dell’Assistente Amministrativo in prima posizione economica riguardo i fascicoli digitali dei dipendenti?", 
@@ -2187,15 +3316,6 @@ answers: [
     ]
   },
   {
-    question: "Quale strumento di supporto è menzionato per il problem solving degli aspiranti GPS?",
-    answers: [
-      { text: "FAQ e chatbot dedicati", correct: true },
-      { text: "Supporto telefonico senza limiti", correct: false },
-      { text: "Solo email", correct: false },
-      { text: "Incontri settimanali obbligatori", correct: false }
-    ]
-  },
-  {
     question: "Quale precauzione viene adottata nella pubblicazione delle graduatorie GPS per tutelare la privacy?",
     answers: [
       { text: "Limitare la diffusione delle informazioni personali degli utenti", correct: true },
@@ -3093,7 +4213,7 @@ answers: [
     { text: "Solo piattaforme di social media per studenti", correct: false }
   ]
 },
- //nuove domande DigComp 2.2.
+ //nuove domande DigComp 2.2
   {
   question: "Quali sono le due tipologie di posizioni economiche previste dal CCNL per il personale ATA?",
   answers: [
